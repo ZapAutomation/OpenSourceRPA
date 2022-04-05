@@ -1,0 +1,10 @@
+LIBRARY	SystemHookCore
+
+EXPORTS
+	InitializeHook
+	SetUserHookCallback
+	InitializeWinEvent
+	SetWinEventCallback
+	UninitializeHook
+	UninitializeWinEvent
+	Dispose

@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.5.2.0" Id="eae4e4d8-4a31-451a-9b2e-d3b9f285c3a0" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\DELL\Documents\zappyai\Crapy\Sample\ZapAutomationAdditionalSamples\CreateVariblesForLoopsAndDecisionNodes\Decision node\check prime number using decision node.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>19921</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2020-03-23T15:02:16.3923698Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>7a62b05b-e0e8-49db-b932-cad3284ab974</SelfGuid>
+      <NextGuid>67ac53f0-b867-405b-a6e3-c4f91ee37dc4</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>108</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2020-03-23T15:02:16.3923698Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>85034981-81ca-4c66-b757-41d1654d5262</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>468</EditorLocationY>
+    </EndNodeAction>
+    <DecisionNodeAction>
+      <Timestamp>2020-03-23T15:02:21.5953698Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>37365ae6-e89b-4d02-8e65-40f8455fec60</SelfGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>306</EditorLocationY>
+      <NextGuid>237862e3-f678-4eac-8ebe-8c3456f0b70c</NextGuid>
+      <TrueGuid>5a0281f9-4794-477c-a1bc-259452625f75</TrueGuid>
+      <FalseGuid>237862e3-f678-4eac-8ebe-8c3456f0b70c</FalseGuid>
+      <EvaluationExpression>
+        <RuntimeScript>context =&gt;  {
+int Inumber = Int32.Parse(${_Number}.ToString());
+if(IsPrime(Inumber))
+{
+  return true;
+}
+else
+{
+  return false;
+}       
+
+bool IsPrime(int number)
+{
+    if (number &lt;= 1) return false;
+    if (number == 2) return true;
+    if (number % 2 == 0) return false;
+
+    var boundary = (int)Math.Floor(Math.Sqrt(number));
+
+    for (int i = 3; i &lt;= boundary; i+=2)
+        if (number % i == 0)
+            return false;
+
+    return true;        
+}
+
+}</RuntimeScript>
+      </EvaluationExpression>
+    </DecisionNodeAction>
+    <InputBoxAction>
+      <Timestamp>2020-03-23T15:02:36.3133698Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>67ac53f0-b867-405b-a6e3-c4f91ee37dc4</SelfGuid>
+      <NextGuid>dd82990e-8538-4151-93cc-f508ca0fe060</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>180</EditorLocationY>
+      <Title>
+        <Value>Check number is prime or not</Value>
+      </Title>
+      <PromptText>
+        <Value>Enter Integer Number</Value>
+      </PromptText>
+      <DialogResult>None</DialogResult>
+    </InputBoxAction>
+    <VariableNodeAction>
+      <DisplayName>_Number</DisplayName>
+      <Timestamp>2020-03-23T15:07:13.0173698Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>a4612f04-6cb3-4ab7-8b08-11dd4c03add8</SelfGuid>
+      <NextGuid>dd82990e-8538-4151-93cc-f508ca0fe060</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>612</EditorLocationX>
+      <EditorLocationY>198</EditorLocationY>
+      <VariableName>_Number</VariableName>
+      <EvaluationExpression>
+        <Value />
+      </EvaluationExpression>
+    </VariableNodeAction>
+    <SetVariableValue>
+      <Timestamp>2020-03-23T15:07:19.4233698Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>dd82990e-8538-4151-93cc-f508ca0fe060</SelfGuid>
+      <NextGuid>37365ae6-e89b-4d02-8e65-40f8455fec60</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>234</EditorLocationY>
+      <VariableName>${_Number}</VariableName>
+      <VariableValue>
+        <DymanicKey>${67ac53f0-b867-405b-a6e3-c4f91ee37dc4:Value}</DymanicKey>
+      </VariableValue>
+    </SetVariableValue>
+    <MessageBoxAction>
+      <Timestamp>2020-03-23T15:08:18.0953698Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>5a0281f9-4794-477c-a1bc-259452625f75</SelfGuid>
+      <NextGuid>85034981-81ca-4c66-b757-41d1654d5262</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>378</EditorLocationY>
+      <Title>
+        <Value>Output</Value>
+      </Title>
+      <Text>
+        <Value>Given number is prime</Value>
+      </Text>
+      <Icon>Asterisk</Icon>
+      <Buttons>OK</Buttons>
+      <DefaultButton>Button1</DefaultButton>
+      <Options />
+      <DialogResult>None</DialogResult>
+      <DialogResultBool>false</DialogResultBool>
+    </MessageBoxAction>
+    <MessageBoxAction>
+      <Timestamp>2020-03-23T15:08:18.0953698Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>237862e3-f678-4eac-8ebe-8c3456f0b70c</SelfGuid>
+      <NextGuid>85034981-81ca-4c66-b757-41d1654d5262</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>486</EditorLocationX>
+      <EditorLocationY>360</EditorLocationY>
+      <Title>
+        <Value>Output</Value>
+      </Title>
+      <Text>
+        <Value>Given number is not prime</Value>
+      </Text>
+      <Icon>Asterisk</Icon>
+      <Buttons>OK</Buttons>
+      <DefaultButton>Button1</DefaultButton>
+      <Options />
+      <DialogResult>None</DialogResult>
+      <DialogResultBool>false</DialogResultBool>
+    </MessageBoxAction>
+  </ExecuteActivities>
+</ZappyTask>

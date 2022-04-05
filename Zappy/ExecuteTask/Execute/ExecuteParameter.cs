@@ -1,0 +1,31 @@
+﻿namespace Zappy.ExecuteTask.Execute
+{
+    internal enum ExecuteParameter
+    {
+        CLICK_ON_VALID_POINT_ONLY = 0x16,
+        CONTAINER_BASED_SWITCH_SUPPORT = 13,
+        DEBUG_MODE = 2,
+        DUMP_SCREEN_FORMAT = 0x13,
+        ENSURE_ENABLED = 0x17,
+        ENSURE_VISIBLE_FLAG = 20,
+        EXACT_QID_MATCH = 4,
+        INPUT_LOCALE_IDENTIFIER = 0x1a,
+        IS_PHONE = 0x1c,
+        SCROLL_FLAG = 0x10,
+        SCROLL_MAX_CONTAINERS = 0x11,
+        SEARCH_IN_MINIMIZED_WINDOWS = 12,
+        SEARCH_IN_PROCESSES = 0x19,
+        SEARCH_IN_TARGETPROCESS_ONLY = 0,
+        SEARCH_RETRY_COUNT = 15,
+        SEARCH_TIMEOUT = 7,
+        SENDKEYS_DELAY = 8,
+        SMART_MATCH_OPTIONS = 11,
+        TARGERT_PROCESS_ID = 6,
+        TARGET_WINDOW = 5,
+        TYPE_UNICODE = 0x15,
+        UISYNCHRONIZATION_ENABLED = 3,
+        WAIT_FOR_READY_LEVEL = 0x18,
+        WFR_TIMEOUT = 1,
+        WHEEL_LARGE_SCROLL_AMOUNT = 0x12
+    }
+}

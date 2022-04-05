@@ -1,0 +1,7 @@
+{
+  "name": "com.zappy.integerai",
+  "description": "Zappy Native Messaging",
+  "path": "ZappyChromeNativeConsole.exe",
+  "type": "stdio",
+  "allowed_extensions": [ "team@zappy.ai" ]
+}

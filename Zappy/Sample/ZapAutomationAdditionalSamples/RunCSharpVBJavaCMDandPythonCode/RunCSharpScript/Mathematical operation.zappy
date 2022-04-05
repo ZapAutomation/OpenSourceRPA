@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.5.2.0" Id="29edd0eb-7098-433e-bc16-76b403b93da4" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\DELL\Documents\zappyai\Crapy\Sample\ZapAutomationAdditionalSamples\RunCSharpVBJavaCMDandPythonCode\RunCSharpScript\Mathematical operation.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>702469</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2020-03-22T06:16:20.3081525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>9f22d10b-c442-42d4-824e-f76ad9d6fa66</SelfGuid>
+      <NextGuid>d58a3805-5bb6-4c4d-a33b-8e9f8f07d625</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>36</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2020-03-22T06:16:20.3081525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>18ae9612-279a-405a-afbc-8332790880a1</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>558</EditorLocationY>
+    </EndNodeAction>
+    <InputBoxMultipleValuesAction>
+      <Timestamp>2020-03-22T06:22:06.3551525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>d58a3805-5bb6-4c4d-a33b-8e9f8f07d625</SelfGuid>
+      <NextGuid>e895d99f-21e5-49f5-8087-feb7b9994756</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>90</EditorLocationY>
+      <Title>
+        <Value>Mathamatical opration</Value>
+      </Title>
+      <FieldName1>
+        <Value>Choice operation Add,Sub,Multiply,Divide
+</Value>
+      </FieldName1>
+      <FieldName2>
+        <Value>Enter First Integer value</Value>
+      </FieldName2>
+      <FieldName3>
+        <Value>Enter Second Integer value</Value>
+      </FieldName3>
+      <DialogResult>None</DialogResult>
+    </InputBoxMultipleValuesAction>
+    <RunScriptActivity>
+      <DisplayName>mathamatical operation</DisplayName>
+      <Timestamp>2020-03-22T06:22:13.0731525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>1e04d7f5-561b-420b-b509-8cb466988b50</SelfGuid>
+      <NextGuid>4693e261-5727-4559-8abd-65102c23c32f</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>378</EditorLocationY>
+      <Script>
+        <RuntimeScript>(context , currentactivity) =&gt; { 
+string Choice=${opration}.ToString();
+int val1 = Int32.Parse(${Value1}.ToString());
+int val2 = Int32.Parse(${Value2}.ToString());
+int Ans=0; 
+if(Choice=="Add")
+{
+    Ans=val1+val2;
+}
+else if(Choice=="Sub")
+{
+    if(val1&lt;val2)
+    {
+        Ans=val2-val1;
+    }
+    else
+    {
+        Ans=val1-val2;
+    }
+}
+else if(Choice=="Multiply")
+{
+    Ans=val1*val2;
+}
+else if(Choice=="Divide")
+{
+    if(val2==0)
+    {
+        return " 0 is not divide by "+val1;
+    }
+    Ans=val1/val2;
+}
+else
+{
+}
+return Ans;
+ }</RuntimeScript>
+      </Script>
+    </RunScriptActivity>
+    <MutipleVariablesAction>
+      <Timestamp>2020-03-22T06:24:11.8081525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>4a1e32b7-a0be-4be2-95e7-9c3a611700e3</SelfGuid>
+      <NextGuid>e895d99f-21e5-49f5-8087-feb7b9994756</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>612</EditorLocationX>
+      <EditorLocationY>72</EditorLocationY>
+      <Variables>
+        <string>opration</string>
+        <string>Value1</string>
+        <string>Value2</string>
+      </Variables>
+    </MutipleVariablesAction>
+    <SetVariableValue>
+      <DisplayName>${opration}</DisplayName>
+      <Timestamp>2020-03-22T06:25:14.9951525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>e895d99f-21e5-49f5-8087-feb7b9994756</SelfGuid>
+      <NextGuid>a5826ee6-b1b6-4d7a-8dc5-36e08518c722</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>162</EditorLocationY>
+      <VariableName>${opration}</VariableName>
+      <VariableValue>
+        <DymanicKey>${d58a3805-5bb6-4c4d-a33b-8e9f8f07d625:Value1}</DymanicKey>
+      </VariableValue>
+    </SetVariableValue>
+    <SetVariableValue>
+      <DisplayName>${Value1}</DisplayName>
+      <Timestamp>2020-03-22T06:25:21.9951525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>a5826ee6-b1b6-4d7a-8dc5-36e08518c722</SelfGuid>
+      <NextGuid>5f865e49-825b-4170-a28d-0b002027f5f4</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>234</EditorLocationY>
+      <VariableName>${Value1}</VariableName>
+      <VariableValue>
+        <DymanicKey>${d58a3805-5bb6-4c4d-a33b-8e9f8f07d625:Value2}</DymanicKey>
+      </VariableValue>
+    </SetVariableValue>
+    <SetVariableValue>
+      <DisplayName>${Value2}</DisplayName>
+      <Timestamp>2020-03-22T06:25:25.0731525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>5f865e49-825b-4170-a28d-0b002027f5f4</SelfGuid>
+      <NextGuid>1e04d7f5-561b-420b-b509-8cb466988b50</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>306</EditorLocationY>
+      <VariableName>${Value2}</VariableName>
+      <VariableValue>
+        <DymanicKey>${d58a3805-5bb6-4c4d-a33b-8e9f8f07d625:Value3}</DymanicKey>
+      </VariableValue>
+    </SetVariableValue>
+    <MessageBoxAction>
+      <Timestamp>2020-03-22T06:28:02.7771525Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>4693e261-5727-4559-8abd-65102c23c32f</SelfGuid>
+      <NextGuid>18ae9612-279a-405a-afbc-8332790880a1</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>450</EditorLocationY>
+      <Title>
+        <Value>Answer</Value>
+      </Title>
+      <Text>
+        <DymanicKey>${1e04d7f5-561b-420b-b509-8cb466988b50:ExecutionResult}</DymanicKey>
+      </Text>
+      <Icon>Asterisk</Icon>
+      <Buttons>OK</Buttons>
+      <DefaultButton>Button1</DefaultButton>
+      <Options />
+      <DialogResult>None</DialogResult>
+      <DialogResultBool>false</DialogResultBool>
+    </MessageBoxAction>
+  </ExecuteActivities>
+</ZappyTask>

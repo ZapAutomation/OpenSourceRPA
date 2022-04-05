@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.5.2.0" Id="db0a94e1-b0a2-495d-addb-b664ff168b2e" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\DELL\Documents\zappyai\Crapy\Sample\ZapAutomationAdditionalSamples\AutomateMouseAndKeyboardActions\GlobalKeyPress.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>9698360</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2020-03-24T05:07:33.8790084Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>8ef689f9-b2f1-472e-8f59-d474a8dd183b</SelfGuid>
+      <NextGuid>e2f93009-2d00-4d5a-a590-b3bcf2747d22</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>36</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2020-03-24T05:07:33.8790084Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>e00f9b78-d13e-4097-aaf9-47ac5f20e99f</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>288</EditorLocationY>
+    </EndNodeAction>
+    <GlobalKeyPress>
+      <Timestamp>2020-03-24T07:49:12.2390084Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>200</PauseTimeAfterAction>
+      <NumberOfRetries>2</NumberOfRetries>
+      <SelfGuid>3fbfa049-8e12-4dc9-9730-dccb20511061</SelfGuid>
+      <NextGuid>e00f9b78-d13e-4097-aaf9-47ac5f20e99f</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>198</EditorLocationY>
+      <Element>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfCondition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;Id&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;15&lt;/Value&gt;
+    &lt;Enabled&gt;true&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;Name&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;Text Editor&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;ClassName&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;Edit&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;Type&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;document&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;true&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;Path&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;/pane/window/document&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;true&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;Value&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string" /&gt;
+    &lt;Enabled&gt;true&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;Index&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:int"&gt;0&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;MainWindowName&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;Untitled - Notepad&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;true&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;WindowName&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;Untitled - Notepad&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;true&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;ParentName&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;Untitled - Notepad&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;ParentIndex&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:int"&gt;4&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+&lt;/ArrayOfCondition&gt;</Element>
+      <Text>
+        <Value>Zap :-  Automate manual business processes such as Data Entry, Data Extraction and Data Gathering in minutes with our Cognitive Robotic Process Automation (C-RPA) capabilities.</Value>
+      </Text>
+    </GlobalKeyPress>
+    <AppStart>
+      <Timestamp>2020-03-24T12:31:12.0319471Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>e2f93009-2d00-4d5a-a590-b3bcf2747d22</SelfGuid>
+      <NextGuid>3fbfa049-8e12-4dc9-9730-dccb20511061</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>108</EditorLocationY>
+      <AppPath>
+        <Value>Notepad.exe</Value>
+      </AppPath>
+      <Arguments />
+    </AppStart>
+  </ExecuteActivities>
+</ZappyTask>

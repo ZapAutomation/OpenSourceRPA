@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="3.9.7.0" Id="40b785e2-0222-4c7d-b7c1-85e8272f03b7" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\vaishnavi\Documents\zappyai\Crapy\Sample\SendEmailsWithOutlook\EmailWithAttachmentSample\EmailAutomationIntroducingZappyAI.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>246235</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2019-05-23T12:16:57.6438245Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>33fb8353-be23-4233-954a-21f86df5181f</SelfGuid>
+      <NextGuid>6d7dd68c-4cac-490c-88c5-17ff2c3faf8c</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>18</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2019-05-23T12:16:57.6438245Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>2c25f1b0-55ac-4573-84b2-aa8b95b34540</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>648</EditorLocationY>
+    </EndNodeAction>
+    <OutlookMailSend>
+      <Timestamp>2019-05-23T12:17:03.1758245Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>913fec89-d0e6-45ed-b8fc-461790362ada</SelfGuid>
+      <NextGuid>8c234af2-263d-495a-8289-0d237ed4b016</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>504</EditorLocationY>
+      <Subject>
+        <Value>ZappyAI -  Leader in Enterprise AI</Value>
+      </Subject>
+      <Body>
+        <DymanicKey>${0c6b7068-10b2-4c01-86f6-eec76448b95b:OutputString}</DymanicKey>
+      </Body>
+      <Attachment>
+        <DymanicKey>${24bf711a-9a7b-42dd-b278-d57021c2c361:FilePath}</DymanicKey>
+      </Attachment>
+      <IsHtmlBody>
+        <Value>true</Value>
+      </IsHtmlBody>
+      <IsDraft>
+        <Value>false</Value>
+      </IsDraft>
+      <To>
+        <DymanicKey>${5192e8c0-8d52-44dd-8696-b5977ca91702:PropertyValue}</DymanicKey>
+      </To>
+      <Cc>
+        <DymanicKey>${23ed538f-6e29-4645-8146-002d871e313d:PropertyValue}</DymanicKey>
+      </Cc>
+      <From>
+        <DymanicKey>${6d7dd68c-4cac-490c-88c5-17ff2c3faf8c:Value}</DymanicKey>
+      </From>
+    </OutlookMailSend>
+    <ForLoopEndAction>
+      <Timestamp>2019-05-23T12:20:04.1908245Z</Timestamp>
+      <StartTimestamp>0</StartTimestamp>
+      <EndTimestamp>0</EndTimestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <LoopStartGuid>962eb9ac-2b39-48a0-a5cc-033196a4c18b</LoopStartGuid>
+      <SelfGuid>8c234af2-263d-495a-8289-0d237ed4b016</SelfGuid>
+      <NextGuid>2c25f1b0-55ac-4573-84b2-aa8b95b34540</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>576</EditorLocationY>
+    </ForLoopEndAction>
+    <ForLoopStartAction>
+      <Timestamp>2019-05-23T12:20:04.1908245Z</Timestamp>
+      <StartTimestamp>0</StartTimestamp>
+      <EndTimestamp>0</EndTimestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <LoopEndGuid>8c234af2-263d-495a-8289-0d237ed4b016</LoopEndGuid>
+      <SelfGuid>962eb9ac-2b39-48a0-a5cc-033196a4c18b</SelfGuid>
+      <NextGuid>5192e8c0-8d52-44dd-8696-b5977ca91702</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>180</EditorLocationY>
+      <TerminateLoop>
+        <Value>false</Value>
+      </TerminateLoop>
+      <InitialValue>
+        <Value>2</Value>
+      </InitialValue>
+      <FinalValue>
+        <Value>5</Value>
+      </FinalValue>
+      <StepValue>
+        <Value>1</Value>
+      </StepValue>
+      <LoopIntValue>0</LoopIntValue>
+    </ForLoopStartAction>
+    <ExcelGetProperty>
+      <DisplayName>To Address</DisplayName>
+      <Timestamp>2019-05-23T12:21:03.8788245Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>5192e8c0-8d52-44dd-8696-b5977ca91702</SelfGuid>
+      <NextGuid>252f1d78-9336-43fb-bbc2-a8b7ded1ead7</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>252</EditorLocationY>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <RowIndex>
+        <DymanicKey>${962eb9ac-2b39-48a0-a5cc-033196a4c18b:LoopIntValue}</DymanicKey>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>1</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>EmailData.xlsx</Value>
+      </WorkbookName>
+    </ExcelGetProperty>
+    <StringReplace>
+      <Timestamp>2020-03-25T10:44:22.6055708Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>0c6b7068-10b2-4c01-86f6-eec76448b95b</SelfGuid>
+      <NextGuid>913fec89-d0e6-45ed-b8fc-461790362ada</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>432</EditorLocationY>
+      <InputString>
+        <Value>&lt;html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;head&gt;&lt;meta http-equiv=Content-Type content="text/html; charset=us-ascii"&gt;&lt;meta name=Generator content="Microsoft Word 15 (filtered medium)"&gt;&lt;!--[if !mso]&gt;&lt;style&gt;v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+&lt;/style&gt;&lt;![endif]--&gt;&lt;style&gt;&lt;!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+span.EmailStyle18
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--&gt;&lt;/style&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;
+&lt;o:shapedefaults v:ext="edit" spidmax="1026" /&gt;
+&lt;/xml&gt;&lt;![endif]--&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;
+&lt;o:shapelayout v:ext="edit"&gt;
+&lt;o:idmap v:ext="edit" data="1" /&gt;
+&lt;/o:shapelayout&gt;&lt;/xml&gt;&lt;![endif]--&gt;&lt;/head&gt;&lt;body lang=EN-US link="#0563C1" vlink="#954F72"&gt;&lt;div class=WordSection1&gt;&lt;p class=MsoNormal&gt;Hi {Namef3f32fc23342432f3232r32r23},&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;Hope things are well and that you, your family and colleagues are all safe in these challenging circumstances&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;We are the leading AI company (part of NASSCOM DeepTech Club) and it would be great to schedule a quick call with you to check for potential collaboration opportunities. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;ZappyAI provides Intelligent Automation, Process Discovery and Data Analytics products. We are currently working with firms like Zurich, Alior Bank, TATA and Investment Management boutiques. We have also won multiple awards and grants from NetApp, Luxembourg Government and Chile Government. I have attached our deck giving more information about our product.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'&gt;&lt;tr style='height:35.4pt'&gt;&lt;td width=401 colspan=2 valign=top style='width:301.0pt;border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:35.4pt'&gt;&lt;p class=MsoNormal&gt;Thank you,&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;b&gt;Ambuj Agrawal&lt;/b&gt;&lt;span style='font-size:12.0pt;font-family:"Times New Roman",serif'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;span style='font-size:9.0pt;color:#009DDD'&gt;Founder (CEO)&lt;/span&gt;&lt;span style='font-family:"Times New Roman",serif'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;b&gt;&lt;span style='font-size:9.0pt;color:black'&gt;M &lt;/span&gt;&lt;/b&gt;&lt;span style='font-size:9.0pt;color:black'&gt;+44 7448 378 204&lt;/span&gt;&lt;span style='font-size:9.0pt;color:black'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;b&gt;&lt;span style='color:black'&gt;L&lt;/span&gt;&lt;/b&gt;&lt;span style='font-size:8.0pt;font-family:"Arial",sans-serif;color:black;border:none windowtext 1.0pt;padding:0cm;background:white'&gt; &lt;/span&gt;&lt;a href="http://www.linkedin.com/in/ambujagrawal"&gt;&lt;span style='font-size:7.0pt;font-family:"Arial",sans-serif;color:#0563C1;border:none windowtext 1.0pt;padding:0cm;background:white'&gt;www.linkedin.com/in/ambujagrawal&lt;/span&gt;&lt;/a&gt;&lt;span style='font-size:7.0pt;font-family:"Arial",sans-serif;border:none windowtext 1.0pt;padding:0cm;background:white'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style='height:28.95pt'&gt;&lt;td width=201 valign=top style='width:150.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.95pt'&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=201 valign=top style='width:150.5pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.95pt'&gt;&lt;p class=MsoNormal&gt;&lt;span style='font-size:9.0pt;color:black'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</Value>
+      </InputString>
+      <OldValue>
+        <Value>{Namef3f32fc23342432f3232r32r23}</Value>
+      </OldValue>
+      <NewValue>
+        <DymanicKey>${252f1d78-9336-43fb-bbc2-a8b7ded1ead7:PropertyValue}</DymanicKey>
+      </NewValue>
+    </StringReplace>
+    <ExcelGetProperty>
+      <DisplayName>Name</DisplayName>
+      <Timestamp>2019-05-23T12:21:03.8788245Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>252f1d78-9336-43fb-bbc2-a8b7ded1ead7</SelfGuid>
+      <NextGuid>23ed538f-6e29-4645-8146-002d871e313d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>306</EditorLocationY>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <RowIndex>
+        <DymanicKey>${962eb9ac-2b39-48a0-a5cc-033196a4c18b:LoopIntValue}</DymanicKey>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>2</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>EmailData.xlsx</Value>
+      </WorkbookName>
+    </ExcelGetProperty>
+    <InputBoxAction>
+      <Timestamp>2020-04-01T10:25:44.0914492Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>6d7dd68c-4cac-490c-88c5-17ff2c3faf8c</SelfGuid>
+      <NextGuid>24bf711a-9a7b-42dd-b278-d57021c2c361</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>72</EditorLocationY>
+      <PromptText>
+        <Value>Enter Your Mail ID</Value>
+      </PromptText>
+      <DialogResult>None</DialogResult>
+    </InputBoxAction>
+    <SelectFileAction>
+      <Timestamp>2020-04-01T10:26:13.4664492Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>24bf711a-9a7b-42dd-b278-d57021c2c361</SelfGuid>
+      <NextGuid>962eb9ac-2b39-48a0-a5cc-033196a4c18b</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>126</EditorLocationY>
+      <Title>
+        <Value>Select Attachement File</Value>
+      </Title>
+    </SelectFileAction>
+    <ExcelGetProperty>
+      <DisplayName>CC Mail ID</DisplayName>
+      <Timestamp>2019-05-23T12:21:03.8788245Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>23ed538f-6e29-4645-8146-002d871e313d</SelfGuid>
+      <NextGuid>0c6b7068-10b2-4c01-86f6-eec76448b95b</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>144</EditorLocationX>
+      <EditorLocationY>378</EditorLocationY>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <RowIndex>
+        <DymanicKey>${962eb9ac-2b39-48a0-a5cc-033196a4c18b:LoopIntValue}</DymanicKey>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>3</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>EmailData.xlsx</Value>
+      </WorkbookName>
+    </ExcelGetProperty>
+  </ExecuteActivities>
+</ZappyTask>

@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.1.3.0" Id="0be23d5f-e1a9-49ce-b7c3-9a971c439dee" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\DELL\Documents\zappyai\Crapy\Sample\ZapAutomationAdditionalSamples\AutomateMouseAndKeyboardActions\GlobalMouseClick.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>112922</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2019-07-18T14:59:11.9631654Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>73e2a300-b2f3-4d22-b237-08abe489bb79</SelfGuid>
+      <NextGuid>e7398005-a7d3-4815-909e-650c6067628d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>396</EditorLocationX>
+      <EditorLocationY>126</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2019-07-18T14:59:11.9631654Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>3f4134f7-2fda-4811-b0a8-4a7d8df08f0e</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>396</EditorLocationX>
+      <EditorLocationY>378</EditorLocationY>
+    </EndNodeAction>
+    <GlobalMouseClick>
+      <Timestamp>2019-07-18T15:01:04.8851654Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>e7398005-a7d3-4815-909e-650c6067628d</SelfGuid>
+      <NextGuid>3f4134f7-2fda-4811-b0a8-4a7d8df08f0e</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>396</EditorLocationX>
+      <EditorLocationY>252</EditorLocationY>
+      <Element>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfCondition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;Id&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string" /&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;Name&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;Help&lt;/Value&gt;
+    &lt;Enabled&gt;true&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;ClassName&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string" /&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;Type&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;menuitem&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;true&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;Path&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;/pane/window/pane/pane/menubar/menuitem&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;true&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;Value&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string" /&gt;
+    &lt;Enabled&gt;true&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;Index&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:int"&gt;4&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;MainWindowName&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;Zappy Editor&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;true&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;true&lt;/Use&gt;
+    &lt;Name&gt;WindowName&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;Zappy Editor&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;true&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;ParentName&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:string"&gt;menuStrip1&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+  &lt;Condition&gt;
+    &lt;Use&gt;false&lt;/Use&gt;
+    &lt;Name&gt;ParentIndex&lt;/Name&gt;
+    &lt;Value xsi:type="xsd:int"&gt;0&lt;/Value&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Required&gt;false&lt;/Required&gt;
+  &lt;/Condition&gt;
+&lt;/ArrayOfCondition&gt;</Element>
+    </GlobalMouseClick>
+  </ExecuteActivities>
+</ZappyTask>

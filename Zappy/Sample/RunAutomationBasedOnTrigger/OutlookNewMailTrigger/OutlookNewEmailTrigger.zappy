@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.1.0.0" Id="ee927842-0499-424d-a0b0-79758a7a9424" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\vaishnavi\Documents\zappyai\Crapy\Sample\RunAutomationBasedOnTrigger\OutlookNewMailTrigger\OutlookNewEmailTrigger.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>-787323003</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2019-06-18T10:03:45.994279Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>378f57a6-3b79-4108-b5c9-3ba0c7c5e2a3</SelfGuid>
+      <NextGuid>8c9e8fb9-6f66-4dc9-a1a9-886682994668</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>360</EditorLocationX>
+      <EditorLocationY>108</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2019-06-18T10:03:45.994279Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>a18846e7-cbeb-4878-ad9e-17bb9b8695c8</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>360</EditorLocationX>
+      <EditorLocationY>342</EditorLocationY>
+    </EndNodeAction>
+    <OutlookNewReadEmailTrigger>
+      <Timestamp>2019-06-18T10:04:12.056279Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>8c9e8fb9-6f66-4dc9-a1a9-886682994668</SelfGuid>
+      <NextGuid>06ce7a5c-0fea-43c6-9f36-40b568de92a6</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>360</EditorLocationX>
+      <EditorLocationY>180</EditorLocationY>
+      <From>
+        <Value>shubham@zappy.ai</Value>
+      </From>
+      <AttachmentName>
+        <Value />
+      </AttachmentName>
+      <IsDisabled>
+        <Value>false</Value>
+      </IsDisabled>
+    </OutlookNewReadEmailTrigger>
+    <OutlookMailSend>
+      <Timestamp>2019-06-18T10:20:09.9068165Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>06ce7a5c-0fea-43c6-9f36-40b568de92a6</SelfGuid>
+      <NextGuid>a18846e7-cbeb-4878-ad9e-17bb9b8695c8</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>360</EditorLocationX>
+      <EditorLocationY>252</EditorLocationY>
+      <Subject>
+        <Value>Thank you for booking your journey with us. </Value>
+      </Subject>
+      <Body>
+        <Value>We are excited to be your travel partner. Hope you enjoy your vacation. For assistance, contact: 020 2222 1111. Thank You!</Value>
+      </Body>
+      <Attachment />
+      <To>
+        <DymanicKey>${8c9e8fb9-6f66-4dc9-a1a9-886682994668:From}</DymanicKey>
+      </To>
+      <Cc>
+        <Value />
+      </Cc>
+      <From>
+        <Value>sanjay@zappy.ai</Value>
+      </From>
+    </OutlookMailSend>
+  </ExecuteActivities>
+</ZappyTask>

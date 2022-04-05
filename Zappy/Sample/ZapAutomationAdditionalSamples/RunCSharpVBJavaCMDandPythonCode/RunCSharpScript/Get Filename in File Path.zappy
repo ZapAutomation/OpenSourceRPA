@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.5.2.0" Id="8ba86c87-90d9-4df3-a20d-0ad0a2307426" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\vaishnavi\Documents\zappyai\Crapy\Sample\ZapAutomationAdditionalSamples\RunCSharpVBJavaCMDandPythonCode\RunCSharpScript\Get Filename in File Path.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>10358203</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2020-03-23T06:16:29.5478822Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>06ccb929-da15-4fec-8ac1-22ea56c6c48b</SelfGuid>
+      <NextGuid>2dc9d602-22cc-4c0e-9fdb-e432733b8257</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>144</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2020-03-23T06:16:29.5478822Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>57afe90a-140e-405d-be8b-dcb2778071c5</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>450</EditorLocationY>
+    </EndNodeAction>
+    <VariableNodeAction>
+      <DisplayName>FileName</DisplayName>
+      <Timestamp>2020-03-23T09:06:35.0628822Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>0be2f164-8880-4514-8eeb-128781896c86</SelfGuid>
+      <NextGuid>1be472af-d600-463c-a301-0753aeb08345</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>540</EditorLocationX>
+      <EditorLocationY>216</EditorLocationY>
+      <VariableName>FileName</VariableName>
+      <EvaluationExpression>
+        <Value />
+      </EvaluationExpression>
+    </VariableNodeAction>
+    <SetVariableValue>
+      <Timestamp>2020-03-23T09:06:47.6418822Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>1be472af-d600-463c-a301-0753aeb08345</SelfGuid>
+      <NextGuid>ec78afe7-8ca0-433b-ab18-2e322d3c1cd0</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>288</EditorLocationY>
+      <VariableName>${FileName}</VariableName>
+      <VariableValue>
+        <DymanicKey>${2dc9d602-22cc-4c0e-9fdb-e432733b8257:FilePath}</DymanicKey>
+      </VariableValue>
+    </SetVariableValue>
+    <RunScriptActivity>
+      <DisplayName>get file name</DisplayName>
+      <Timestamp>2020-03-23T09:07:38.7198822Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>ec78afe7-8ca0-433b-ab18-2e322d3c1cd0</SelfGuid>
+      <NextGuid>227d9b32-4f06-407a-8001-093e6e00f8eb</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>342</EditorLocationY>
+      <Script>
+        <RuntimeScript>using System.IO; 
+(context , currentactivity) =&gt; { 
+string filename = Path.GetFileName(${FileName}.ToString()); 
+return filename;
+}</RuntimeScript>
+      </Script>
+    </RunScriptActivity>
+    <MessageBoxAction>
+      <Timestamp>2020-03-23T09:09:07.7508822Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>227d9b32-4f06-407a-8001-093e6e00f8eb</SelfGuid>
+      <NextGuid>57afe90a-140e-405d-be8b-dcb2778071c5</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>396</EditorLocationY>
+      <Text>
+        <DymanicKey>${ec78afe7-8ca0-433b-ab18-2e322d3c1cd0:ExecutionResult}</DymanicKey>
+      </Text>
+      <Icon>Asterisk</Icon>
+      <Buttons>OK</Buttons>
+      <DefaultButton>Button1</DefaultButton>
+      <Options />
+      <DialogResult>None</DialogResult>
+      <DialogResultBool>false</DialogResultBool>
+    </MessageBoxAction>
+    <SelectFileAction>
+      <Timestamp>2020-03-31T10:40:23.796467Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>2dc9d602-22cc-4c0e-9fdb-e432733b8257</SelfGuid>
+      <NextGuid>1be472af-d600-463c-a301-0753aeb08345</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>324</EditorLocationX>
+      <EditorLocationY>216</EditorLocationY>
+      <Title>
+        <Value>Select File</Value>
+      </Title>
+    </SelectFileAction>
+  </ExecuteActivities>
+</ZappyTask>

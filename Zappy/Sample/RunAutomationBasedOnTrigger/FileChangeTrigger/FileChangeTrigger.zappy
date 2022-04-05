@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.1.0.0" Id="677730a0-4bcf-4fee-af5a-4b1532822729" Name="">
+  <ReuseID>false</ReuseID>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2019-06-14T10:39:12.8455333Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>826d6306-1e01-45dd-bcd0-7888a13e6b59</SelfGuid>
+      <NextGuid>365aa693-dc3b-41a5-9869-8068e61b501c</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>100</EditorLocationX>
+      <EditorLocationY>65</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2019-06-14T10:39:12.8455333Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>1b40e463-0b29-479d-a418-4fc70c2f5228</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>100</EditorLocationX>
+      <EditorLocationY>305</EditorLocationY>
+    </EndNodeAction>
+    <FileChangeTrigger>
+      <Timestamp>2019-06-14T10:39:14.1115333Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>365aa693-dc3b-41a5-9869-8068e61b501c</SelfGuid>
+      <NextGuid>bb5b1a51-ea2b-480a-a296-e48d0cd3db5c</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>100</EditorLocationX>
+      <EditorLocationY>145</EditorLocationY>
+      <WatcherChangeTypes>All</WatcherChangeTypes>
+      <NotifyFilters>Attributes Size LastWrite LastAccess CreationTime Security</NotifyFilters>
+      <Filter>Zappy.txt</Filter>
+      <FolderPath>
+        <Value>C:\Users\Comp4\Documents\zappyaniroj\Crapy\Sample\ZappyAdditionalSamples\Triggers\FileChange Trigger</Value>
+      </FolderPath>
+      <IncludeSubdirectories />
+      <NotificationDelay />
+      <IsDisabled />
+      <FilePath>
+        <Value>C:\Users\Comp4\Documents\zappyaniroj\Crapy\Sample\ZappyAdditionalSamples\Triggers\FileChange Trigger\Zappy.txt</Value>
+      </FilePath>
+    </FileChangeTrigger>
+    <MessageBoxAction>
+      <Timestamp>2019-06-14T10:41:09.7675333Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>bb5b1a51-ea2b-480a-a296-e48d0cd3db5c</SelfGuid>
+      <NextGuid>1b40e463-0b29-479d-a418-4fc70c2f5228</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>100</EditorLocationX>
+      <EditorLocationY>225</EditorLocationY>
+      <Title>
+        <Value>Notification</Value>
+      </Title>
+      <Text>
+        <Value>Changes done in file</Value>
+      </Text>
+      <Icon>Asterisk</Icon>
+      <Buttons>OK</Buttons>
+      <DefaultButton>Button1</DefaultButton>
+      <Options />
+      <DialogResult>None</DialogResult>
+      <DialogResultBool>false</DialogResultBool>
+    </MessageBoxAction>
+  </ExecuteActivities>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>116922</ManualExecutionTimeMillisecs>
+</ZappyTask>

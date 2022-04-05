@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/developer/teamtask/ActionFilters/2007" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ActionFilters">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:choice>
+          <xs:element name="CodeFilter">
+            <xs:complexType>
+              <xs:attribute name="ClassName" type="xs:string" use="required" />
+              <xs:attribute name="Category" type="xs:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="XmlFilter">
+            <xs:complexType>
+              <xs:attribute name="Name" type="xs:string" use="required" />
+              <xs:attribute name="FilteringQuery" type="xs:string" use="required" />
+              <xs:attribute name="OutputQuery" type="xs:string" use="required" />
+              <xs:attribute name="FilterType" use="required">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Unary" />
+                    <xs:enumeration value="Binary" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+              <xs:attribute name="ApplyTimeout" type="xs:boolean" use="required" />
+              <xs:attribute name="Enabled" type="xs:boolean" use="optional" />
+              <xs:attribute name="Group" type="xs:string" use="required" />
+              <xs:attribute name="Category" type="xs:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

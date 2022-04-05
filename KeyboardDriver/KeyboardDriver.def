@@ -1,0 +1,6 @@
+LIBRARY	KeyboardDriver
+
+EXPORTS
+	sendKeys
+	mouseSingleClick
+	mouseDoubleClick

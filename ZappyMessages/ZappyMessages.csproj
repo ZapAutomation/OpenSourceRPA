@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95BEC3F7-55D1-465D-AE41-7B5484A6A245}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZappyMessages</RootNamespace>
+    <AssemblyName>ZappyMessages</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DO_NOT_ENCRYPT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;DO_NOT_ENCRYPT</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Legacy4|AnyCPU'">
+    <OutputPath>bin\Legacy4\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Legacy4|x86'">
+    <OutputPath>bin\x86\Legacy4\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.2.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.2\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Chrome\BaseJavaAction.cs" />
+    <Compile Include="RecordPlayback\ZappyTaskExecutionResult.cs" />
+    <Compile Include="RecordPlayback\ZappyTaskExecutionState.cs" />
+    <Compile Include="Chrome\BaseChromeAction.cs" />
+    <Compile Include="Logger\ConsoleLogger.cs" />
+    <Compile Include="ExcelMessages\ExcelCellInfo.cs" />
+    <Compile Include="ExcelMessages\ExcelCustomPropertyNames.cs" />
+    <Compile Include="ExcelMessages\ExcelElementInfo.cs" />
+    <Compile Include="ExcelMessages\ExcelRangeInfo.cs" />
+    <Compile Include="ExcelMessages\ExcelRequest.cs" />
+    <Compile Include="ExcelMessages\ExcelSortOrder.cs" />
+    <Compile Include="ExcelMessages\ExcelWorksheetInfo.cs" />
+    <Compile Include="ExcelMessages\IExcelZappyTaskCommunication.cs" />
+    <Compile Include="Helpers\DictionaryPropertyDescriptor.cs" />
+    <Compile Include="Helpers\DictionaryPropertyGridAdapter.cs" />
+    <Compile Include="Helpers\SaveFile\CFileDlgBase.cs" />
+    <Compile Include="Helpers\SaveFile\CFileOpenDlgThreadApartmentSafe.cs" />
+    <Compile Include="Helpers\SaveFile\CFileSaveDlgThreadApartmentSafe.cs" />
+    <Compile Include="Helpers\SaveFile\ForegroundWindow.cs" />
+    <Compile Include="Helpers\StaticTypes.cs" />
+    <Compile Include="OutlookMessages\IOutlookZappyTaskCommunication.cs" />
+    <Compile Include="OutlookMessages\OutlookMessageInfo.cs" />
+    <Compile Include="OutlookMessages\OutlookNewEmailTriggerInfo.cs" />
+    <Compile Include="OutlookMessages\OutlookRequest.cs" />
+    <Compile Include="ExcelMessages\PropertyNames.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RobotHubPubSub\IPubSubClientIdentifier.cs" />
+    <Compile Include="RobotHubPubSub\IZappyPubSubManager.cs" />
+    <Compile Include="RobotHubPubSub\IZappyPubSubService.cs" />
+    <Compile Include="RobotHubPubSub\PubSubIdentifier.cs" />
+    <Compile Include="RobotHubPubSub\PubSubServerState.cs" />
+    <Compile Include="RobotHubPubSub\PubSubServiceManager.cs" />
+    <Compile Include="RobotHubPubSub\ZappyPubSubClient.cs" />
+    <Compile Include="RobotHubPubSub\ZappyPubSubService.cs" />
+    <Compile Include="PubSubHelper\PubSubMessages.cs" />
+    <Compile Include="PubSubHelper\PubSubTopicRegister.cs" />
+    <Compile Include="PubSub\IPubSubService.cs" />
+    <Compile Include="PubSub\IPubSubSubscriber.cs" />
+    <Compile Include="PubSub\IPubSubServiceChannel.cs" />
+    <Compile Include="PubSub\LoggerSubscription.cs" />
+    <Compile Include="PubSub\NoneSubscription.cs" />
+    <Compile Include="PubSub\PubSubClient.cs" />
+    <Compile Include="PubSub\PubSubProxyClientIdentifier.cs" />
+    <Compile Include="PubSub\PubSubService.cs" />
+    <Compile Include="PubSub\PubSubServiceClient.cs" />
+    <Compile Include="PubSub\Subscription.cs" />
+    <Compile Include="Robot\HubClientRepsonse.cs" />
+    <Compile Include="Robot\HubClientRequest.cs" />
+    <Compile Include="Robot\HubCommandInfo.cs" />
+    <Compile Include="Robot\HubCommandType.cs" />
+    <Compile Include="Robot\NetSh.cs" />
+    <Compile Include="Robot\RobotInfo.cs" />
+    <Compile Include="Robot\RobotHelperFunctions.cs" />
+    <Compile Include="Robot\UacHelper.cs" />
+    <Compile Include="Robot\ZappyFileInfo.cs" />
+    <Compile Include="Robot\ZappyRobotState.cs" />
+    <Compile Include="Robot\ZappyRobotTaskInfo.cs" />
+    <Compile Include="Robot\ZappyTaskInfo.cs" />
+    <Compile Include="Robot\ZappyFileHelper.cs" />
+    <Compile Include="Robot\ZappyTriggerInfo.cs" />
+    <Compile Include="RecordPlayback\TrapyWinEvent.cs" />
+    <Compile Include="RecordPlayback\KeyBoardInfo.cs" />
+    <Compile Include="RecordPlayback\MessageSizeCache.cs" />
+    <Compile Include="RecordPlayback\MessageType.cs" />
+    <Compile Include="RecordPlayback\MouseHookInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordPlayback\TrapyLowLevelHookMessage.cs" />
+    <Compile Include="Triggers\TriggerMessageInfo.cs" />
+    <Compile Include="Triggers\TriggerRequest.cs" />
+    <Compile Include="Triggers\TriggerRequestInfo.cs" />
+    <Compile Include="Triggers\TriggerResponseInfo.cs" />
+    <Compile Include="Triggers\ZappyTriggerKind.cs" />
+    <Compile Include="Util\Files\GenFileHelper.cs" />
+    <Compile Include="Util\Helper\ChildProcessTracker.cs" />
+    <Compile Include="Util\Helper\IO_COUNTERS.cs" />
+    <Compile Include="Util\Helper\JobObjectInfoType.cs" />
+    <Compile Include="Util\Helper\JOBOBJECTLIMIT.cs" />
+    <Compile Include="Util\Helper\JOBOBJECT_BASIC_LIMIT_INFORMATION.cs" />
+    <Compile Include="Util\Helper\JOBOBJECT_EXTENDED_LIMIT_INFORMATION.cs" />
+    <Compile Include="Helpers\ZappyMessagingConstants.cs" />
+    <Compile Include="Robot\ZappyRobotHubConfiguration.cs" />
+    <Compile Include="Robot\ZappyRobotProfile.cs" />
+    <Compile Include="Helpers\ZappySerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

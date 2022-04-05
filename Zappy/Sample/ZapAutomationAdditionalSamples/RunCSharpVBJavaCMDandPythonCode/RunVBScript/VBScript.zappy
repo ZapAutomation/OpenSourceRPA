@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.5.2.0" Id="570382d1-7633-4625-825a-fb1e575db8d0" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\DELL\Documents\zappyai\Crapy\Sample\ZapAutomationAdditionalSamples\RunCSharpVBJavaCMDandPythonCode\RunVBScript\VBScript.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>993734</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2020-03-23T12:58:09.1422297Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>3862396c-2bdb-472a-b6b8-9afc9821be44</SelfGuid>
+      <NextGuid>68e4ed08-3838-4f2a-a85d-5c41d366c69b</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>342</EditorLocationX>
+      <EditorLocationY>180</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2020-03-23T12:58:09.1422297Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>24f407ba-b9b7-4700-b3b8-afb4fa22868f</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>342</EditorLocationX>
+      <EditorLocationY>414</EditorLocationY>
+    </EndNodeAction>
+    <VBRunScript>
+      <Timestamp>2020-03-23T13:33:57.6732297Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>68e4ed08-3838-4f2a-a85d-5c41d366c69b</SelfGuid>
+      <NextGuid>24f407ba-b9b7-4700-b3b8-afb4fa22868f</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>342</EditorLocationX>
+      <EditorLocationY>288</EditorLocationY>
+      <Script>
+        <Value>Dim number
+number = InputBox("Enter Any Number For Check Odd Or Even:-")
+If number Mod 2 = 0 Then
+MsgBox "This Number Is Even"
+Else
+MsgBox "This Number Is Odd"
+End If</Value>
+      </Script>
+      <ExpandVariable />
+      <ExecuteMultipleStatements>
+        <Value>true</Value>
+      </ExecuteMultipleStatements>
+    </VBRunScript>
+  </ExecuteActivities>
+</ZappyTask>

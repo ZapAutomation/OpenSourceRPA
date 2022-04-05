@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Docs>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                                  General                                         -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<General>
+		<Empty>
+			<summary />
+		</Empty>
+	</General>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                                SystemHook                                        -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<SystemHook>
+		<Class>
+			<summary>
+				This class is the abstract base class for all system hook classes.
+			</summary>
+			<remarks>
+				<para>
+					To use this class you typically create a derived type which is a
+					particular type of hook. Then simply implement the <c>HookCallback</c>
+					method. This method will be called whenever an event is caught
+					by the base class. For example, we have created the 
+					<see cref="MouseHook" /> and <see cref="KeyboardHook" /> classes 
+					following this prescription. 
+				</para>
+				<para>
+					Note that each type of hook class is expected to exist as
+					a singleton.
+				</para>
+			</remarks>
+		</Class>
+		<ctor>
+			<summary>
+				Creates a new instance of the <c>SystemHook</c> class.
+			</summary>
+			<param name="type">The type of system hook this class will represent.</param>
+		</ctor>
+		<dtor>
+			<summary>
+				Destructor / finalizer for the SystemHook classes. Do not rely on this,
+				be sure to call Dispose() when you are done with the hook classes.
+			</summary>
+		</dtor>
+		<HookProcessedHandler>
+			<summary>
+				A delegate defining the type of method that is expected to be passed
+				to the unmanaged layer for use as a callback method for a given hook 
+				event type.
+			</summary>
+		</HookProcessedHandler>
+		<type>
+			<summary>
+				The type of system hook this instance represents.
+			</summary>
+		</type>
+		<processHandler>
+			<summary>
+				A delegate which holds a reference to the callback that is 
+				passed to the unmanaged layer for use as a callback method
+				into this class.
+			</summary>
+		</processHandler>
+		<delegateHandle>
+			<summary>
+				A garbage collection handle to ensure that our callback delegate
+				won't get moved around after passing it to the unmanaged layer.
+			</summary>
+		</delegateHandle>
+		<HookCallback>
+			<summary>
+				An abstract method which will be called when a system hook event
+				of the specified type is called.
+			</summary>
+			<param name="code">The event code that comes from the system hook event callback.</param>
+			<param name="wparam">The WPARAM parameter associated with the system hook event.</param>
+			<param name="lparam">The LPARAM parameter associated with the system hook event.</param>
+			<remarks>
+				<para>
+					Implement this class in derived classes to provide callback 
+					functionality to the base class.
+				</para>
+				<para>
+					These three parameters vary by system hook event. For example, in the 
+					<c>HookTypes.MouseLL</c> event, wparam is typical <c>WM_LBUTTONDOWN</c>
+					which maps to the enumeration <c>MouseEvents.LeftButtonDown</c>. See
+					the Win32 API documentation for SetWindowsHookEx for details about
+					what these parameters mean in the various hook types.
+				</para>
+			</remarks>
+		</HookCallback>
+		<InternalHookCallback>
+			<summary>
+				The method which is actually passed to the unmanaged layer as the callback.
+				This method in turn passes execution off to the HookCallback method which
+				the derived classes use to process hook events.
+			</summary>
+			<param name="code">The event code that comes from the system hook event callback.</param>
+			<param name="wparam">The WPARAM parameter associated with the system hook event.</param>
+			<param name="lparam">The LPARAM parameter associated with the system hook event.</param>
+		</InternalHookCallback>
+		<InstallHook>
+			<summary>
+				Installs the system hook of the specified type as a global system hook.
+			</summary>
+			<remarks>
+				Note that once the hook is installed, <see cref="HookCallback" /> will be called 
+				as the events arrive. 
+			</remarks>
+		</InstallHook>
+		<UninstallHook>
+			<summary>
+				Uninstalls the system hook.
+			</summary>
+		</UninstallHook>
+		<Dispose>
+			<summary>
+				Cleans up resources associated with this class, and in particular,
+				uninstalls the system hook if it is installed.
+			</summary>
+		</Dispose>
+		<IsHooked>
+			<summary>
+				Indicates whether the system hook is currently installed for this instance.
+			</summary>
+		</IsHooked>
+		<GetMousePosition>
+			<summary>
+				This utility function helps translate Win32 constants and values 
+				to meaningful .NET enumerations and values.
+			</summary>
+			<param name="wparam">The wparam for which to get the mouse data.</param>
+			<param name="lparam">The lparam for which to get the mouse data.</param>
+			<param name="x">The mouse x position will be stored here on return.</param>
+			<param name="y">The mouse y position will be stored here on return.</param>
+		</GetMousePosition>
+		<GetKeyboardReading>
+			<summary>
+				This utility function helps translate Win32 constants and values 
+				to meaningful .NET enumerations and values.
+			</summary>
+			<param name="wparam">The wparam for which to get the key data.</param>
+			<param name="lparam">The lparam for which to get the key data.</param>
+			<param name="vkCode">
+				The virtual key code from the Win32 API as specified in winuser.h.
+				Essentially this is all the VK_* constants that are contained in
+				the <see cref="IntegerAI.Trapy.ManagedHooks.VirtualKeys" /> enumeration and possibly even some that are not
+				explicitly specified.
+			</param>
+		</GetKeyboardReading>
+		<SetUserHookCallback>
+			<summary>
+				Used by the SystemHook class to register it's callback method
+				for a given hook type.
+			</summary>
+			<param name="hookCallback">A delegate to the method which will be used as the callback for this event type.</param>
+			<param name="hookType">The type of system hook event to install.</param>
+			<returns></returns>
+		</SetUserHookCallback>
+		<InitializeHook>
+			<summary>
+				Used by the SystemHook class to instruct the unmanaged layer
+				to install the system hook of the specified type.
+			</summary>
+			<param name="hookType">The type of system hook to install.</param>
+			<param name="threadID">This should always be zero.</param>
+			<returns>A boolean indicating whether the call succeeded.</returns>
+			<remarks>
+				This is actually accomplished by calling <c>SetWindowsHookEx()</c>
+				in the unmanaged layer.
+			</remarks>
+		</InitializeHook>
+		<UninitializeHook>
+			<summary>
+				Used by the SystemHook class to instruct the unmanaged layer
+				to uninstall the system hook of the specified type.
+			</summary>
+			<param name="hookType">The type of system hook to uninstall.</param>
+		</UninitializeHook>
+		<InternalGetMousePosition>
+			<summary>
+				This utility function exposed from the unmanaged layer helps translate
+				Win32 constants and values to meaningful .NET enumerations and values.
+			</summary>
+			<param name="wparam">The wparam for which to get the mouse data.</param>
+			<param name="lparam">The lparam for which to get the mouse data.</param>
+			<param name="x">The mouse x position will be stored here on return.</param>
+			<param name="y">The mouse y position will be stored here on return.</param>
+			<returns>A boolean indicating whether the call succeeded.</returns>
+			<remarks>
+				As the access level and name indicate, this method is used only
+				internal to the SystemHook class. The non-static, non-internal 
+				version of this method is identical to this method except that
+				it converts the boolean error handling to exceptions to be more
+				consistent with the rest of the .NET framework.
+			</remarks>
+			<seealso cref="GetMousePosition" />
+		</InternalGetMousePosition>
+		<IntenralGetKeyboardReading>
+			<summary>
+				This utility function exposed from the unmanaged layer helps translate
+				Win32 constants and values to meaningful .NET enumerations and values.
+			</summary>
+			<param name="wparam">The wparam for which to get the key data.</param>
+			<param name="lparam">The lparam for which to get the key data.</param>
+			<param name="vkCode">
+				The virtual key code from the Win32 API as specified in winuser.h.
+				Essentially this is all the VK_* constants that are contained in
+				the <c>VirtualKeys</c> enumeration and possibly even some that are not
+				explicitly specified.
+			</param>
+			<returns>A boolean indicating whether the call succeeded.</returns>
+			<remarks>
+				As the access level and name indicate, this method is used only
+				internal to the SystemHook class. The non-static, non-internal 
+				version of this method is identical to this method except that
+				it converts the boolean error handling to exceptions to be more
+				consistent with the rest of the .NET framework.
+			</remarks>
+			<seealso cref="GetKeyboardReading" />
+		</IntenralGetKeyboardReading>
+		<HookType>
+			<summary>
+				Indicates the hook type for a given class instance.
+			</summary>
+		</HookType>
+		<FilterMessage>
+			<summary>
+				Tells the library to ignore the specified event type and not to fire events of that type.
+			</summary>
+			<param name="hookType">The hook type that generates the events of type <paramref name="message" />.</param>
+			<param name="message">The type of event to ignore, for example, MouseEvents.Move.</param>
+		</FilterMessage>
+		<DisposeCppLayer>
+			<summary>
+				Cleans up system resources in the C++ layer that are associated with this class.
+			</summary>
+			<param name="hookType">The hook type represented by this class instance.</param>
+		</DisposeCppLayer>
+		<InternalFilterMessage>
+			<summary>
+				Tells the library to ignore the specified event type and not to fire events of that type.
+			</summary>
+			<param name="hookType">The hook type represented by this class instance.</param>
+			<param name="message">The constant value of the message to filter.</param>
+		</InternalFilterMessage>
+	</SystemHook>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                                MouseHook                                        -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<MouseHook>
+		<Class>
+			<summary>
+				This class represents a system hook of the type 
+				<see cref="HookTypes.MouseLL" /> (low level mouse system events).
+			</summary>
+			<remarks>
+				This class is designed to be used as a singleton: only create one at a time.
+			</remarks>
+		</Class>
+		<ctor>
+			<summary>
+				Creates a new instance of the MouseHook class.
+			</summary>
+		</ctor>
+		<HookCallback>
+			<summary>
+				This method will be called when a system hook event of the type MouseLL occurs.
+			</summary>
+			<param name="code">The event code that comes from the system hook event callback.</param>
+			<param name="wparam">The WPARAM parameter associated with the system hook event.</param>
+			<param name="lparam">The LPARAM parameter associated with the system hook event.</param>
+			<remarks>
+				<para>
+					These three parameters vary by system hook event. For example, in the 
+					<c>HookTypes.MouseLL</c> event, wparam is typical <c>WM_LBUTTONDOWN</c>
+					which maps to the enumeration <c>MouseEvents.LeftButtonDown</c>. See
+					the Win32 API documentation for SetWindowsHookEx for details about
+					what these parameters mean in the various hook types.
+				</para>
+			</remarks>
+		</HookCallback>
+		<MouseEvent>
+			<summary>
+				This event is fired whenever a system hook event is received by the MouseHook class.
+			</summary>
+		</MouseEvent>
+		<MouseEventHandler>
+			<summary>
+				A delegate defining the method signature for the MouseEvent event.
+			</summary>
+		</MouseEventHandler>
+		<FilterMessage>
+			<summary>
+				Tells the library to ignore the specified event type and not to fire events of that type.
+			</summary>
+			<param name="eventType">The type of event to ignore, for example, MouseEvents.Move.</param>
+		</FilterMessage>
+	</MouseHook>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                              MouseHookExt                                       -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<MouseHookExt>
+		<Class>
+			<summary>
+				This class represents a system hook of the type 
+				<see cref="HookTypes.MouseLL" /> (low level mouse system events).
+			</summary>
+			<remarks>
+				<para>
+					This class differs from the <see cref="MouseHook" /> class in that it breaks
+					the types of mouse events into categories. For example, there is a LeftButtonDown
+					event and a RightButtonDown event.
+				</para>
+				<para>
+					This class is designed to be used as a singleton: only create one at a time.
+				</para>
+			</remarks>
+		</Class>
+		<ctor>
+			<summary>
+				Creates a new instance of the MouseHookExt class.
+			</summary>
+		</ctor>
+		<LeftButtonDown>
+			<summary>
+				This event is fired when the left mouse button is pushed down.
+			</summary>
+		</LeftButtonDown>
+		<RightButtonDown>
+			<summary>
+				This event is fired when the right mouse button is pushed down.
+			</summary>
+		</RightButtonDown>
+		<LeftButtonUp>
+			<summary>
+				This event is fired when the left mouse button is released.
+			</summary>
+		</LeftButtonUp>
+		<RightButtonUp>
+			<summary>
+				This event is fired when the right mouse button is released.
+			</summary>
+		</RightButtonUp>
+		<MouseWheel>
+			<summary>
+				This event is fired when the mouse wheel is spun..
+			</summary>
+		</MouseWheel>
+		<Move>
+			<summary>
+				This event is fired when the mouse is moved.
+			</summary>
+		</Move>
+	</MouseHookExt>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                               KeyboardHook                                       -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<KeyboardHook>
+		<Class>
+			<summary>
+				This class represents a system hook of the type 
+				<see cref="HookTypes.KeyboardLL" /> (low level keyboard system events).
+			</summary>
+			<remarks>
+				This class is designed to be used as a singleton: only create one at a time.
+			</remarks>
+		</Class>
+		<ctor>
+			<summary>
+				Creates a new instance of the KeyboardHook class.
+			</summary>
+		</ctor>
+		<HookCallback>
+			<summary>
+				This method will be called when a system hook event of the type KeyboardLL occurs.
+			</summary>
+			<param name="code">The event code that comes from the system hook event callback.</param>
+			<param name="wparam">The WPARAM parameter associated with the system hook event.</param>
+			<param name="lparam">The LPARAM parameter associated with the system hook event.</param>
+			<remarks>
+				<para>
+					These three parameters vary by system hook event. For example, in the 
+					<c>HookTypes.MouseLL</c> event, wparam is typical <c>WM_LBUTTONDOWN</c>
+					which maps to the enumeration <c>MouseEvents.LeftButtonDown</c>. See
+					the Win32 API documentation for SetWindowsHookEx for details about
+					what these parameters mean in the various hook types.
+				</para>
+			</remarks>
+		</HookCallback>
+		<KeyboardEvent>
+			<summary>
+				This event is fired whenever a system hook event is received by the KeyboardHook class.
+			</summary>
+		</KeyboardEvent>
+		<KeyboardEventHandler>
+			<summary>
+				A delegate defining the method signature for the KeyboardEvent event.
+			</summary>
+		</KeyboardEventHandler>
+		<ConvertKeyCode>
+			<summary>
+				Provides a conversion between Win32 API virtual key codes and the .NET enumeration
+				<see cref="System.Windows.Forms.Keys" />.
+			</summary>
+			<param name="vk">The Win32 API virtual key code to convert.</param>
+			<returns>The corresponding <see cref="System.Windows.Forms.Keys" /> value.</returns>
+		</ConvertKeyCode>
+		<FilterMessage>
+			<summary>
+				Tells the library to ignore the specified event type and not to fire events of that type.
+			</summary>
+			<param name="eventType">The type of event to ignore, for example, KeyboardEvents.SysKeyDown.</param>
+		</FilterMessage>
+	</KeyboardHook>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                              KeyboardHookExt                                     -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<KeyboardHookExt>
+		<Class>
+			<summary>
+				This class represents a system hook of the type 
+				<see cref="HookTypes.KeyboardLL" /> (low level keyboard system events).
+			</summary>
+			<remarks>
+				<para>
+					This class differs from the <see cref="KeyboardHook" /> class in that it breaks
+					the types of keyboard events into categories. For example, there is a KeyDown
+					event and a KeyUp event.
+				</para>
+				<para>
+					This class is designed to be used as a singleton: only create one at a time.
+				</para>
+			</remarks>
+		</Class>
+		<ctor>
+			<summary>
+				Creates a new instance of the KeyboardHook class.
+			</summary>
+		</ctor>
+		<KeyDown>
+			<summary>
+				Fired when a standard (non-system) key is pushed down.
+			</summary>
+		</KeyDown>
+		<KeyUp>
+			<summary>
+				Fired when a standard (non-system) key is released.
+			</summary>
+		</KeyUp>
+		<SystemKeyDown>
+			<summary>
+				Fired when a system key is pushed down.
+			</summary>
+		</SystemKeyDown>
+		<SystemKeyUp>
+			<summary>
+				Fired when a system key is released.
+			</summary>
+		</SystemKeyUp>
+		<OnKeyDown>
+			<summary>
+				Called when a standard (non-system) key is pushed down. This in turn
+				triggers the <see cref="KeyboardHookExt.KeyDown" /> event to be fired.
+			</summary>
+			<param name="key">The key that was pressed which caused this action.</param>
+			<remarks>
+				Override this method when you need to change the conditions that trigger
+				the key pressed events. For an example of how this can be useful, 
+				see the <see cref="KeyboardTracking" /> class.
+			</remarks>
+		</OnKeyDown>
+		<OnKeyUp>
+			<summary>
+				Called when a standard (non-system) key is released. This in turn
+				triggers the <see cref="KeyboardHookExt.KeyUp" /> event to be fired.
+			</summary>
+			<param name="key">The key that was pressed which caused this action.</param>
+			<remarks>
+				Override this method when you need to change the conditions that trigger
+				the key pressed events. For an example of how this can be useful, 
+				see the <see cref="KeyboardTracking" /> class.
+			</remarks>
+		</OnKeyUp>
+		<OnSysKeyDown>
+			<summary>
+				Called when a system key is pushed down. This in turn
+				triggers the <see cref="SystemKeyDown" /> event to be fired.
+			</summary>
+			<param name="key">The key that was pressed which caused this action.</param>
+			<remarks>
+				Override this method when you need to change the conditions that trigger
+				the key pressed events. For an example of how this can be useful, 
+				see the <see cref="KeyboardTracking" /> class.
+			</remarks>
+		</OnSysKeyDown>
+		<OnSysKeyUp>
+			<summary>
+				Called when a system key is released. This in turn
+				triggers the <see cref="SystemKeyUp" /> event to be fired.
+			</summary>
+			<param name="key">The key that was pressed which caused this action.</param>
+			<remarks>
+				Override this method when you need to change the conditions that trigger
+				the key pressed events. For an example of how this can be useful, 
+				see the <see cref="KeyboardTracking" /> class.
+			</remarks>
+		</OnSysKeyUp>
+	</KeyboardHookExt>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                                 HookTypes                                        -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<HookTypes>
+		<enum>
+			<summary>
+				Represents the types of system hooks available in Windows.
+			</summary>
+			<remarks>
+				Currently only <c>KeyboardLL</c> and <c>MouseLL</c> are supported
+				in this library. But it is relatively easy to extend it for any
+				given hook type by following the provided examples.
+			</remarks>
+		</enum>
+	</HookTypes>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                               KeyboardEvents                                     -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<KeyboardEvents>
+		<enum>
+			<summary>
+				Represents the types of keyboard events that will be received when
+				hooking keyboard events.
+			</summary>
+		</enum>
+	</KeyboardEvents>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                                 MouseEvents                                      -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<MouseEvents>
+		<enum>
+			<summary>
+				Represents the types of mouse events that will be received when
+				hooking mouse events.
+			</summary>
+			<remarks>
+				Note that this list is not exhaustive. For example, third button clicks
+				(typically the pushing the mouse wheel) will not be processed. This
+				can be extended by modifying the source code to receive the desired events.
+			</remarks>
+		</enum>
+	</MouseEvents>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                                 VirtualKeys                                      -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<VirtualKeys>
+		<enum>
+			<summary>
+				Represents the keys from keyboard events received from Win32 events.
+			</summary>
+			<remarks>
+				It would be ideal if we could simply use the <c>System.Windows.Forms.Keys</c>
+				enumeration. But there is no direct translation from the integers received
+				from the C++ layer (Win32 key codes) and this enumeration. Thus we have
+				included the <c>VirtualKeys</c> enumeration along with the
+				<c>ConvertKeyCode</c> to bridge that gap.
+			</remarks>
+		</enum>
+	</VirtualKeys>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                           ManagedHooksException                                  -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<ManagedHooksException>
+		<Class>
+			<summary>
+				This class represents exceptions that originate from the ManagedHooks classes.
+			</summary>
+			<remarks>
+				Note that other exceptions are possible. For example, where appropriate, these
+				classes throw <see cref="ArgumentException" /> and 
+				<see cref="ArgumentNullException" /> among others.
+			</remarks>
+		</Class>
+		<ctor>
+			<overloads>Creates a new instance of the ManagedHooksException class.</overloads>
+			<summary>
+				Creates an empty exception.
+			</summary>
+		</ctor>
+		<ctor_string>
+			<summary>
+				Creates an exception with a message.
+			</summary>
+		</ctor_string>
+		<ctor_string_exception>
+			<summary>
+				Creates an exception with a message and inner exception.
+			</summary>
+		</ctor_string_exception>
+	</ManagedHooksException>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                       HookTypeNotImplementedException                            -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<HookTypeNotImplementedException>
+		<Class>
+			<summary>
+				An exception indicating that there is already a class hooking a particular event type.
+			</summary>
+			<remarks>
+				Each event type can only be hooked by one class at any given time. This is
+				the type of exception you get when you break that rule.
+			</remarks>
+		</Class>
+	</HookTypeNotImplementedException>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!--                               KeyboardTracking                                   -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<KeyboardTracking>
+		<Class>
+			<summary>
+				This class represents a system hook of the type 
+				<see cref="HookTypes.KeyboardLL" /> (low level keyboard system events).
+				Additionally it tracks the state of modifier keys (control, alt, and shift).
+			</summary>
+			<remarks>
+				<para>
+					This class differs from the <see cref="KeyboardHookExt" /> class in that 
+					it tracks the state of modifier keys (control, alt, and shift).
+				</para>
+				<para>
+					This class is designed to be used as a singleton: only create one at a time.
+				</para>
+			</remarks>
+		</Class>
+		<ctor>
+			<summary></summary>
+		</ctor>
+		<ControlPressed>
+			<summary>Indicates whether the control key is currently held down.</summary>
+		</ControlPressed>
+		<AltPressed>
+			<summary>Indicates whether the alt key is currently held down.</summary>
+		</AltPressed>
+		<ShiftPressed>
+			<summary>Indicates whether the shift key is currently held down.</summary>
+		</ShiftPressed>
+	</KeyboardTracking>
+</Docs>

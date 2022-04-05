@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.0.1.0" Id="b576cfc0-c946-4353-aac4-bfa8d21cb1c2" Name="">
+  <ReuseID>false</ReuseID>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2019-06-10T11:16:30.5854723Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>944a198c-f5f9-4602-9cbd-fa6f0a4415a3</SelfGuid>
+      <NextGuid>0310ac77-eb4c-48f0-aa72-f79bd9732353</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>200</EditorLocationX>
+      <EditorLocationY>45</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2019-04-25T07:11:58.7556398Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>25db314e-9dcc-45b6-b645-7d26af236d06</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>200</EditorLocationX>
+      <EditorLocationY>465</EditorLocationY>
+    </EndNodeAction>
+    <RunScriptActivity>
+      <Timestamp>2019-04-25T07:13:07.1926398Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>b301f67d-8a56-46b4-99aa-71b41e8ec771</SelfGuid>
+      <NextGuid>686253fd-bad0-4f58-b06c-a3fe1caf02c2</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>200</EditorLocationX>
+      <EditorLocationY>285</EditorLocationY>
+      <Script>
+        <RuntimeScript>using System;
+(context , currentactivity) =&gt; 
+{    int y=Convert.ToInt32(${Year});
+       if ((y % 4 == 0 &amp;&amp; y % 100 != 0) || (y % 400 == 0))
+        {
+            return (string) "leap year";
+        }  
+        else
+        {
+            return (string) "Not leap year";
+        }
+ }</RuntimeScript>
+      </Script>
+    </RunScriptActivity>
+    <MessageBoxAction>
+      <Timestamp>2019-04-25T07:20:35.6146398Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>686253fd-bad0-4f58-b06c-a3fe1caf02c2</SelfGuid>
+      <NextGuid>25db314e-9dcc-45b6-b645-7d26af236d06</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>200</EditorLocationX>
+      <EditorLocationY>365</EditorLocationY>
+      <Title>
+        <Value>Message</Value>
+      </Title>
+      <Text>
+        <DymanicKey>${b301f67d-8a56-46b4-99aa-71b41e8ec771:ExecutionResult}</DymanicKey>
+      </Text>
+      <Icon>Asterisk</Icon>
+      <Buttons>OK</Buttons>
+      <DefaultButton>Button1</DefaultButton>
+      <Options />
+      <DialogResult>None</DialogResult>
+      <DialogResultBool>false</DialogResultBool>
+    </MessageBoxAction>
+    <VariableNodeAction>
+      <DisplayName>Year</DisplayName>
+      <Timestamp>2019-04-25T07:38:47.1456398Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>bca3c187-eddf-4655-a7f6-08f41f17cce7</SelfGuid>
+      <NextGuid>0310ac77-eb4c-48f0-aa72-f79bd9732353</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>205</EditorLocationY>
+      <VariableName>Year</VariableName>
+      <EvaluationExpression>
+        <Value />
+      </EvaluationExpression>
+    </VariableNodeAction>
+    <InputBoxAction>
+      <Timestamp>2019-05-03T06:14:20.3099997Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>0310ac77-eb4c-48f0-aa72-f79bd9732353</SelfGuid>
+      <NextGuid>1ab8c7bf-9d15-434a-841e-4df5fe314855</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>200</EditorLocationX>
+      <EditorLocationY>125</EditorLocationY>
+      <Title>
+        <Value>Input</Value>
+      </Title>
+      <PromptText>
+        <Value>Enter year</Value>
+      </PromptText>
+      <DialogResult>None</DialogResult>
+    </InputBoxAction>
+    <SetVariableValue>
+      <Timestamp>2019-06-10T13:25:40.6794723Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>1ab8c7bf-9d15-434a-841e-4df5fe314855</SelfGuid>
+      <NextGuid>b301f67d-8a56-46b4-99aa-71b41e8ec771</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>200</EditorLocationX>
+      <EditorLocationY>205</EditorLocationY>
+      <VariableName>${Year}</VariableName>
+      <VariableValue>
+        <DymanicKey>${0310ac77-eb4c-48f0-aa72-f79bd9732353:Value}</DymanicKey>
+      </VariableValue>
+    </SetVariableValue>
+  </ExecuteActivities>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>-298145373</ManualExecutionTimeMillisecs>
+</ZappyTask>

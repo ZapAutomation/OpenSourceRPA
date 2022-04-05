@@ -1,0 +1,3161 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="3.4.0.0" Id="cedd67f6-28b0-428f-bc37-fb95595e6ded" Name="">
+  <ReuseID>false</ReuseID>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2019-02-05T13:11:03.504132Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>cd8fd2fd-8c48-4142-a611-ac777bcdd7ce</SelfGuid>
+      <NextGuid>269280b3-1e8b-47e9-8134-df512612420e</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>25</EditorLocationY>
+    </StartNodeAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:09:42.473132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>269280b3-1e8b-47e9-8134-df512612420e</SelfGuid>
+      <NextGuid>0f90c270-5b4b-4742-8505-d35759431b95</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>105</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>1</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:09:46.161132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>0f90c270-5b4b-4742-8505-d35759431b95</SelfGuid>
+      <NextGuid>2287b859-2c30-49ef-a2b1-7e454f073a66</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>185</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.CmbSettlementAccountComboBox.PART_EditableTextBoxEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="ComboBox" FriendlyName="cmbSettlementAccount" Id="CmbSettlementAccountComboBox" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">ComboBox</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="AutomationId">cmbSettlementAccount</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="PART_EditableTextBox" Id="PART_EditableTextBoxEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="AutomationId">PART_EditableTextBox</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SupportLevel>0</SupportLevel>
+                    <Framework>UIA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Mirai Allocations</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>159</X>
+        <Y>7</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:09:46.473132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>2287b859-2c30-49ef-a2b1-7e454f073a66</SelfGuid>
+      <NextGuid>0f86a5ce-b5b2-44c3-a7ba-c0da3397907c</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>285</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.CmbSettlementAccountComboBox.PART_EditableTextBoxEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="ComboBox" FriendlyName="cmbSettlementAccount" Id="CmbSettlementAccountComboBox" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">ComboBox</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="AutomationId">cmbSettlementAccount</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="PART_EditableTextBox" Id="PART_EditableTextBoxEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="AutomationId">PART_EditableTextBox</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SupportLevel>0</SupportLevel>
+                    <Framework>UIA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Mirai Allocations</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:09:49.395132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>0f86a5ce-b5b2-44c3-a7ba-c0da3397907c</SelfGuid>
+      <NextGuid>7a58c4e0-7897-4d52-a3bd-f093dfb32083</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>385</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtSettAccountWindow.TxtSettAccountEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSettAccount" Id="TxtSettAccountWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSettAccount</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSettAccount" Id="TxtSettAccountEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>21</X>
+        <Y>13</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:09:50.020132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>7a58c4e0-7897-4d52-a3bd-f093dfb32083</SelfGuid>
+      <NextGuid>86f39e12-03ee-4ffa-a8d1-7773bab3cb02</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>485</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtSettAccountWindow.TxtSettAccountEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSettAccount" Id="TxtSettAccountWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSettAccount</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSettAccount" Id="TxtSettAccountEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:09:54.083132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>86f39e12-03ee-4ffa-a8d1-7773bab3cb02</SelfGuid>
+      <NextGuid>545bf85e-325e-484b-b6aa-025a4d20e0ef</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>585</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>2</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:09:57.301132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>545bf85e-325e-484b-b6aa-025a4d20e0ef</SelfGuid>
+      <NextGuid>81957659-93b8-4023-89dc-d22964a51328</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>685</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>121</X>
+        <Y>3</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:09:57.864132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>81957659-93b8-4023-89dc-d22964a51328</SelfGuid>
+      <NextGuid>12cb6457-279c-4d67-97cb-f8a05d482912</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>785</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:09:59.348132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>12cb6457-279c-4d67-97cb-f8a05d482912</SelfGuid>
+      <NextGuid>53cd4e06-6bef-4692-a041-14f8a7b45f5e</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>885</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtClntAccountWindow.TxtClntAccountEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtClntAccount" Id="TxtClntAccountWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtClntAccount</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtClntAccount" Id="TxtClntAccountEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>34</X>
+        <Y>11</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:09:59.692132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>53cd4e06-6bef-4692-a041-14f8a7b45f5e</SelfGuid>
+      <NextGuid>c02de661-e302-4786-90d9-d787ca206b68</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>985</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtClntAccountWindow.TxtClntAccountEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtClntAccount" Id="TxtClntAccountWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtClntAccount</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtClntAccount" Id="TxtClntAccountEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:10:04.411132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>c02de661-e302-4786-90d9-d787ca206b68</SelfGuid>
+      <NextGuid>ab8e3d36-66d3-4100-acd7-1cb717be9ba0</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1085</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>3</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:06.192132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>ab8e3d36-66d3-4100-acd7-1cb717be9ba0</SelfGuid>
+      <NextGuid>507605ec-1c2e-4702-88d6-78449e4040b3</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1185</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">2</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>110</X>
+        <Y>9</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:06.364132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>507605ec-1c2e-4702-88d6-78449e4040b3</SelfGuid>
+      <NextGuid>825b9960-4899-415b-8125-3385201bbf9f</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1285</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">2</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:07.739132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>825b9960-4899-415b-8125-3385201bbf9f</SelfGuid>
+      <NextGuid>20975129-a3f8-47dc-a032-051dfae31483</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1385</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtTickerWindow.TxtTickerEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtTicker" Id="TxtTickerWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtTicker</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtTicker" Id="TxtTickerEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>40</X>
+        <Y>11</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:08.379132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>20975129-a3f8-47dc-a032-051dfae31483</SelfGuid>
+      <NextGuid>4f63cb73-6e69-4247-9285-14d9ff5230d5</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1485</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtTickerWindow.TxtTickerEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtTicker" Id="TxtTickerWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtTicker</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtTicker" Id="TxtTickerEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:10:12.129132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>4f63cb73-6e69-4247-9285-14d9ff5230d5</SelfGuid>
+      <NextGuid>a7200026-5041-43d8-9efc-9254d1a21805</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1585</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>4</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:13.692132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>a7200026-5041-43d8-9efc-9254d1a21805</SelfGuid>
+      <NextGuid>e0501f8c-f934-4780-9a0e-0d93b364b9ba</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1685</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">3</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>58</X>
+        <Y>12</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:13.895132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>e0501f8c-f934-4780-9a0e-0d93b364b9ba</SelfGuid>
+      <NextGuid>ff7f80ba-4ef9-4b3b-8c2a-8cf7f7da9523</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1785</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">3</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:15.192132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>ff7f80ba-4ef9-4b3b-8c2a-8cf7f7da9523</SelfGuid>
+      <NextGuid>5f3166e1-a551-4bd2-87c4-c9fb557c671a</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1885</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtSizeWindow.TxtSizeEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSize" Id="TxtSizeWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSize</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSize" Id="TxtSizeEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>26</X>
+        <Y>10</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:15.379132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>5f3166e1-a551-4bd2-87c4-c9fb557c671a</SelfGuid>
+      <NextGuid>de653e4f-b632-4660-994e-3d08f522d5fa</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>1985</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtSizeWindow.TxtSizeEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSize" Id="TxtSizeWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSize</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSize" Id="TxtSizeEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:10:19.348132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>de653e4f-b632-4660-994e-3d08f522d5fa</SelfGuid>
+      <NextGuid>235a3838-aaaf-4c5d-a2b2-b2165ae1606d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2085</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>5</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:21.161132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>235a3838-aaaf-4c5d-a2b2-b2165ae1606d</SelfGuid>
+      <NextGuid>69fd6b7f-0df4-4aa7-a2e3-088f1ad3df2e</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2185</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">4</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>64</X>
+        <Y>18</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:21.801132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>69fd6b7f-0df4-4aa7-a2e3-088f1ad3df2e</SelfGuid>
+      <NextGuid>49771c2a-ef31-4752-9428-9f804026453b</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2285</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">4</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:24.817132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>49771c2a-ef31-4752-9428-9f804026453b</SelfGuid>
+      <NextGuid>03647298-2e94-414a-b338-a6953b4b7ead</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2385</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtPriceWindow.TxtPriceEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtPrice" Id="TxtPriceWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtPrice</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtPrice" Id="TxtPriceEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>22</X>
+        <Y>11</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:25.411132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>03647298-2e94-414a-b338-a6953b4b7ead</SelfGuid>
+      <NextGuid>52943085-21a9-4d2a-8cbf-1d1fad7230dd</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2485</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtPriceWindow.TxtPriceEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtPrice" Id="TxtPriceWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtPrice</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtPrice" Id="TxtPriceEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:10:28.395132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>52943085-21a9-4d2a-8cbf-1d1fad7230dd</SelfGuid>
+      <NextGuid>97cffee7-a480-4c22-af3c-c42454bc1d76</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2585</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>6</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:30.129132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>97cffee7-a480-4c22-af3c-c42454bc1d76</SelfGuid>
+      <NextGuid>83459c69-4c89-49ea-b29d-6b7eed28cc76</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2685</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.CmbSideComboBox.PART_EditableTextBoxEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="ComboBox" FriendlyName="cmbSide" Id="CmbSideComboBox" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">ComboBox</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="AutomationId">cmbSide</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="PART_EditableTextBox" Id="PART_EditableTextBoxEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="AutomationId">PART_EditableTextBox</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SupportLevel>0</SupportLevel>
+                    <Framework>UIA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Mirai Allocations</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>123</X>
+        <Y>0</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:30.301132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>83459c69-4c89-49ea-b29d-6b7eed28cc76</SelfGuid>
+      <NextGuid>4d22a1f6-f6a4-4c73-8023-6fa6be42d69b</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2785</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.CmbSideComboBox.PART_EditableTextBoxEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="ComboBox" FriendlyName="cmbSide" Id="CmbSideComboBox" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">ComboBox</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="AutomationId">cmbSide</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="PART_EditableTextBox" Id="PART_EditableTextBoxEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="AutomationId">PART_EditableTextBox</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SupportLevel>0</SupportLevel>
+                    <Framework>UIA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Mirai Allocations</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:32.004132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>4d22a1f6-f6a4-4c73-8023-6fa6be42d69b</SelfGuid>
+      <NextGuid>bda74ed4-b4e9-4564-ae23-0d2830eeacb3</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2885</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.ItemWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="" Id="ItemWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlId">1001</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" Id="ItemEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>1</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>1</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>78</X>
+        <Y>13</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:32.442132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>bda74ed4-b4e9-4564-ae23-0d2830eeacb3</SelfGuid>
+      <NextGuid>b8644514-e25a-4d0d-8ceb-7fd8dc1d9d75</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>2985</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.ItemWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="" Id="ItemWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlId">1001</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" Id="ItemEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>1</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>1</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:10:35.879132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>b8644514-e25a-4d0d-8ceb-7fd8dc1d9d75</SelfGuid>
+      <NextGuid>6efa2c45-afd8-4170-969e-52fa1dd900f2</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3085</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>7</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:37.473132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>6efa2c45-afd8-4170-969e-52fa1dd900f2</SelfGuid>
+      <NextGuid>291b4f1b-73be-49e6-a948-ec6d435c5894</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3185</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.SettlementDateText</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Text" FriendlyName="Settlement Date" Id="SettlementDateText" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Text</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Name">Settlement Date</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>90</X>
+        <Y>0</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:38.067132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>291b4f1b-73be-49e6-a948-ec6d435c5894</SelfGuid>
+      <NextGuid>3e825478-6ff0-40dc-9dc0-1920b21b170d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3285</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">5</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>12</X>
+        <Y>12</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:38.301132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>3e825478-6ff0-40dc-9dc0-1920b21b170d</SelfGuid>
+      <NextGuid>c65d56ed-476b-484a-9759-b58735c4675a</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3385</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">5</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:39.583132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>c65d56ed-476b-484a-9759-b58735c4675a</SelfGuid>
+      <NextGuid>40dbbb7c-9f16-43cb-af65-5ea95ccc0648</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3485</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.EnterAllocationDetaiClient</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Client" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiClient" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Client</Conditions>
+                </Condition>
+                <Descendants />
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>62</X>
+        <Y>202</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:40.036132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>40dbbb7c-9f16-43cb-af65-5ea95ccc0648</SelfGuid>
+      <NextGuid>9eebc92e-ae01-481a-8694-dc24594899dc</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3585</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtSettDateWindow.TxtSettDateEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSettDate" Id="TxtSettDateWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSettDate</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSettDate" Id="TxtSettDateEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Client Account</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>26</X>
+        <Y>5</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:40.395132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>9eebc92e-ae01-481a-8694-dc24594899dc</SelfGuid>
+      <NextGuid>c05cee40-b4ae-402d-ab3a-6d4e7a32777c</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3685</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtSettDateWindow.TxtSettDateEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSettDate" Id="TxtSettDateWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSettDate</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSettDate" Id="TxtSettDateEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Client Account</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:10:43.114132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>c05cee40-b4ae-402d-ab3a-6d4e7a32777c</SelfGuid>
+      <NextGuid>5d2c8202-e4ad-48a9-aea8-4b8753e3f218</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3785</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>8</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:44.301132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>5d2c8202-e4ad-48a9-aea8-4b8753e3f218</SelfGuid>
+      <NextGuid>d6c8db40-4187-44a1-b103-2489dc73e353</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3885</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants />
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>80</X>
+        <Y>357</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:44.879132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>d6c8db40-4187-44a1-b103-2489dc73e353</SelfGuid>
+      <NextGuid>9bce7fde-f057-43b6-a705-60a4ce227a2d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>3985</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">6</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>16</X>
+        <Y>8</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:45.098132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>9bce7fde-f057-43b6-a705-60a4ce227a2d</SelfGuid>
+      <NextGuid>620a2308-1dd4-48d7-a7ce-87a6eeb194c4</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4085</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.ItemEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Edit" FriendlyName="" Id="ItemEdit" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="Instance">6</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:46.286132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>620a2308-1dd4-48d7-a7ce-87a6eeb194c4</SelfGuid>
+      <NextGuid>d062e265-41b8-477f-9704-525a8249ab83</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4185</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.SalesMarginIncludedACheckBox</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="CheckBox" FriendlyName="Sales Margin Included (All-In Price) ?" Id="SalesMarginIncludedACheckBox" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">CheckBox</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="AutomationId">chkAllIn</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>51</X>
+        <Y>7</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:46.786132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>d062e265-41b8-477f-9704-525a8249ab83</SelfGuid>
+      <NextGuid>7884347c-f9f1-4c9f-9b4a-2efe60171292</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4285</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.GoAlongFXRateincludeCheckBox</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="CheckBox" FriendlyName="GoAlong FX Rate included ?" Id="GoAlongFXRateincludeCheckBox" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">CheckBox</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="AutomationId">chkFX</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>49</X>
+        <Y>5</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:47.520132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>7884347c-f9f1-4c9f-9b4a-2efe60171292</SelfGuid>
+      <NextGuid>bbe4e0aa-2de6-4498-86de-57889a6ba25b</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4385</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants />
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>369</X>
+        <Y>463</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:48.754132Z</Timestamp>
+      <ExeName>MiraiSettlements.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>bbe4e0aa-2de6-4498-86de-57889a6ba25b</SelfGuid>
+      <NextGuid>e93b5d4f-b67b-4668-968a-230cc956adff</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4485</EditorLocationY>
+      <ZappyWindowTitle>Mirai Allocations</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.MiraiAllocationsWindow.SubmitButton</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Mirai Allocations" Id="MiraiAllocationsWindow" SessionId="657122" SpecialControlType="None">
+            <Condition xsi:type="AndCondition">
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="Name">Mirai Allocations</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">HwndWrapper</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Button" FriendlyName="Submit" Id="SubmitButton" SpecialControlType="None">
+                <Condition xsi:type="AndCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="FrameworkId">WPF</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Button</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="AutomationId">Submit</Conditions>
+                </Condition>
+                <Descendants />
+                <SupportLevel>0</SupportLevel>
+                <Framework>UIA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Mirai Allocations</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SupportLevel>0</SupportLevel>
+            <Framework>UIA</Framework>
+            <WindowTitles>
+              <WindowTitle>Mirai Allocations</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>64</X>
+        <Y>15</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:49.286132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>e93b5d4f-b67b-4668-968a-230cc956adff</SelfGuid>
+      <NextGuid>53bfd28a-ab80-46bb-9276-19f43748a27c</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4585</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.EnterAllocationDetaiClient</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Client" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiClient" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Client</Conditions>
+                </Condition>
+                <Descendants />
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>25</X>
+        <Y>157</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:50.379132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>53bfd28a-ab80-46bb-9276-19f43748a27c</SelfGuid>
+      <NextGuid>ce16f37d-eea9-477c-aff7-98a9a4ac49dd</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4685</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtCommWindow.TxtCommEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtComm" Id="TxtCommWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtComm</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtComm" Id="TxtCommEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>38</X>
+        <Y>12</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-05T13:10:50.645132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>ce16f37d-eea9-477c-aff7-98a9a4ac49dd</SelfGuid>
+      <NextGuid>04bd2512-a4b6-4bce-b9af-83d27c018ea8</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4785</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.TxtCommWindow.TxtCommEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtComm" Id="TxtCommWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtComm</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtComm" Id="TxtCommEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <Text>
+        <Value>v</Value>
+      </Text>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:52.848132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>04bd2512-a4b6-4bce-b9af-83d27c018ea8</SelfGuid>
+      <NextGuid>f8c7b46d-fd4e-4cb5-a171-b82591d3b29b</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4885</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.SalesMarginIncludedAWindow.SalesMarginIncludedACheckBox</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="Sales Margin Included (All-In Price)" Id="SalesMarginIncludedAWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">chkSalesMargin</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="CheckBox" FriendlyName="Sales Margin Included (All-In Price)" Id="SalesMarginIncludedACheckBox" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Sales Margin Included (All-In Price)</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">CheckBox</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>72</X>
+        <Y>8</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:53.364132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>f8c7b46d-fd4e-4cb5-a171-b82591d3b29b</SelfGuid>
+      <NextGuid>9c4f405d-0a4d-47cb-a6de-719da40dae3d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>4985</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.GoAlongFXRateConversWindow.GoAlongFXRateConversCheckBox</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="GoAlong FX Rate Conversion Included" Id="GoAlongFXRateConversWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">chkFX</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="CheckBox" FriendlyName="GoAlong FX Rate Conversion Included" Id="GoAlongFXRateConversCheckBox" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">GoAlong FX Rate Conversion Included</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">CheckBox</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>57</X>
+        <Y>11</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-05T13:10:54.708132Z</Timestamp>
+      <ExeName>SettlementUpload.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>9c4f405d-0a4d-47cb-a6de-719da40dae3d</SelfGuid>
+      <NextGuid>7db00d87-fa52-44d7-9a5a-2c787dd95ebe</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>5085</EditorLocationY>
+      <ZappyWindowTitle>Enter Allocation Details (Hailey)</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.EnterAllocationDetaiWindow.SubmitWindow.SubmitButton</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Enter Allocation Details (Hailey)" Id="EnterAllocationDetaiWindow" SessionId="395022" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Enter Allocation Details (Hailey)</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="Submit" Id="SubmitWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">button1</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Button" FriendlyName="Submit" Id="SubmitButton" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Submit</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Button</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Enter Allocation Details (Hailey)</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>59</X>
+        <Y>3</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-05T13:10:58.176132Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>7db00d87-fa52-44d7-9a5a-2c787dd95ebe</SelfGuid>
+      <NextGuid>d87ac633-39f7-4924-b3eb-20ecc4848b88</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>5185</EditorLocationY>
+      <ZappyWindowTitle>GAIN_Settlement.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <Text>
+        <Value>done</Value>
+      </Text>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>9</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>GAIN_Settlement.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <ExcelSetFocusedCell>
+      <Timestamp>2019-02-05T13:11:03.333132Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>d87ac633-39f7-4924-b3eb-20ecc4848b88</SelfGuid>
+      <NextGuid>0272d452-116c-4b86-80bc-ec0c8f08c726</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>5285</EditorLocationY>
+      <RowOffset>1</RowOffset>
+      <ColumnOffset>0</ColumnOffset>
+      <UseFixedRow>false</UseFixedRow>
+      <ExcelCellInfo>
+        <RowIndex>3</RowIndex>
+        <ColumnIndex>1</ColumnIndex>
+        <SheetName>Sheet1</SheetName>
+        <WorkbookName>GAIN_Settlement.xlsx</WorkbookName>
+      </ExcelCellInfo>
+    </ExcelSetFocusedCell>
+    <EndNodeAction>
+      <Timestamp>2019-02-05T13:11:03.504132Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>0272d452-116c-4b86-80bc-ec0c8f08c726</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>60</EditorLocationX>
+      <EditorLocationY>5385</EditorLocationY>
+    </EndNodeAction>
+  </ExecuteActivities>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>81031</ManualExecutionTimeMillisecs>
+</ZappyTask>

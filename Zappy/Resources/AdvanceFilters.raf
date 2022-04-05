@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ActionFilters>
+
+  <!-- Ensure last action is in sorted order. This should always be the first aggregator. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.EnsureLastActionIsSorted" 
+              Category="Critical" />
+
+  <!-- If there is a marker with a same test step id preceding this marker
+       anywhere in the recording, then removes the preceding marker. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.RemoveDuplicateMarkersWithSameTestStep" 
+              Category="Critical" />
+
+  <!-- If there are two consecutive markers, even for different step,
+       absorb the preceding marker. -->
+  <XmlFilter Name="AbsorbPrecedingMakerOfTwoConsecutiveMarkers"
+             FilteringQuery="Last.ActionName=&quot;TestStepMarkerAction&quot;&amp;Last2.ActionName=&quot;TestStepMarkerAction&quot;"
+             OutputQuery="Last.All=Last.All"
+             FilterType="Binary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="Critical" />
+
+  <!-- Absorbs unintentional duplicate key down of modifiers. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbDuplicateModifiers"
+              Category="Critical" />
+
+  <!-- Aggregates mouse down, drag, mouse up into drag. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.MergeMouseDragActivities" 
+              Category="Critical" />
+
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ProcessIEDialogs" 
+              Category="Critical" />
+
+  <!-- When a double click happens, the first click (of the doubleclick) is
+       already in the aggregation queue as single click. Remove it. -->
+  <XmlFilter Name="RemoveClickBeforeDoubleClick"
+             FilteringQuery="Last.ActionName=&gt;&quot;DoubleClick&quot;&amp;Last2.ActionName=&gt;&quot; Click&quot;&amp;Last2.ElementQueryId=Last.ElementQueryId"
+             OutputQuery="Last.All=Last.All&amp;Last.AdditionalInfo=&quot;Aggregated&quot;"
+             FilterType="Binary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="Critical" />
+
+  <!-- When a SetValueAction on List Comes Before a Double Click on it's ListItem Eat the SetValueAction.
+       This is needed because double click could Pop Up or change the UI of the AUT,
+       and during Playback Engine would do a Single Click to do perform SetValueAction Action.
+       The Sequence of Action which will hit this Aggregator is Click, SetValueAction, Double Click.
+       This Aggregator needs to be placed before RemoveDoubleClickIfNotPreceededByClick otherwise
+       RemoveDoubleClickIfNotPreceededByClick aggregator would eat Double Click. -->
+  <XmlFilter Name="AbsorbSetValueBeforeDoubleClickOnList"
+             FilteringQuery="Last2.ActionName=&quot;SetValueAction&quot;&amp;Last2.ElementType=&quot;List&quot;&amp;Last.ActionName=&gt;&quot; DoubleClick&quot;&amp;Last.ElementType=&quot;ListItem&quot;&amp;Last.Parent.ElementQueryId=Last2.ElementQueryId"
+             OutputQuery="Last.All=Last.All&amp;Last.AdditionalInfo=&quot;Aggregated&quot;"
+             FilterType="Binary" ApplyTimeout="false" Group="SetValueAggregators"
+             Category="Critical" />
+
+  <!-- A doubleclick is not preceeded by the click. This means either the
+       control has ignored doubleclick and fired say SetValueAction on single
+       click or something else has gone wrong. The best option we have is to
+       ignore the doubleclick action. -->
+  <XmlFilter Name="RemoveDoubleClickIfNotPreceededByClick"
+             FilteringQuery="Last.ActionName=&gt;&quot;DoubleClick&quot;&amp;Last.AdditionalInfo!=&quot;Aggregated&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators"
+             Category="Critical" />
+
+  <!-- Do not record actions on ScrollBar as playback will scroll as
+       appropriate with help of EnsureVisible algorithm. 
+       Ignore Drags in this aggregator since we  remove them in MergeMouseDragActivities later -->
+  <XmlFilter Name="RemoveScrollBarAction"
+             FilteringQuery="Last.MouseButton=&quot;Left&quot;&amp;Last.ActionName!=&quot;Left Drag&quot;&amp;Last.ElementType=&quot;ScrollBar&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="Critical" />
+
+  <!-- Same as above. Remove actions on child Buttons etc of ScrollBar too. 
+       Ignore Drags in this aggregator since we  remove them in MergeMouseDragActivities later -->
+  <XmlFilter Name="RemoveParentScrollBarAction"
+             FilteringQuery="Last.MouseButton=&quot;Left&quot;&amp;Last.ActionName!=&quot;Left Drag&quot;&amp;Last.Parent.ElementType=&quot;ScrollBar&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators"
+             Category="Critical" />
+
+
+  <!-- The following 8 aggregators absorb resizing or moving actions on windows. -->
+  <XmlFilter Name="AbsorbTitleBarDrag"
+             FilteringQuery="Last.ActionName=&quot;DragAction&quot;&amp;Last.ElementType=&quot;TitleBar&quot;&amp;Last.MouseButton=&quot;Left&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+  
+  <XmlFilter Name="AbsorbTitleBarDragDrop"
+             FilteringQuery="Last.ActionName=&quot;DragDropAction&quot;&amp;Last.ElementType=&quot;TitleBar&quot;&amp;Last.MouseButton=&quot;Left&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+  
+  <XmlFilter Name="AbsorbWindowDrag"
+             FilteringQuery="Last.ActionName=&quot;DragAction&quot;&amp;Last.ElementType=&quot;Window&quot;&amp;Last.IsTopLevelElement=&quot;true&quot;&amp;Last.MouseButton=&quot;Left&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+  <XmlFilter Name="AbsorbWindowDragDrop"
+             FilteringQuery="Last.ActionName=&quot;DragDropAction&quot;&amp;Last.ElementType=&quot;Window&quot;&amp;Last.IsTopLevelElement=&quot;true&quot;&amp;Last.MouseButton=&quot;Left&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+
+  <XmlFilter Name="AbsorbSizeboxDragIE"
+             FilteringQuery="Last.ActionName=&quot;DragAction&quot;&amp;Last.ElementClass=&quot;BrowserFrameGripperClass&quot;&amp;Last.MouseButton=&quot;Left&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+  
+  <XmlFilter Name="AbsorbSizeboxDragDropIE"
+             FilteringQuery="Last.ActionName=&quot;DragDropAction&quot;&amp;Last.ElementClass=&quot;BrowserFrameGripperClass&quot;&amp;Last.MouseButton=&quot;Left&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+
+  <XmlFilter Name="AbsorbSizeboxDrag"
+             FilteringQuery="Last.ActionName=&quot;DragAction&quot;&amp;Last.ElementType=&quot;Grip&quot;&amp;Last.MouseButton=&quot;Left&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+  
+  <XmlFilter Name="AbsorbSizeboxDragDrop"
+             FilteringQuery="Last.ActionName=&quot;DragDropAction&quot;&amp;Last.ElementType=&quot;Grip&quot;&amp;Last.MouseButton=&quot;Left&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+
+  <!-- Following aggregators absorb action on various IME windows.-->
+  <XmlFilter Name="AbsorbActivitiesOnCandidateListWindowWinForms"
+             FilteringQuery="Last.ElementName=&quot;Candidate List&quot;&amp;Last.TopLevelElement.ElementClass=&quot;Progman&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="MiscellaneousAggregators" 
+             Category="General" />
+
+  <XmlFilter Name="AbsorbActivitiesOnCandidateListWindowIEAndWPFChild"
+             FilteringQuery="Last.Parent.ElementClass=&quot;MSCandUIWindow_Candidate&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="MiscellaneousAggregators" 
+             Category="General" />
+
+  <XmlFilter Name="AbsorbActivitiesOnCandidateListWindowIEAndWPF"
+             FilteringQuery="Last.ElementClass=&quot;MSCandUIWindow_Candidate&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="MiscellaneousAggregators" 
+             Category="General" />
+
+  <XmlFilter Name="AbsorbActivitiesOnCandidateListWindowIEAndWPFMenu"
+             FilteringQuery="Last.TopLevelElement.ElementClass=&quot;CiceroUIWndFrame&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="MiscellaneousAggregators" 
+             Category="General" />
+
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbActivitiesOnCandidateListOnIME" Category="General" />
+  
+  <XmlFilter Name="AbsorbActivitiesOnTableTextServiceCandidateWindow"
+             FilteringQuery="Last.ElementClass=&quot;TableTextService.IncrementalCandidateWindow&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="MiscellaneousAggregators" 
+             Category="General" />
+  
+  <XmlFilter Name="AbsorbActivitiesOnTableTextServiceCandidateWindowChildren"
+             FilteringQuery="Last.Parent.ElementClass=&quot;TableTextService.IncrementalCandidateWindow&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="MiscellaneousAggregators" 
+             Category="General" />
+  
+  <XmlFilter Name="AbsorbActivitiesOnTableTextServiceCandidateWindowChildren"
+           FilteringQuery="Last.Parent.ElementClass=&quot;TableTextService.ScrollBarWindow&quot;"
+           OutputQuery=""
+           FilterType="Unary" ApplyTimeout="false" Group="MiscellaneousAggregators" 
+             Category="General" />
+
+  <!-- Remove modifiers from printable keydown.  For example, "SHIFT+a" will
+       get converted to SendKeysAction of "A" (without any modifier). Similarly, in
+       certain non-ENU layout something else with modifiers can get converted
+       into a printable char. Since we playback the string (and not chars),
+       remove the modifiers. One exception is {Space} since if there is a SHIFT+SPACE
+       we want to retain the modifier, since this key combinations does some things
+       special like selecting a row in a datagrid -->
+  <XmlFilter Name="RemoveModifiersForPrintableChar"
+             FilteringQuery="Last.ActionName=&quot;KeyDown&quot;&amp;Last.ActionValue!=&quot; &quot;&amp;Last.ModifierKeys!=&quot;&quot;&amp;Last.AdditionalInfo=&quot;Printable&quot;"
+             OutputQuery="Last.All=Last.All&amp;Last.ModifierKeys=&quot;&quot;"
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="General" />
+
+  <!-- Absorb printable char after SetValueAction to avoid redundant SendKeysAction. -->
+  <XmlFilter Name="AbsorbPrintableCharAfterSetValue"
+             FilteringQuery="Last.ActionName=&quot;KeyDown&quot;&amp;Last.AdditionalInfo=&quot;Printable&quot;&amp;Last.ElementType=&quot;ComboBox&quot;&amp;Last2.ActionName=&quot;SetValueAction&quot;&amp;Last.ElementQueryId=Last2.ElementQueryId"
+             OutputQuery="Last.All=Last2.All"
+             FilterType="Binary" ApplyTimeout="true" Group="SetValueAggregators" 
+             Category="General" />
+
+  <!-- Convert the KeyDown action into SendKeysAction. -->
+  <XmlFilter Name="ConvertKeyDownToSendKeys"
+             FilteringQuery="Last.ActionName=&quot;KeyDown&quot;"
+             OutputQuery="Last.All=Last.All&amp;Last.ActionType=&quot;SendKeysAction&quot;"
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="General" />
+
+  <!-- These two aggregators remove the two key combinations that can be used
+       to set focus to a particular top level window. The setting of focus
+       happens implicitly in playback and these actions needed not be recorded. -->
+  <XmlFilter Name="AbsorbAltTabCombinations"
+             FilteringQuery="Last.ActionName=&quot;SendKeysAction&quot;&amp;Last.ActionValue=&quot;{Tab}&quot;&amp;Last.ModifierKeys=&gt;&quot;Alt&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+  <XmlFilter Name="AbsorbWinTabCombinations"
+             FilteringQuery="Last.ActionName=&quot;SendKeysAction&quot;&amp;Last.ActionValue=&quot;{Tab}&quot;&amp;Last.ModifierKeys=&gt;&quot;Windows&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+  
+  <!-- These aggregators remove SendKeys actions for the IME keys which are usd to switch between
+       different IME input types.-->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbImeModeSendKeys"
+              Category="General" />
+
+  <!-- These aggregators remove any action that happens on the either the
+       TaskSwitcher or Flip3D windows (these windows come on ALT+TAB or
+       WIN+TAB) or their children. These window have class name as used below. -->
+  <!-- Xp and 2K3-->
+  <XmlFilter Name="AbsorbActivitiesOnTaskSwitcherWindow"
+             FilteringQuery="Last.TopLevelElement.ElementClass=&quot;#32771&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+
+  <!-- Vista-->
+  <XmlFilter Name="AbsorbActivitiesOnTaskSwitcherListWindow"
+             FilteringQuery="Last.TopLevelElement.ElementClass=&quot;TaskSwitcherWnd&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+  <XmlFilter Name="AbsorbActivitiesOnFlip3DWindow"
+             FilteringQuery="Last.TopLevelElement.ElementClass=&quot;Flip3D&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="General" />
+
+  <!-- Prevents absorbing of special shortcut keys on the TextBox by subsequent SetValueAction. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.DoNotAbsorbSpecialShortcutKeysOnEdit" 
+             Category="General" />
+
+  <!-- Convert the SendKey of " " on a button to SendKey {Space} so that 
+       Playback can play it. -->
+  <XmlFilter Name="ConvertSpaceOnNonEditableControlsToVirtualSpace"
+             FilteringQuery="Last.ActionName=&quot;SendKeysAction&quot;&amp;Last.ActionValue=&quot; &quot;&amp;Last.ElementType!=&quot;Edit&quot;&amp;Last.ElementType!=&quot;Text&quot;&amp;Last.ElementType!=&quot;Pane&quot;&amp;Last.ElementType!=&quot;Document&quot;"
+             OutputQuery="Last.All=Last.All&amp;Last.ActionValue=&quot;{Space}&quot;"
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="General" />
+
+  <!-- Absorbs input actions before a SetValueAction in case of a editable combobox in a datagrid. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbInputActivitiesBeforeSetValueOnDataGrid" 
+              Category="General" />
+
+  <!-- Absorbs input actions before a SetValueAction in case of a editable combobox in a WPF datagrid. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbActivitiesOnWPFDataGrid"
+              Category="General" />
+
+  <!-- Converts any action on an editable Winform Datagrid cell to an action on a Datagrid cell. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ConvertActionOnWinformDatagrid" 
+              Category="General" />
+
+  <!-- Combine two SendKeysAction on the same control with no modifiers into one.
+       This will ensure keypress of "a" followed by "b" and "c" is recorded
+       as one SendKeysAction of "abc". -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.CombineTwoSendKeys" 
+              Category="General"/>
+
+  <!-- Removes modifier from the SendKeysAction of modifier key. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.RemoveModifierForModifierSendKeys" 
+              Category="General" />
+
+  <!-- Converts hover. This needs to be present before RemoveKeyup as we use
+       keyup action in the queue to determine if a mousehover before sendkeys 
+       needs to be aggregated or not.-->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ConvertImplicitHover" 
+              Category="General" />
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.RecordImplicitHover" 
+              Category="General" />
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.DeleteImplicitHover" 
+              Category="General" />
+
+  <!-- Remove KeyUp action as it is redundant. -->
+  <XmlFilter Name="RemoveKeyUp"
+             FilteringQuery="Last.ActionName=&quot;KeyUp&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="General" />
+
+  <!-- Remove multiple consecutive hovers on the same control. -->
+  <XmlFilter Name="RemoveMultipleHover"
+             FilteringQuery="Last.ActionName=&quot;Hover&quot;&amp;Last2.ActionName=&quot;Hover&quot;&amp;Last.ElementQueryId=Last2.ElementQueryId"
+             OutputQuery="Last.All=Last.All"
+             FilterType="Binary" ApplyTimeout="true" Group="MiscellaneousAggregators" 
+             Category="General" />
+
+  <!-- Converts actions following searchbox in start menu to playable actions in win 7. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ConvertActivitiesForStartMenuSearch"
+                Category="SimpleToCompoundActionConversion" />
+
+  <!-- Absorbs keyboard and mouse actions on menus to record only the final
+       action on the leaf menu node. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbActivitiesOnMenu" 
+              Category="SimpleToCompoundActionConversion" />
+
+    <!-- Absorbs keyboard and mouse actions on tree items to record only the
+       final action on the leaf tree node. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbActivitiesOnTreeItem" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- RemoveKeys are inserted by the recorder to indicate removal of all preceding modifier keys. -->
+  <XmlFilter Name="RemoveModifierBeforeRemoveKeys"
+             FilteringQuery="Last.ActionName=&gt;&quot;RemoveKeysAction&quot;&amp;Last2.ActionName=&quot;SendKeysAction&quot;&amp;Last2.AdditionalInfo=&quot;ModifierKey&quot;"
+             OutputQuery="Last.All=Last.All"
+             FilterType="Binary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="SimpleToCompoundActionConversion" />
+
+  <!-- RemoveKeysAction are inserted by the recorder to indicate removal itself and 
+       of all preceding modifier keys. -->
+  <XmlFilter Name="RemoveRemoveKeys"
+             FilteringQuery="Last.ActionName=&quot;RemoveKeysAction&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="SimpleToCompoundActionConversion" />
+
+  <!-- Do not absorb SendKeysAction of {ENTER} before empty SetValueAction. This is required
+       for chat windows where after you hit {ENTER} the value disappears.
+       The flag NeedFiltering is set to false so that later on we do not 
+       aggregate this {Enter}. Note that we do not explicitly eat the empty
+       SetValueAction because it is eaten by RemoveZombieSetValue. -->
+  <XmlFilter Name="DoNotAbsorbEnterBeforeEmptySetValue"
+             FilteringQuery="Last.ActionName=&quot;SetValueAction&quot;&amp;Last.ActionValue=&quot;&quot;&amp;Last.ElementQueryId=Last2.ElementQueryId&amp;Last2.ActionType=&quot;SendKeysAction&quot;&amp;Last2.ActionValue=&quot;{Enter}&quot;"
+             OutputQuery="Last.All=Last.All&amp;Last2.All=Last2.All&amp;Last2.NeedFiltering=&quot;False&quot;"
+             FilterType="Binary" ApplyTimeout="false" Group="SetValueAggregators" 
+             Category="SimpleToCompoundActionConversion" />
+
+  <!-- Do not absorb SendKeysAction of {ESCAPE} before empty SetValueAction. This is required
+       for text boxes in IE windows where after you hit {ESCAPE} the value disappears.
+       The flag NeedFiltering is set to false so that later on we do not 
+       aggregate this {Enter}. Note that we do not explicitly eat the empty
+       SetValueAction because it is eaten by RemoveZombieSetValue. -->
+  <XmlFilter Name="DoNotAbsorbEscapeBeforeEmptySetValue"
+             FilteringQuery="Last.ActionName=&quot;SetValueAction&quot;&amp;Last.ActionValue=&quot;&quot;&amp;Last.ElementQueryId=Last2.ElementQueryId&amp;Last2.ActionType=&quot;SendKeysAction&quot;&amp;Last2.ActionValue=&quot;{Escape}&quot;"
+             OutputQuery="Last.All=Last.All&amp;Last2.All=Last2.All&amp;Last2.NeedFiltering=&quot;False&quot;"
+             FilterType="Binary" ApplyTimeout="false" Group="SetValueAggregators" 
+             Category="SimpleToCompoundActionConversion" />
+
+  <!-- Do not absorb SendKeysAction of {ENTER} before a SetValueAction in an editable
+       combobox.  -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.DoNotAbsorbEnterOnEditableCombobox" 
+              Category="SimpleToCompoundActionConversion" />
+  
+  <!-- Similar to the aggregator 'DoNotAbsorbMouseActionBeforeEditBoxEmptySetValue' except that
+       this covers DragAction action which is also a MouseAction. -->
+  <XmlFilter Name="DoNotAbsorbDragBeforeEditBoxEmptySetValue"
+             FilteringQuery="Last.ActionName=&quot;SetValueAction&quot;&amp;Last.ActionValue=&quot;&quot;&amp;Last.ElementType=&quot;Edit&quot;&amp;Last.AdditionalInfo!=&quot;Aggregated&quot;
+             &amp;Last2.ElementType=&quot;Edit&quot;&amp;Last2.ActionType=&quot;DragAction&quot;"
+             OutputQuery="Last.All=Last.All&amp;Last2.All=Last2.All&amp;Last2.NeedFiltering=&quot;False&quot;"
+             FilterType="Binary" ApplyTimeout="false" Group="SetValueAggregators" 
+             Category="SimpleToCompoundActionConversion" />
+
+  <!-- Retains special sendkey actions (such as tab) on same edit box cause both a ValueChanged
+       and a focus out. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.RetainSendKeysCausingSetValuesAndFocusOut"
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Absorbs input actions on the control (or the child of it) preceeding SetValueAction action. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbInputActivitiesBeforeSetValue" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Absorbs input actions adjacent to MediaAction. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbInputActivitiesAdjacentMediaAction"
+              Category="SimpleToCompoundActionConversion" /> 
+
+  <!-- Absorbs spell suggest actions in IE. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbActionOnIESpellSuggest"
+              Category="SimpleToCompoundActionConversion" />
+
+    <!-- If a SetValueAction is fired after an action on an AutoSuggestDropDown, then the action
+  on AutoSuggestDropDown is absorbed and the SetValueAction is set to Aggregated.-->
+  <XmlFilter Name="AbsorbInputActivitiesOnAutoSuggestDropDownBeforeSetValue"
+             FilteringQuery="Last.ActionName=&quot;SetValueAction&quot;&amp;Last.AdditionalInfo!=&quot;Aggregated&quot;&amp;Last2.TopLevelElement.ElementClass=&quot;Auto-Suggest Dropdown&quot;"
+             OutputQuery="Last.All=Last.All&amp;Last.AdditionalInfo=&quot;Aggregated&quot;"
+             FilterType="Binary" ApplyTimeout="false" Group="SetValueAggregators" 
+             Category="SimpleToCompoundActionConversion" />
+
+  <!-- Aggregates actions on file upload dialog.-->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ProcessFileUploadDialogActivities" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Absorbs Click/DragAction actions after SetBase action. This is a case when the sequence of actions are
+       MouseDown->SetBase->MouseClick/DragAction. We should only be recording SetBase action and ignore other mouse action.-->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbMouseActionAfterSetBaseAction" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Aggregates MouseDown Activities. -->
+  <XmlFilter Name="RemoveMouseButtonDown"
+             FilteringQuery="Last2.ActionName=&gt;&quot;ButtonDown&quot;"
+             OutputQuery="Last.All=Last.All&amp;"
+             FilterType="Binary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="SimpleToCompoundActionConversion" />
+
+  <!-- Absorbs ENTER/ESC keys on the drop down after SetValueAction action on the parent. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbKeysOnDropDownAfterSetValue" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Absorbs a valid sequences of actions to convert into NavigateToUrlAction. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ConvertSetValueOnIEAddressBarBinary" 
+              Category="SimpleToCompoundActionConversion" />
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ConvertSetValueOnIEAddressBarUnary" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Absorbs a valid sequences of actions before LaunchApplicationAction. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbActivitiesBeforeLaunchApplication" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- This removes the clicks on the task bar buttons that bring elements to focus-->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbClicksOnTaskBar" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Aggregates out double clicks on title bars or clicks on maximize/restore buttons of the title bar. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ConvertActionOnWindowTitleBar" 
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Aggregates clicks on back/forward/stop/refresh buttons on browser to Browser Activities. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.ConvertActivitiesOnBrowserButtons"
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Aggregates the actions on the context menu of IE Media controls -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.HandleIEMediaContextMenu"
+              Category="SimpleToCompoundActionConversion" />
+
+  <!-- Absorb SetBase preceeding another SetBase of the same control as the
+       subsequent SetBase will be superset in most cases. Even if the
+       subsequent SetBase is not superset, the preceeding is redundant. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbSetBaseActionBeforeSetBaseAction" 
+              Category="RedundantActionDeletion" />
+  
+  <!-- Convert consecutive similar MediaActivities into one. Eg: While dragging the current time slider, 
+       multiple MediaActivities will be enqueued. This retains only the last one. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbMediaActionBeforeMediaAction"
+              Category="RedundantActionDeletion" />
+
+  <!-- Remove duplicate NavigateToUrlAction on same instance. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.AbsorbDuplicateNavigateToUrl" 
+              Category="RedundantActionDeletion" />
+  
+  <!-- Remove any left over SetValueAction i.e. one that we did not aggregated
+       because it was not preceed by another action on the same control. The
+       SetValueAction in such cases might be coming from spurious control or out of
+       order. For example, SendKeysAction on TextBox but then there is a click on a
+       button before SetValueAction comes. In such cases, it is best to remove the
+       SetValueAction and go with the SendKeysAction. -->
+  <XmlFilter Name="RemoveZombieSetValue"
+             FilteringQuery="Last.ActionName=&quot;SetValueAction&quot;&amp;Last.AdditionalInfo!=&quot;Aggregated&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="RedundantActionDeletion" />
+
+  <!-- Remove any left over SetStateAction i.e. one that we did not aggregated
+       because it was not preceed by another action on the same control. The
+       SetStateAction in such cases might be coming from spurious control or out of
+       order. -->
+  <XmlFilter Name="RemoveZombieSetState"
+             FilteringQuery="Last.ActionName=&quot;SetStateAction&quot;&amp;Last.AdditionalInfo!=&quot;Aggregated&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators" 
+             Category="RedundantActionDeletion" />
+  
+  <!-- Remove this along with Invoke Action-->
+  <XmlFilter Name="RemoveZombieInvokeAction"
+             FilteringQuery="Last.ActionName=&quot;InvokeAction&quot;&amp;Last.AdditionalInfo!=&quot;Aggregated&quot;"
+             OutputQuery=""
+             FilterType="Unary" ApplyTimeout="false" Group="SystemAggregators"
+             Category="RedundantActionDeletion" />
+
+  <!-- Remove any left over LaunchApplication or NavigateToUrl. -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.RemoveZombieLaunchApplication"
+             Category="RedundantActionDeletion" />
+
+  <!-- Remove mousewheel action if it is succeeded by another action. -->
+  <XmlFilter Name="RemoveMouseWheel"
+             FilteringQuery="Last2.ActionName=&quot;WheelRotate&quot;"
+             OutputQuery="Last.All=Last.All"
+             FilterType="Binary" ApplyTimeout="false" Group="AbsorbWindowResizeAndSetFocusAggregators" 
+             Category="RedundantActionDeletion" />
+
+  <!-- Aggregate actions on web dialogs -->
+  <CodeFilter ClassName="Zappy.Decode.Aggregator.WebDialogAggregator"
+              Category="RedundantActionDeletion" />
+  
+</ActionFilters>

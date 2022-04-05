@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZappyChromeNativeConsole.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SendXPATHTargets" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sapbydesign.com;</Value>
+    </Setting>
+    <Setting Name="RetryStrategies" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sapbydesign.com|self^click2doubleclickoropen;</Value>
+    </Setting>
+    <Setting Name="InsertPauseOnUrlChange" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sapbydesign.com;</Value>
+    </Setting>
+    <Setting Name="RemoveSubmitCommand" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sapbydesign.com;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

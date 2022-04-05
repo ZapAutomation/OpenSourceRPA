@@ -1,0 +1,1859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TotalTimeString" xml:space="preserve">
+    <value>TOTAL TIME</value>
+  </data>
+  <data name="SessionIsNotStarted" xml:space="preserve">
+    <value>Session is not started.</value>
+  </data>
+  <data name="FlipView" xml:space="preserve">
+    <value>flipView</value>
+  </data>
+  <data name="TouchActionZoomOut" xml:space="preserve">
+    <value>Zoom out</value>
+  </data>
+  <data name="ResumeImmersiveWindowFailed" xml:space="preserve">
+    <value>Unable to resume application window with title : '{0}' </value>
+  </data>
+  <data name="ActionNotSupported" xml:space="preserve">
+    <value>The action {0} is not supported by playback.</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>rating</value>
+  </data>
+  <data name="InvalidNativeElement" xml:space="preserve">
+    <value>The native object {0} is not supported by technology manager {1}.</value>
+  </data>
+  <data name="InvalidS3Reference" xml:space="preserve">
+    <value>The following shared steps are not defined in this task case: {0}. Code cannot be generated for the action recording associated with this task case.</value>
+  </data>
+  <data name="propertyvaluestring" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Play {0} {1} from {2}</value>
+  </data>
+  <data name="RecorderInstanceRunningError" xml:space="preserve">
+    <value>A recording session is in progress. Please stop it before attempting to start another recording.</value>
+  </data>
+  <data name="FlipViewItem" xml:space="preserve">
+    <value>flipView item</value>
+  </data>
+  <data name="NotSupportedForPhone" xml:space="preserve">
+    <value>Coded UI Test can only be used to task XAML based Windows Phone apps.</value>
+  </data>
+  <data name="SetValueSliderAction" xml:space="preserve">
+    <value>Set position '{0}' in {1} {2}</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="WaitForControlReady" xml:space="preserve">
+    <value>WaitForControlReady took {0} milliseconds</value>
+  </data>
+  <data name="UnableToFindTopLevelWindow" xml:space="preserve">
+    <value>Unable to find the top level element of the control</value>
+  </data>
+  <data name="Matches" xml:space="preserve">
+    <value>matches</value>
+  </data>
+  <data name="ParameterNotExisting" xml:space="preserve">
+    <value>The row to be bound does not have values for all of the parameters.</value>
+  </data>
+  <data name="LaunchWindowsStoreAppPackageFamilyName" xml:space="preserve">
+    <value> using Package Family Name '{0}'</value>
+  </data>
+  <data name="InvalidDateRange" xml:space="preserve">
+    <value>Invalid date range was specified.</value>
+  </data>
+  <data name="ErrorReadingExtensionNames" xml:space="preserve">
+    <value>Failure during read of extension package names: {0}.</value>
+  </data>
+  <data name="TouchActionTwoFingerTap" xml:space="preserve">
+    <value>Two Finger Tap on</value>
+  </data>
+  <data name="BrowserWindowCloseAction" xml:space="preserve">
+    <value>Perform Close on Browser Window</value>
+  </data>
+  <data name="TopLevelWindowNotFound" xml:space="preserve">
+    <value>The TopLevelWindow with Id {0} was not found.</value>
+  </data>
+  <data name="PackageFamilyName" xml:space="preserve">
+    <value>PackageFamilyName</value>
+  </data>
+  <data name="AreEqual" xml:space="preserve">
+    <value>equals</value>
+  </data>
+  <data name="ZappyScreenObjectNotFound" xml:space="preserve">
+    <value>The ScreenObject with Id {0} was not found.</value>
+  </data>
+  <data name="NextToInstanceInfo" xml:space="preserve">
+    <value>{0} numbered {1} next to {2}</value>
+  </data>
+  <data name="CheckBox" xml:space="preserve">
+    <value>check box</value>
+  </data>
+  <data name="SFIRequestError" xml:space="preserve">
+    <value>Unable to '{0}' in Immersive Mode : '{1}'</value>
+  </data>
+  <data name="IntermediateVirtualizedControlSearchFailure" xml:space="preserve">
+    <value>Search may have failed at '{0}' {1} as it may have virtualized children. If the control being searched is descendant of '{0}' {1} then including it as the parent container may solve the problem.</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>table</value>
+  </data>
+  <data name="EndsWith" xml:space="preserve">
+    <value>ends with</value>
+  </data>
+  <data name="VolumeChangeForNoFriendlyName" xml:space="preserve">
+    <value>Set volume of {0} to {2}%</value>
+  </data>
+  <data name="Not" xml:space="preserve">
+    <value>not </value>
+  </data>
+  <data name="Hyperlink" xml:space="preserve">
+    <value>link</value>
+  </data>
+  <data name="IEAddressBarGoButtonStartText" xml:space="preserve">
+    <value>Go to</value>
+  </data>
+  <data name="ActionException" xml:space="preserve">
+    <value>Unable to perform '{4}'on {0} {1} in - {2} {3}.</value>
+  </data>
+  <data name="DataDrivenMethodComment" xml:space="preserve">
+    <value>{0} - Use '{1}' to pass parameters into this method.</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>document</value>
+  </data>
+  <data name="SkippingFailedAction" xml:space="preserve">
+    <value>Skipping failed action as ContinueOnError is true.</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>label</value>
+  </data>
+  <data name="BrowserDialogActionText" xml:space="preserve">
+    <value>Browser action performed</value>
+  </data>
+  <data name="SetStateExpandAndXXXAction" xml:space="preserve">
+    <value>Expand and {2} {0} {1}.</value>
+  </data>
+  <data name="TouchActionPanLeft" xml:space="preserve">
+    <value>Pan left</value>
+  </data>
+  <data name="CustomActionFilterError1" xml:space="preserve">
+    <value>Invalid UITask action filter. FilterType is neither unary nor binary. Custom action filter : {0}, filter type : {1}.</value>
+  </data>
+  <data name="DraggedContainer" xml:space="preserve">
+    <value>Dragging stopped on control</value>
+  </data>
+  <data name="ActionWithValue" xml:space="preserve">
+    <value>{0} with value "{1}"</value>
+  </data>
+  <data name="ControlNotFoundWithQidOrCondition" xml:space="preserve">
+    <value>The playback failed to find the control with the given search properties.</value>
+  </data>
+  <data name="BrowserVersionMismatch" xml:space="preserve">
+    <value>{0}. {1} {2}.{3} is available instead.</value>
+  </data>
+  <data name="BrowserOkAction" xml:space="preserve">
+    <value>Click 'Ok' button in the browser dialog window</value>
+  </data>
+  <data name="BrowserDialogNotFound" xml:space="preserve">
+    <value>Unable to find the browser dialog to perform the action</value>
+  </data>
+  <data name="MouseClickActionForNoFriendlyName" xml:space="preserve">
+    <value>{0} {1}{2}</value>
+  </data>
+  <data name="ExtensionPackageLoadFailure" xml:space="preserve">
+    <value>Failure during load of Extension package. PackageName: {0}, Version: {1}, Vendor: {2}, Assembly: {3}.</value>
+  </data>
+  <data name="SetValueNotSupportedMessage" xml:space="preserve">
+    <value>SetValue is not supported on control: {0}</value>
+  </data>
+  <data name="AutClosedMessage" xml:space="preserve">
+    <value>The application process no longer exists.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gnome_session_reboot_eDD_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gnome_session_reboot_eDD_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetStateExpandActionForNoFriendlyName" xml:space="preserve">
+    <value>Expand {0}</value>
+  </data>
+  <data name="InvalidFilterFile" xml:space="preserve">
+    <value>The filter file does not match the schema. Detailed error: {0}.</value>
+  </data>
+  <data name="LaunchApplication" xml:space="preserve">
+    <value>Launch '{0}'</value>
+  </data>
+  <data name="SetValueEditBoxActionForNoFriendlyName" xml:space="preserve">
+    <value>Type '{0}' in {1}</value>
+  </data>
+  <data name="PrimaryPropertySearchFailed" xml:space="preserve">
+    <value>Failed to find any control that matched the value {0} for the search property {1}.</value>
+  </data>
+  <data name="BrowserWindowNotFound" xml:space="preserve">
+    <value>Unable to find {0} window with '{1}' in the title.</value>
+  </data>
+  <data name="MouseHoverDuration" xml:space="preserve">
+    <value>Hover duration: '{0}' milliseconds</value>
+  </data>
+  <data name="TouchActionRotateClockwise" xml:space="preserve">
+    <value>Rotate clockwise</value>
+  </data>
+  <data name="WaitForReadyTimedOut" xml:space="preserve">
+    <value>Wait for ready timed out.</value>
+  </data>
+  <data name="ZappyTaskSchemaValidationError" xml:space="preserve">
+    <value>Error validating the ZappyTask Schema xml: {0}</value>
+  </data>
+  <data name="InvalidIEQueryElement" xml:space="preserve">
+    <value>The Query Element specified {0} do not satisfy the format requirements for a Internet Explorer Web Control</value>
+  </data>
+  <data name="DoubleClickText" xml:space="preserve">
+    <value>Double-Click</value>
+  </data>
+  <data name="SFIInitError" xml:space="preserve">
+    <value>Error while initializing Playback component for resuming Windows Store Apps.</value>
+  </data>
+  <data name="AdvanceFiltersraf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AdvanceFilters.raf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SetValueUnCheckBoxAction" xml:space="preserve">
+    <value>Clear {0} {1}</value>
+  </data>
+  <data name="ExecutableNotFound" xml:space="preserve">
+    <value>The application cannot be started because it cannot be found in the specified location, or the user does not have sufficient permissions to start the application.</value>
+  </data>
+  <data name="InvalidParameterValueFormat" xml:space="preserve">
+    <value>An invalid value {0} was assigned to property {2} of control type {1}. Expected Format : {3} or {4}</value>
+  </data>
+  <data name="BrowserNotSupported" xml:space="preserve">
+    <value>The browser {0} is currently not supported.</value>
+  </data>
+  <data name="RowHeader" xml:space="preserve">
+    <value>row header</value>
+  </data>
+  <data name="CannotDeleteObject" xml:space="preserve">
+    <value>The control is used in action {0} and hence cannot be deleted.</value>
+  </data>
+  <data name="ValidationAction" xml:space="preserve">
+    <value>Verify that {0} {1}'s property '{2}' {3} '{4}'</value>
+  </data>
+  <data name="NoSearchPropertiesSpecified" xml:space="preserve">
+    <value>No search information has been specified. To search for a control, you must specify one or more search properties or filter properties.</value>
+  </data>
+  <data name="MediaSourceFailToLoad" xml:space="preserve">
+    <value>SetProperty of "{0}" failed because all sources for the media element have failed to load.</value>
+  </data>
+  <data name="TouchActionZoomIn" xml:space="preserve">
+    <value>Zoom in</value>
+  </data>
+  <data name="ExtensionTypeNotFound" xml:space="preserve">
+    <value>The UITask extension package type information could not be found in the following assembly: {0}.</value>
+  </data>
+  <data name="EndTestCaseTitle" xml:space="preserve">
+    <value>End tasking</value>
+  </data>
+  <data name="DragStartLocation" xml:space="preserve">
+    <value>Start point</value>
+  </data>
+  <data name="TouchActionManipulation1" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="WWANotSupported" xml:space="preserve">
+    <value>Coded UI Test can only be used to task XAML based Windows Store apps.</value>
+  </data>
+  <data name="InvalidParameterValue1" xml:space="preserve">
+    <value>An invalid value {0} was passed for parameter {1}. Expected data type: {2}. Actual data type: {3}.</value>
+  </data>
+  <data name="Cell" xml:space="preserve">
+    <value>cell</value>
+  </data>
+  <data name="FailedToRecordKeyboardAction" xml:space="preserve">
+    <value>Last keyboard action was not recorded.</value>
+  </data>
+  <data name="Hub" xml:space="preserve">
+    <value>hub</value>
+  </data>
+  <data name="InvalidParameterValue2" xml:space="preserve">
+    <value>An invalid value {0} was assigned to property {2} of control type {1}.</value>
+  </data>
+  <data name="SetStateException" xml:space="preserve">
+    <value>Failed to set state to '{0}' for '{1}'</value>
+  </data>
+  <data name="Audio" xml:space="preserve">
+    <value>audio</value>
+  </data>
+  <data name="StartTestCaseTitle" xml:space="preserve">
+    <value>Start tasking</value>
+  </data>
+  <data name="SetValueCheckBoxAction" xml:space="preserve">
+    <value>Select {0} {1}</value>
+  </data>
+  <data name="DoesNotMatch" xml:space="preserve">
+    <value>does not match</value>
+  </data>
+  <data name="GetPropertyFailed" xml:space="preserve">
+    <value>Property "{0}" cannot be retrieved due to the current state of {1}</value>
+  </data>
+  <data name="Mute" xml:space="preserve">
+    <value>Mute {0} {1}</value>
+  </data>
+  <data name="TabList" xml:space="preserve">
+    <value>tab list</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>image</value>
+  </data>
+  <data name="IEExtensionPackageDescriptionText" xml:space="preserve">
+    <value>UITask Extension Package for Internet Explorer.</value>
+  </data>
+  <data name="ImageSizesNotEqual" xml:space="preserve">
+    <value>Images must be of equal size to be compared.</value>
+  </data>
+  <data name="CaptureProtectedWindowMessage" xml:space="preserve">
+    <value>The screen image cannot be captured because a digital rights management window is displayed.</value>
+  </data>
+  <data name="SetStateExpandAndXXXActionForNoFriendlyName" xml:space="preserve">
+    <value>Expand and {1} {0}.</value>
+  </data>
+  <data name="ScriptToExecute" xml:space="preserve">
+    <value>Script to Execute</value>
+  </data>
+  <data name="SetStateControlAction" xml:space="preserve">
+    <value>Set to '{0}' state {1} {2}</value>
+  </data>
+  <data name="TestCase" xml:space="preserve">
+    <value>Test Case</value>
+  </data>
+  <data name="SemanticZoom" xml:space="preserve">
+    <value>semantic zoom</value>
+  </data>
+  <data name="AncestorInstanceInfo" xml:space="preserve">
+    <value>{0} numbered {1} in {2}</value>
+  </data>
+  <data name="GetPropertyActionName" xml:space="preserve">
+    <value>GetProperty of {0}</value>
+  </data>
+  <data name="NoRowSpecifiedAsContainer" xml:space="preserve">
+    <value>No row was specified as search container for the control. To search for a cell control using '{0}', you must specify row as a container element or add '{1}' to the search property of the cell.</value>
+  </data>
+  <data name="RadioButton" xml:space="preserve">
+    <value>radio button</value>
+  </data>
+  <data name="IgnoreExceptionForSkip" xml:space="preserve">
+    <value>Ignoring exception as PlaybackErrorOption.Skip was chosen.</value>
+  </data>
+  <data name="BrowserCloseAction" xml:space="preserve">
+    <value>Close the browser dialog window</value>
+  </data>
+  <data name="SessionLocked" xml:space="preserve">
+    <value>Automation engine is unable to playback the task because it is not able to interact with the desktop.  This could happen if the computer running the task is locked or it’s remote session window is minimized.</value>
+  </data>
+  <data name="LaunchApplicationWithArguments" xml:space="preserve">
+    <value>Launch '{0}' with arguments '{1}'</value>
+  </data>
+  <data name="SetValueEditBoxActionWithNewLine" xml:space="preserve">
+    <value>Type the following paragraph in {1} {2} \n'{0}'</value>
+  </data>
+  <data name="WindowRestoreAction" xml:space="preserve">
+    <value>Restore window {0}</value>
+  </data>
+  <data name="SetValueComboBoxActionForNoFriendlyName" xml:space="preserve">
+    <value>Select '{0}' in {1}</value>
+  </data>
+  <data name="TouchActionLogFormat" xml:space="preserve">
+    <value>{0} {1} {2}</value>
+  </data>
+  <data name="SetOffStateOfControl" xml:space="preserve">
+    <value>Turn off {0} {1}</value>
+  </data>
+  <data name="MouseMoveActionOnControl" xml:space="preserve">
+    <value>Mouse moved to ({0},{1}) relative to {2}</value>
+  </data>
+  <data name="StartsWith" xml:space="preserve">
+    <value>starts with</value>
+  </data>
+  <data name="SetStateExpandAction" xml:space="preserve">
+    <value>Expand {0} {1}</value>
+  </data>
+  <data name="MethodNotSupported" xml:space="preserve">
+    <value>Internal Error: This method on IEWebControlElement should not get called.</value>
+  </data>
+  <data name="Spinner" xml:space="preserve">
+    <value>spinner</value>
+  </data>
+  <data name="InvalidQueryString" xml:space="preserve">
+    <value>An invalid query string was specified.</value>
+  </data>
+  <data name="ClassKeywordComment" xml:space="preserve">
+    <value>Keyword is used to recognize the following specialized class: {0}</value>
+  </data>
+  <data name="NoTableSpecifiedAsContainer" xml:space="preserve">
+    <value>No table was specified as search container for the control. To search for a row or cell control using '{0}' or '{1}' or both, you must specify table as a container element.</value>
+  </data>
+  <data name="ClearString" xml:space="preserve">
+    <value>clear</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>Pause {0} {1} at {2}</value>
+  </data>
+  <data name="Expander" xml:space="preserve">
+    <value>expander</value>
+  </data>
+  <data name="NoSupportForFilterProperties" xml:space="preserve">
+    <value>Filter properties are not supported by the following technology: {0}. To search for a control, you must remove the filter properties.</value>
+  </data>
+  <data name="ParamClassComment" xml:space="preserve">
+    <value>Parameters to be passed into '{0}'</value>
+  </data>
+  <data name="FormattedFriendlyName" xml:space="preserve">
+    <value>'{0}'</value>
+  </data>
+  <data name="LaunchWindowsStoreApplication" xml:space="preserve">
+    <value>Launch Windows Store Application</value>
+  </data>
+  <data name="DragByAction" xml:space="preserve">
+    <value>Move{0} {1} {2} from ({3}, {4}) by ({5}, {6}){7}</value>
+  </data>
+  <data name="StartDraggingFailure" xml:space="preserve">
+    <value>Consecutive StartDragging should not be performed.</value>
+  </data>
+  <data name="TruncatedStringWithEllipsis" xml:space="preserve">
+    <value>{0}...</value>
+  </data>
+  <data name="BrowserBackAction" xml:space="preserve">
+    <value>Perform Back on Browser Window</value>
+  </data>
+  <data name="DisambiguationFailure" xml:space="preserve">
+    <value>Unable to disambiguate controls based on the condition {0}</value>
+  </data>
+  <data name="ThinkTimeWaitMessage" xml:space="preserve">
+    <value>Wait for {0} {1} for user delay between actions</value>
+  </data>
+  <data name="NoAutomationForS3" xml:space="preserve">
+    <value>The following shared steps referenced in this task case do not have an associated action recording: {0}. Code cannot be generated if there is no action recording for the shared steps.</value>
+  </data>
+  <data name="DuplicateVariableName" xml:space="preserve">
+    <value>A control already exists with this name. The name for a control must be unique.</value>
+  </data>
+  <data name="InvalidDateFormat" xml:space="preserve">
+    <value>Unable to convert string {0} to date format '{1}'. Provide the date string in current culture format (example:- '{2}') or '{3}' format (example:- '{4}'). </value>
+  </data>
+  <data name="TouchActionManipulation" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Slide" xml:space="preserve">
+    <value>Slide</value>
+  </data>
+  <data name="SendGlobalHotKeysActionForNoFriendlyName" xml:space="preserve">
+    <value>Press keyboard shortcut keys '{0}' in {1}</value>
+  </data>
+  <data name="NoTechnologyNameSpecified" xml:space="preserve">
+    <value>No technology name has been specified. To search for a control, you must specify the TechnologyName property.</value>
+  </data>
+  <data name="HigherPrivilegeError" xml:space="preserve">
+    <value>The last action was not recorded because access to the application was denied.</value>
+  </data>
+  <data name="SetPropertyActionName" xml:space="preserve">
+    <value>SetProperty of {0}</value>
+  </data>
+  <data name="LaunchApplicationAsUser" xml:space="preserve">
+    <value>Launch '{0}' as user '{1}\{2}'</value>
+  </data>
+  <data name="GetPropertyHelper" xml:space="preserve">
+    <value>Get Property: {0} for {1}</value>
+  </data>
+  <data name="SetValueUnCheckBoxActionForNoFriendlyName" xml:space="preserve">
+    <value>Clear {0}</value>
+  </data>
+  <data name="TouchActionPanDown" xml:space="preserve">
+    <value>Pan down</value>
+  </data>
+  <data name="GetPropertyValuesValueTypeIncorrectMessage" xml:space="preserve">
+    <value>One or more UI controls in this collection do not have the property '{0}' of type '{1}'</value>
+  </data>
+  <data name="RestartTestAgent" xml:space="preserve">
+    <value>To run tasks that interact with the desktop, you must set up the task agent to run as an interactive process. For more information, see "How to: Set Up Your Test Agent to Run Tests That Interact with the Desktop" ({0})\nIf you are running the tasks as part of your team build, you must also set up the build agent to run as an interactive process. For more information, see "How to: Configure and Run Scheduled Tests After Building Your Application" ({1})</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>row</value>
+  </data>
+  <data name="WindowMinimizeActionForNoFriendlyName" xml:space="preserve">
+    <value>Minimize window</value>
+  </data>
+  <data name="RecordedMethodTCMComment" xml:space="preserve">
+    <value>{0} - {1} {2}</value>
+  </data>
+  <data name="MouseWheelRotateAction" xml:space="preserve">
+    <value>Scrolled {0} {1} by {2}{3}</value>
+  </data>
+  <data name="Tab" xml:space="preserve">
+    <value>tab</value>
+  </data>
+  <data name="SendGlobalHotKeysActionWithoutParentName" xml:space="preserve">
+    <value>Press keyboard shortcut keys '{0}'</value>
+  </data>
+  <data name="ExecutableUnknownError" xml:space="preserve">
+    <value>The following error occurred when this process was started: {0}</value>
+  </data>
+  <data name="Common_CrapyLoggerReachedMaxEventLogEntries" xml:space="preserve">
+    <value>Trace has reached the maximum number of messages to log to the event log. Next messages will not be logged.</value>
+  </data>
+  <data name="SessionAlreadyStarted" xml:space="preserve">
+    <value>Session is already started.</value>
+  </data>
+  <data name="ModifierKeyPressed" xml:space="preserve">
+    <value>Modifier key pressed : {0}</value>
+  </data>
+  <data name="ControlFind" xml:space="preserve">
+    <value>Control find took {0} milliseconds</value>
+  </data>
+  <data name="SetValueComboBoxAction" xml:space="preserve">
+    <value>Select '{0}' in {1} {2}</value>
+  </data>
+  <data name="ToggleSwitch" xml:space="preserve">
+    <value>toggle switch</value>
+  </data>
+  <data name="PackageDescription" xml:space="preserve">
+    <value>This is UI Automation based extension package for UITask.</value>
+  </data>
+  <data name="ResetContinueOnErrorComment" xml:space="preserve">
+    <value>Reset flag to ensure that play back stops if there is an error.</value>
+  </data>
+  <data name="SetOnStateOfControl" xml:space="preserve">
+    <value>Turn on {0} {1} </value>
+  </data>
+  <data name="MuteForNoFriendlyName" xml:space="preserve">
+    <value>Mute {0} {1}</value>
+  </data>
+  <data name="IgnoreExceptionForContinueOnError" xml:space="preserve">
+    <value>Ignoring exception as ContinueOnError is set.</value>
+  </data>
+  <data name="InvalidKeySpecified" xml:space="preserve">
+    <value>Invalid value {0}, for Key was specified</value>
+  </data>
+  <data name="Domain" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="StatusBar" xml:space="preserve">
+    <value>status bar</value>
+  </data>
+  <data name="SetValueEditBoxAction" xml:space="preserve">
+    <value>Type '{0}' in {1} {2}</value>
+  </data>
+  <data name="HubSection" xml:space="preserve">
+    <value>hub section</value>
+  </data>
+  <data name="NotAListViewItemControl" xml:space="preserve">
+    <value>The control passed is not a list view item control. This operation is valid only for list view item control.</value>
+  </data>
+  <data name="DatePicker" xml:space="preserve">
+    <value>date picker</value>
+  </data>
+  <data name="favicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zappy.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightString" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="InvalidNullValue" xml:space="preserve">
+    <value>The property {0} of control type {1} cannot have null value.</value>
+  </data>
+  <data name="ZappyTaskingExtensionPackageDescription" xml:space="preserve">
+    <value>UITask Extension package for property providers and browser factories.</value>
+  </data>
+  <data name="DataDrivenMethodTCMComment" xml:space="preserve">
+    <value>{0} - {1} {2} - Use '{3}' to pass parameters into this method.</value>
+  </data>
+  <data name="DragFullWindowsError" xml:space="preserve">
+    <value>System parameter 'Show window contents while dragging' is not set.This could lead to incorrect recording of drag actions.</value>
+  </data>
+  <data name="SetStateCollapseAndXXXActionForNoFriendlyName" xml:space="preserve">
+    <value>Collapse and {1} {0}</value>
+  </data>
+  <data name="SetStateNotSupportedForControlMessage" xml:space="preserve">
+    <value>SetState of "{0}" is not supported on control "{1}"</value>
+  </data>
+  <data name="NullString" xml:space="preserve">
+    <value>null</value>
+  </data>
+  <data name="ErrorGeneratingActionString" xml:space="preserve">
+    <value>Action log is not supported for this action</value>
+  </data>
+  <data name="RecorderStartToastNotification" xml:space="preserve">
+    <value>Testing session has started. Your actions might be recorded.</value>
+  </data>
+  <data name="ExtensionDllLoadFailure" xml:space="preserve">
+    <value>The following package failed to load: {0}.</value>
+  </data>
+  <data name="IsEncoded" xml:space="preserve">
+    <value>Is encoded</value>
+  </data>
+  <data name="IE64BitProcessNotSupported" xml:space="preserve">
+    <value>Testing web applications in 64-bit Internet Explorer is only supported on Internet Explorer versions 10 or later.</value>
+  </data>
+  <data name="ErrorFailedToInstallHook" xml:space="preserve">
+    <value>Failed to install low level hook for recording events.</value>
+  </data>
+  <data name="SetValueSliderActionForNoFriendlyName" xml:space="preserve">
+    <value>Set position '{0}' in {1}</value>
+  </data>
+  <data name="TouchGestureDuration" xml:space="preserve">
+    <value>Gesture duration: '{0}' milliseconds</value>
+  </data>
+  <data name="Tree" xml:space="preserve">
+    <value>tree</value>
+  </data>
+  <data name="SelectString" xml:space="preserve">
+    <value>select</value>
+  </data>
+  <data name="SetValueCheckBoxActionForNoFriendlyName" xml:space="preserve">
+    <value>Select {0}</value>
+  </data>
+  <data name="Pivot" xml:space="preserve">
+    <value>pivot</value>
+  </data>
+  <data name="SmartMatch" xml:space="preserve">
+    <value>Unable to find window with '{0}' in the title. Control with Friendly Name '{1}' was found instead and is being used. Verify that a window with the title '{2}' exists.</value>
+  </data>
+  <data name="DecodingFailedExceptionMessage" xml:space="preserve">
+    <value>The following error occurred while attempting to decode encrypted text: {0}</value>
+  </data>
+  <data name="TouchActionRotateAnticlockwise" xml:space="preserve">
+    <value>Rotate counterclockwise</value>
+  </data>
+  <data name="SendKeysActionForNoFriendlyName" xml:space="preserve">
+    <value>Type '{0}' in {1}</value>
+  </data>
+  <data name="MouseActionNotSupported" xml:space="preserve">
+    <value>The following mouse action type is not supported: {0}.</value>
+  </data>
+  <data name="FirefoxNotInstalled" xml:space="preserve">
+    <value>Firefox browser is not installed on the machine</value>
+  </data>
+  <data name="ControlNotFound" xml:space="preserve">
+    <value>The control : {0} could not be found.</value>
+  </data>
+  <data name="XButton1String" xml:space="preserve">
+    <value>X-button1</value>
+  </data>
+  <data name="PropertyExpressionNotFound" xml:space="preserve">
+    <value>PropertyExpression with the given property name does not exist in the collection.</value>
+  </data>
+  <data name="StopDraggingFailure" xml:space="preserve">
+    <value>StopDragging has to be performed only after StartDragging</value>
+  </data>
+  <data name="FailedToSendMessage" xml:space="preserve">
+    <value>Internal Error: Failed to send message to the control.</value>
+  </data>
+  <data name="TouchActionCrossSlide" xml:space="preserve">
+    <value>Cross-slide on</value>
+  </data>
+  <data name="SetContinueOnErrorComment" xml:space="preserve">
+    <value>Set flag to allow play back to continue if non-essential actions fail. (For example, if a mouse hover action fails.)</value>
+  </data>
+  <data name="ExecutableNotValid" xml:space="preserve">
+    <value>The specified executable is not a valid Win32 application.</value>
+  </data>
+  <data name="Unmute" xml:space="preserve">
+    <value>Unmute {0} {1}</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="StopZappyMenuImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        3Nt87Wv/B/qRkpugyEVGAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="MenuItem" xml:space="preserve">
+    <value>menu item</value>
+  </data>
+  <data name="ButtonQualifierString" xml:space="preserve">
+    <value> using {0} button</value>
+  </data>
+  <data name="Milliseconds" xml:space="preserve">
+    <value>milliseconds</value>
+  </data>
+  <data name="InvalidUriFormatError" xml:space="preserve">
+    <value>{0} is not a valid uri format</value>
+  </data>
+  <data name="ErrorFailedToQueryWMIData" xml:space="preserve">
+    <value>A problem with WMI has caused an error in the recording. To correct this, verify that WMI services are running and that you have access permissions to WMI. The WMI repository might also be corrupted. For more information, see "WMI Troubleshooting Techniques" ({0})</value>
+  </data>
+  <data name="BrowserForwardAction" xml:space="preserve">
+    <value>Perform Forward on Browser Window</value>
+  </data>
+  <data name="LocationString" xml:space="preserve">
+    <value>({0}, {1})</value>
+  </data>
+  <data name="MouseClickAction" xml:space="preserve">
+    <value>{0} {1} {2}{3}</value>
+  </data>
+  <data name="GetPropertyFailedOnPassword" xml:space="preserve">
+    <value>{0} technology does not support retrieval of properties on password control.</value>
+  </data>
+  <data name="ColorDifferenceToString" xml:space="preserve">
+    <value>{Alpha={0}, Red={1}, Green={2}, Blue={3}}</value>
+  </data>
+  <data name="SetStateNotSupportedForControlTypeMessage" xml:space="preserve">
+    <value>SetState of "{0}" is not supported on control type: {1}</value>
+  </data>
+  <data name="UnknownControlName" xml:space="preserve">
+    <value>Unknown name</value>
+  </data>
+  <data name="FixPasswordForLaunchApplication" xml:space="preserve">
+    <value>The password has been removed from the generated code for security reasons.</value>
+  </data>
+  <data name="PerfCountersDisabled" xml:space="preserve">
+    <value>The "PerfProc" performance counters are disabled on this machine. The Automation Playback Engine uses these counters and cannot work without these being enabled. Please download exctrlst.exe from http://www.microsoft.com/downloads/details.aspx?familyid=7ff99683-b7ec-4da6-92ab-793193604ba4&amp;amp;displaylang=en and run it to enable "PerfProc" counters from "Extensible Performance Counters" list.  For more information, see http://technet.microsoft.com/en-us/library/cc738275.aspx.</value>
+  </data>
+  <data name="OddNumberOfArguments" xml:space="preserve">
+    <value>The PropertyExpressionCollection.Add method can take only in name-value pairs.</value>
+  </data>
+  <data name="TouchActionHold" xml:space="preserve">
+    <value>Hold on</value>
+  </data>
+  <data name="StartZappyMenuImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="SettingMismatchMessage" xml:space="preserve">
+    <value>The settings do not match the values that were used to record. Mismatch type = {0}, Group = {1}, WarningLevel = {2}, Name = {3}, SourceValue = {4}, TargetValue = {5}</value>
+  </data>
+  <data name="ConditionSearchFailed" xml:space="preserve">
+    <value>Failed to find any control that matched the search condition {0}</value>
+  </data>
+  <data name="ControlDetailsNotSpecified" xml:space="preserve">
+    <value>The control details were not specified.</value>
+  </data>
+  <data name="Media" xml:space="preserve">
+    <value>media</value>
+  </data>
+  <data name="FailedToGetUIElement" xml:space="preserve">
+    <value>Failed to record the object corresponding to this action.</value>
+  </data>
+  <data name="ToolBar" xml:space="preserve">
+    <value>tool bar</value>
+  </data>
+  <data name="SplitButton" xml:space="preserve">
+    <value>split button</value>
+  </data>
+  <data name="NextToInfo" xml:space="preserve">
+    <value>first {0} next to {1}</value>
+  </data>
+  <data name="BrowserExecuteScriptAction" xml:space="preserve">
+    <value>Perform ExecuteScript on Browser Window</value>
+  </data>
+  <data name="WheelDirectionAntiClockwise" xml:space="preserve">
+    <value>Anticlockwise</value>
+  </data>
+  <data name="DragActionForNoFriendlyName" xml:space="preserve">
+    <value>Move{0} {1}{2}</value>
+  </data>
+  <data name="SecondContactPoint" xml:space="preserve">
+    <value>Contact point 2</value>
+  </data>
+  <data name="InvalidValueInFilter" xml:space="preserve">
+    <value>The filter {0} has an invalid value {2} for parameter {1}.</value>
+  </data>
+  <data name="NotInReportViewMode" xml:space="preserve">
+    <value>The list view control is not in report view mode. This operation is valid only in report view mode.</value>
+  </data>
+  <data name="BrowserPromptAction" xml:space="preserve">
+    <value>Type '{0}' in the prompt dialog window</value>
+  </data>
+  <data name="TabItem" xml:space="preserve">
+    <value>tab item</value>
+  </data>
+  <data name="CustomActionFilterError3" xml:space="preserve">
+    <value>Invalid UITask action filter. Custom Filter category is not of type custom. Custom action filter:{0}, group : {1}, category : {2}. </value>
+  </data>
+  <data name="TitleBar" xml:space="preserve">
+    <value>title bar</value>
+  </data>
+  <data name="ModifierKeyReleasedOnControl" xml:space="preserve">
+    <value>Modifier key released : {0} on control type : {1}  name : {2}</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>client</value>
+  </data>
+  <data name="ModifierKeyReleased" xml:space="preserve">
+    <value>Modifier key released : {0}</value>
+  </data>
+  <data name="SendKeysActionWithoutParentName" xml:space="preserve">
+    <value>Type '{0}'</value>
+  </data>
+  <data name="XButton2String" xml:space="preserve">
+    <value>X-button2</value>
+  </data>
+  <data name="InvalidIEWindowHandle" xml:space="preserve">
+    <value>The Internet Explorer window is not available.</value>
+  </data>
+  <data name="SkipIntermediateTargetElement" xml:space="preserve">
+    <value>The target element {0} was not found, so all intermediate elements were ignored. As a result, an incorrect element that matches the target element's search properties can be found. Verify that all intermediate elements in Query Id have valid and unique search properties.</value>
+  </data>
+  <data name="DragDropActionForNoFriendlyName" xml:space="preserve">
+    <value>Move{0} {1} to {2}{3}</value>
+  </data>
+  <data name="ModiferKeyActionString" xml:space="preserve">
+    <value> while pressing {0}</value>
+  </data>
+  <data name="FormatForErrorWithFileName" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="HierarchicalNameDelimiter" xml:space="preserve">
+    <value> -&gt; </value>
+  </data>
+  <data name="SpecializedClassComment" xml:space="preserve">
+    <value>Definition of Class {0}.</value>
+  </data>
+  <data name="SendKeysAction" xml:space="preserve">
+    <value>Type '{0}' in {1} {2}</value>
+  </data>
+  <data name="PopupMenu" xml:space="preserve">
+    <value>popup menu</value>
+  </data>
+  <data name="NavigateToUrlOnExistingBrowser" xml:space="preserve">
+    <value>Go to web page '{0}'</value>
+  </data>
+  <data name="Window" xml:space="preserve">
+    <value>window</value>
+  </data>
+  <data name="NavigateToUrlOnNewBrowser1" xml:space="preserve">
+    <value>Go to web page '{0}' using new browser instance</value>
+  </data>
+  <data name="ControlBlockedByCurrentProcess" xml:space="preserve">
+    <value>Window '{1}' is blocking the control {0}. Please move the window '{1}' or make the control {0} visible and retry the action.</value>
+  </data>
+  <data name="CustomActionFilterError2" xml:space="preserve">
+    <value>Invalid UITask action filter. Custom Filter is of reserved group name. Custom action filter :{0}, group : {1}, category : {2}. </value>
+  </data>
+  <data name="NoCorePropertyProviderExists" xml:space="preserve">
+    <value>The control {0} lacks a core property provider.</value>
+  </data>
+  <data name="InvalidKeyFile" xml:space="preserve">
+    <value>{0} file has fewer bytes than encryption key length specified.</value>
+  </data>
+  <data name="ModifierKeyPressedOnControl" xml:space="preserve">
+    <value>Modifier key pressed : {0} on control type : {1}  name : {2}</value>
+  </data>
+  <data name="InvalidIUnknownObject" xml:space="preserve">
+    <value>Invalid IUnknown object : {0}</value>
+  </data>
+  <data name="DragActionNoStartPoint" xml:space="preserve">
+    <value>Move{0} {1} {2} to ({3}, {4}){5}</value>
+  </data>
+  <data name="ProgressBar" xml:space="preserve">
+    <value>progress bar</value>
+  </data>
+  <data name="FirstContactPoint" xml:space="preserve">
+    <value>Contact point 1</value>
+  </data>
+  <data name="Button" xml:space="preserve">
+    <value>button</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>list box</value>
+  </data>
+  <data name="ActionFailed" xml:space="preserve">
+    <value>Action failed</value>
+  </data>
+  <data name="AdvanceFiltersxsd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AdvanceFilters.xsd;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PlaybackAlreadyInialized" xml:space="preserve">
+    <value>Playback is already initialized.</value>
+  </data>
+  <data name="ErrorFailedToCreateTouchRedirectionProcess" xml:space="preserve">
+    <value>Failed to create the Touch Redirection process for recording events.</value>
+  </data>
+  <data name="TabPage" xml:space="preserve">
+    <value>tab</value>
+  </data>
+  <data name="InvalidMultiSelectionState" xml:space="preserve">
+    <value>Unable to set dates '{0}' on control '{1}' because the control is not multi-selectable.</value>
+  </data>
+  <data name="PlaybackIsNotInitialized" xml:space="preserve">
+    <value>Playback is not initialized.</value>
+  </data>
+  <data name="MiddleString" xml:space="preserve">
+    <value>Middle</value>
+  </data>
+  <data name="MouseClickActionWithButtonNameForNoFriendlyName" xml:space="preserve">
+    <value>{0}-{1} {2}{3}</value>
+  </data>
+  <data name="BlackoutDateRange" xml:space="preserve">
+    <value>Unable to set date range '{0}'. Make sure none of the dates in the range is a blackout date.</value>
+  </data>
+  <data name="AlternateFileName" xml:space="preserve">
+    <value>Alternative file name: {0}</value>
+  </data>
+  <data name="TouchGestureDirection" xml:space="preserve">
+    <value>Gesture direction: '{0}' degrees</value>
+  </data>
+  <data name="WpfString" xml:space="preserve">
+    <value>Wpf</value>
+  </data>
+  <data name="TestStepMarkerAction" xml:space="preserve">
+    <value>Step Completed : {0}</value>
+  </data>
+  <data name="Video" xml:space="preserve">
+    <value>video</value>
+  </data>
+  <data name="WaitForCondition" xml:space="preserve">
+    <value>WaitForCondition took {0} milliseconds</value>
+  </data>
+  <data name="DuplicateClassComment" xml:space="preserve">
+    <value>Duplicate class has been generated.</value>
+  </data>
+  <data name="BrowserOperationNotSupported" xml:space="preserve">
+    <value>{0} is not supported on {1}.</value>
+  </data>
+  <data name="NextSiblingNotSupportedWithFindMatchingControls" xml:space="preserve">
+    <value>You cannot use the NextSibling property with the FindMatchingControls method. You need to use the Find method if you want to use the NextSibling property.</value>
+  </data>
+  <data name="InvalidAttributeValue" xml:space="preserve">
+    <value>Invalid value for attribute {0}</value>
+  </data>
+  <data name="FileInput" xml:space="preserve">
+    <value>file input</value>
+  </data>
+  <data name="MultipleControlsFoundException" xml:space="preserve">
+    <value>Automation Playback Engine was not able to uniquely find the {0} {1} in - {2} {3}.</value>
+  </data>
+  <data name="InvalidTechnologyManager" xml:space="preserve">
+    <value>The following technology manager is not valid: {0}.</value>
+  </data>
+  <data name="WarningsString" xml:space="preserve">
+    <value>Completed with {0} warnings</value>
+  </data>
+  <data name="TouchActionSecondaryTap" xml:space="preserve">
+    <value>Secondary tap on</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>group</value>
+  </data>
+  <data name="DragDropAction" xml:space="preserve">
+    <value>Move{0} {1} {2} {3} to {4} {5} {6}{7}</value>
+  </data>
+  <data name="ToolTip" xml:space="preserve">
+    <value>tooltip</value>
+  </data>
+  <data name="NavigationUrl" xml:space="preserve">
+    <value>Uri to navigate</value>
+  </data>
+  <data name="SetPropertyNotSupportedMessage" xml:space="preserve">
+    <value>SetProperty of "{0}" is not supported on control type: {1}</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>contains</value>
+  </data>
+  <data name="NullString1" xml:space="preserve">
+    <value>null</value>
+  </data>
+  <data name="InvalidSearchProperty" xml:space="preserve">
+    <value>The property {0} is not a valid search property.</value>
+  </data>
+  <data name="SetValueEditBoxActionWithNewLineForNoFriendlyName" xml:space="preserve">
+    <value>Type the following paragraph in {1} \n'{0}'1</value>
+  </data>
+  <data name="FindMatchingControlsDuration" xml:space="preserve">
+    <value>Find Matching Control was performed with {0} and took {1} milliseconds.</value>
+  </data>
+  <data name="CheckBoxTreeItem" xml:space="preserve">
+    <value>check box</value>
+  </data>
+  <data name="PivotItem" xml:space="preserve">
+    <value>pivot item</value>
+  </data>
+  <data name="DragDropActionForNoSourceFriendlyName" xml:space="preserve">
+    <value>Move{0} {1} to {2} {3}{4}</value>
+  </data>
+  <data name="SetValueNotSupported" xml:space="preserve">
+    <value>The control value '{0}' is not supported by playback.</value>
+  </data>
+  <data name="ColumnHeader" xml:space="preserve">
+    <value>column header</value>
+  </data>
+  <data name="BrowserVersionNotSupported" xml:space="preserve">
+    <value>Internet Explorer {0}.{1} is currently not supported.</value>
+  </data>
+  <data name="TouchActionPanRight" xml:space="preserve">
+    <value>Pan right</value>
+  </data>
+  <data name="PropertyName" xml:space="preserve">
+    <value>Property name</value>
+  </data>
+  <data name="ImproperVariableName" xml:space="preserve">
+    <value>The variable name must be a valid .NET identifier.</value>
+  </data>
+  <data name="NavigateToUrlOnNewBrowser" xml:space="preserve">
+    <value>Go to web page '{0}' using new instance of '{1}' browser.</value>
+  </data>
+  <data name="StateNotSupported" xml:space="preserve">
+    <value>'{0}' is not supported by '{1}'</value>
+  </data>
+  <data name="TouchActionPanUp" xml:space="preserve">
+    <value>Pan up</value>
+  </data>
+  <data name="DifferentIdByOnlyCase" xml:space="preserve">
+    <value>Control names must be unique and cannot differ only by lower case or upper case. This follows the standard coding guidelines.</value>
+  </data>
+  <data name="Utility_IgnoredThrownException" xml:space="preserve">
+    <value>Exception thrown (ignored): {0} {1}.</value>
+  </data>
+  <data name="InvalidArgumentValue" xml:space="preserve">
+    <value>Invalid value for parameter. Value: {0}. Parameter: {1}.</value>
+  </data>
+  <data name="InvalidTopLevelElement" xml:space="preserve">
+    <value>Invalid Top Level Element {0} provided for search.</value>
+  </data>
+  <data name="PauseForNoFriendlyName" xml:space="preserve">
+    <value>Pause {0} at {1}</value>
+  </data>
+  <data name="SmartMatchWarning" xml:space="preserve">
+    <value>Unable to find window with '{0}' in the title.</value>
+  </data>
+  <data name="EncryptionKeyLocationNotFoundMessage" xml:space="preserve">
+    <value>The file location for the following EncryptionKeyLocation parameter is not valid: {0}.</value>
+  </data>
+  <data name="ZappyTaskLogTitle" xml:space="preserve">
+    <value>Zappy Log</value>
+  </data>
+  <data name="ControlNotFoundException" xml:space="preserve">
+    <value>Automation Playback Engine was not able to find the {0} {1} in - {2} {3}.</value>
+  </data>
+  <data name="FindMatchingControls" xml:space="preserve">
+    <value>Search is using matching controls.</value>
+  </data>
+  <data name="IndeterminateString" xml:space="preserve">
+    <value>indeterminate</value>
+  </data>
+  <data name="TreeItem" xml:space="preserve">
+    <value>tree item</value>
+  </data>
+  <data name="DragDropAction1" xml:space="preserve">
+    <value>Move{0} {1} {2} to {3} {4}{5}</value>
+  </data>
+  <data name="BlackoutDate" xml:space="preserve">
+    <value>Unable to set date '{0}'. Make sure the date is not a blackout date.</value>
+  </data>
+  <data name="InvalidParameterValue" xml:space="preserve">
+    <value>An invalid value {0} was assigned to property {2} of control type {1}.</value>
+  </data>
+  <data name="FormatForErrorWithFileNameAndAlternateFileName" xml:space="preserve">
+    <value>{0} {1} {2}</value>
+  </data>
+  <data name="PlayForNoFriendlyName" xml:space="preserve">
+    <value>Play {0} from {1}</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="DesktopNotSupported" xml:space="preserve">
+    <value>To task desktop apps, use the Coded UI Test project template under the Test node.</value>
+  </data>
+  <data name="TouchGestureLength" xml:space="preserve">
+    <value>Gesture length: '{0}' pixels</value>
+  </data>
+  <data name="DragByLocation" xml:space="preserve">
+    <value>End point</value>
+  </data>
+  <data name="SharedSteps" xml:space="preserve">
+    <value>Shared Steps</value>
+  </data>
+  <data name="TouchActionRotate" xml:space="preserve">
+    <value>Rotate</value>
+  </data>
+  <data name="WindowMaximizeAction" xml:space="preserve">
+    <value>Maximize window {0}</value>
+  </data>
+  <data name="ModifierKeysPressed" xml:space="preserve">
+    <value>ModifierKeys</value>
+  </data>
+  <data name="ClickText" xml:space="preserve">
+    <value>Click</value>
+  </data>
+  <data name="MouseHoverAction" xml:space="preserve">
+    <value>Mouse hover {0} {1} at ({2}, {3}){4}</value>
+  </data>
+  <data name="SetStateControlActionForNoFriendlyName" xml:space="preserve">
+    <value>Set to '{0}' state {1}</value>
+  </data>
+  <data name="MenuBar" xml:space="preserve">
+    <value>menu bar</value>
+  </data>
+  <data name="GetPropertyNotSupportedMessage" xml:space="preserve">
+    <value>GetProperty of "{0}" is not supported on control type: {1}</value>
+  </data>
+  <data name="BrowserRetryAction" xml:space="preserve">
+    <value>Click 'Retry' button in the browser dialog window</value>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="IterateActionIdError" xml:space="preserve">
+    <value>Failed to find valid action range to execute.</value>
+  </data>
+  <data name="SmartMatchAlternateWindow" xml:space="preserve">
+    <value>Control with Friendly Name : '{0}' was found instead and is being used.</value>
+  </data>
+  <data name="InvalidPropertyName" xml:space="preserve">
+    <value>The property {0} is not supported for this control.</value>
+  </data>
+  <data name="ErrorElementNotAvailable" xml:space="preserve">
+    <value>The following element is no longer available: {0}</value>
+  </data>
+  <data name="LogEntryWithParentWindowName" xml:space="preserve">
+    <value>{0} in the window {1}</value>
+  </data>
+  <data name="Swipe" xml:space="preserve">
+    <value>Swipe</value>
+  </data>
+  <data name="ControlNotFoundP" xml:space="preserve">
+    <value>The control : {0} could not be found under the container : {1}. </value>
+  </data>
+  <data name="TouchActionPan" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="EncryptedText" xml:space="preserve">
+    <value>The encoded string can only be used for a password.</value>
+  </data>
+  <data name="NotEqualTo" xml:space="preserve">
+    <value>is not equal to</value>
+  </data>
+  <data name="TouchActionManipulation2" xml:space="preserve">
+    <value>{0} and {1}</value>
+  </data>
+  <data name="ValidationActionForNoFriendlyName" xml:space="preserve">
+    <value>Verify that the '{1}' property of {0} {2} '{3}'</value>
+  </data>
+  <data name="IsInstanceOfType" xml:space="preserve">
+    <value>is instance of type</value>
+  </data>
+  <data name="In" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="NotPascalVariableName" xml:space="preserve">
+    <value>Name cannot start with a lowercase letter since it is not according to coding guidelines.</value>
+  </data>
+  <data name="VolumeChange" xml:space="preserve">
+    <value>Set volume of {0} {1} to {2}%</value>
+  </data>
+  <data name="MouseClickActionWithButtonName" xml:space="preserve">
+    <value>{0}-{1} {2} {3}{4}</value>
+  </data>
+  <data name="Flick" xml:space="preserve">
+    <value>Flick</value>
+  </data>
+  <data name="UnBoundParameter" xml:space="preserve">
+    <value>The following parameter is not bound to a specific value: {0}.</value>
+  </data>
+  <data name="DragDropByAction" xml:space="preserve">
+    <value>Move{0} {1} {2} {3} to {4} {5} by {6}{7}</value>
+  </data>
+  <data name="SetValueZoomedOutAction" xml:space="preserve">
+    <value>Zoom out of {0} {1} control</value>
+  </data>
+  <data name="ComboBox" xml:space="preserve">
+    <value>combo box</value>
+  </data>
+  <data name="InvalidCoreTechManager" xml:space="preserve">
+    <value>The technology {0} is not a core technology.</value>
+  </data>
+  <data name="InvalidTechnologyNameSpecified" xml:space="preserve">
+    <value>The following is not a valid technology name: {0}. To search for a control, you must specify a valid technology name.</value>
+  </data>
+  <data name="propertyValueSeparator" xml:space="preserve">
+    <value>{0} {1} {2}</value>
+  </data>
+  <data name="MouseMoveAction" xml:space="preserve">
+    <value>Mouse moved to ({0},{1})</value>
+  </data>
+  <data name="IncorrectUIObjectId" xml:space="preserve">
+    <value>The UIObject Id {0} is of incorrect format.</value>
+  </data>
+  <data name="SetStateCollapseAndXXXAction" xml:space="preserve">
+    <value>Collapse and {2} {0} {1}</value>
+  </data>
+  <data name="BrowserStopAction" xml:space="preserve">
+    <value>Perform Stop on Browser Window</value>
+  </data>
+  <data name="IsUnicode" xml:space="preserve">
+    <value>Is Unicode</value>
+  </data>
+  <data name="SetValueMonthCalendar" xml:space="preserve">
+    <value>Select '"{0}"-"{1}"' in {2} {3}</value>
+  </data>
+  <data name="TopLevelWindowChange" xml:space="preserve">
+    <value>Parent window changed to {0}</value>
+  </data>
+  <data name="BrowserCancelAction" xml:space="preserve">
+    <value>Click 'Cancel' button in the browser dialog window</value>
+  </data>
+  <data name="SearchRegionComment" xml:space="preserve">
+    <value>Search Criteria</value>
+  </data>
+  <data name="RectangleNotInRange" xml:space="preserve">
+    <value>Tolerance rectangle at index {0} does not lie within range of the image.</value>
+  </data>
+  <data name="DragByActionNoStartPoint" xml:space="preserve">
+    <value>Move{0} {1} {2} by ({3}, {4}){5}</value>
+  </data>
+  <data name="EmptyValueInFilter" xml:space="preserve">
+    <value>The filter {0} has an empty or null value for parameter {1}.</value>
+  </data>
+  <data name="InvalidListItemOperation" xml:space="preserve">
+    <value>This operation is valid only when the list item is child of a list or a combo box.</value>
+  </data>
+  <data name="DragAction1" xml:space="preserve">
+    <value>Move{0} {1} {2}{3}</value>
+  </data>
+  <data name="TouchActionManipulationRight" xml:space="preserve">
+    <value>{0} right</value>
+  </data>
+  <data name="TouchActionPressAndTap" xml:space="preserve">
+    <value>Press and tap on</value>
+  </data>
+  <data name="ArgumentsPassed" xml:space="preserve">
+    <value>Arguments passed to application</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>calendar</value>
+  </data>
+  <data name="EPMModeNotSupported" xml:space="preserve">
+    <value>The Internet Explorer process appears to be running at a lower integrity level than the current process. Please run Internet Explorer at the same integrity level and try again.</value>
+  </data>
+  <data name="ControlStateNotSupported" xml:space="preserve">
+    <value>The control state '{0}' is not supported by playback.</value>
+  </data>
+  <data name="IgnoreExceptionForRetry" xml:space="preserve">
+    <value>Ignoring exception as PlaybackErrorOption.Retry was chosen.</value>
+  </data>
+  <data name="StoreApplicationActivationError" xml:space="preserve">
+    <value>Exception occurred while trying to launch the app. Verify that the app is installed: {0}</value>
+  </data>
+  <data name="UnableToFindMainWindow" xml:space="preserve">
+    <value>Unable to find the main window of the underlying process.</value>
+  </data>
+  <data name="FindMatchinControlsSkipIntermediate" xml:space="preserve">
+    <value>FindMatchingControls threw exception - {0}. Attempting to find at least one control by skipping intermediate elements</value>
+  </data>
+  <data name="WindowMaximizeActionForNoFriendlyName" xml:space="preserve">
+    <value>Maximize window</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>text box</value>
+  </data>
+  <data name="SetValueMonthCalendarForNoFriendlyName" xml:space="preserve">
+    <value>Select '"{0}"-"{1}"' in {3}</value>
+  </data>
+  <data name="Utility_ProcessNameWhenCannotGetIt" xml:space="preserve">
+    <value>(Error getting process name)</value>
+  </data>
+  <data name="DocumentNotAccessible" xml:space="preserve">
+    <value>The web page could not be accessed. If the page is refreshing, please wait until the page refreshes and then perform actions on it.</value>
+  </data>
+  <data name="DataBoundNameIssueError" xml:space="preserve">
+    <value>Last action on {0} was not recorded because the control does not have any good identification property.</value>
+  </data>
+  <data name="ParameterInformation" xml:space="preserve">
+    <value>Parameter '{0}' for this action was parameterized with value '{1}'</value>
+  </data>
+  <data name="SetStateCollapseAction" xml:space="preserve">
+    <value>Collapse {0} {1}</value>
+  </data>
+  <data name="ExecuteFailedAsProcessExited" xml:space="preserve">
+    <value>The application cannot be started. This could be due to one of the following reasons:\n1) Another instance of the application is already running and only one instance can be running at a time.\n2) The application started another process and has now stopped. You may need to launch the process directly.\n3) You do not have sufficient privileges for this application."</value>
+  </data>
+  <data name="WheelDirectionClockwise" xml:space="preserve">
+    <value>Clockwise</value>
+  </data>
+  <data name="Ellipsis" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="ScrollBar" xml:space="preserve">
+    <value>scroll bar</value>
+  </data>
+  <data name="TouchActionManipulationDown" xml:space="preserve">
+    <value>{0} down</value>
+  </data>
+  <data name="FileName1" xml:space="preserve">
+    <value>File: {0}.</value>
+  </data>
+  <data name="ClickablePointException" xml:space="preserve">
+    <value>Failed to get a clickable point.</value>
+  </data>
+  <data name="WindowMinimizeAction" xml:space="preserve">
+    <value>Minimize window {0}</value>
+  </data>
+  <data name="UnableToFindDocument" xml:space="preserve">
+    <value>Unable to get reference to the document.</value>
+  </data>
+  <data name="RebootMessage" xml:space="preserve">
+    <value>Please reboot the system for the Record and Play settings to take effect. Otherwise certain features may not function correctly.</value>
+  </data>
+  <data name="LaunchApplicationWithAgrumentsAsUser" xml:space="preserve">
+    <value>Launch '{0}' with arguments '{1}' as user '{2}\{3}'</value>
+  </data>
+  <data name="SkipIntermediateAncestorElement" xml:space="preserve">
+    <value>The element {0} was not found, so all intermediate elements of the target element were ignored. To improve performance fix this element's search properties or exclude it from Query Id. If this element is the target element, replace or remove intermediate elements.</value>
+  </data>
+  <data name="Slider" xml:space="preserve">
+    <value>slider</value>
+  </data>
+  <data name="ListItem" xml:space="preserve">
+    <value>list item</value>
+  </data>
+  <data name="EncodedPassword" xml:space="preserve">
+    <value>********</value>
+  </data>
+  <data name="Pane" xml:space="preserve">
+    <value>pane</value>
+  </data>
+  <data name="ActionErrorMessage" xml:space="preserve">
+    <value>Error executing action: {0}</value>
+  </data>
+  <data name="ContextMenu" xml:space="preserve">
+    <value>context menu</value>
+  </data>
+  <data name="ApplicationFromNetworkShareException" xml:space="preserve">
+    <value>The recording for the application under task '{0}' may not be correct as it is located on a network share. Please install the application on a local path.</value>
+  </data>
+  <data name="ExtraRowSpecifiedAsContainer" xml:space="preserve">
+    <value>A row control was specified as container of the element. To search for a cell control using '{0}' and '{1}', you need not explicitly specify row as a container element.</value>
+  </data>
+  <data name="FailedToGetUIElement1" xml:space="preserve">
+    <value>The control for this action was not recorded.</value>
+  </data>
+  <data name="DragAction" xml:space="preserve">
+    <value>Move{0} {1} {2} from ({3}, {4}) to ({5}, {6}){7}</value>
+  </data>
+  <data name="ZappyTaskControlStringFormat" xml:space="preserve">
+    <value>{0}:  '{1}'{2}</value>
+  </data>
+  <data name="Frame" xml:space="preserve">
+    <value>frame</value>
+  </data>
+  <data name="ValidationAction1" xml:space="preserve">
+    <value>Verify that the '{2}' property of {0} {1} {3} '{4}'</value>
+  </data>
+  <data name="SendKeyValueStringConnector" xml:space="preserve">
+    <value> + </value>
+  </data>
+  <data name="GetPropertyNotSupportedOnIndeterminate" xml:space="preserve">
+    <value>GetProperty of "{0}" is not supported on an Indeterminate {1}</value>
+  </data>
+  <data name="BrowserVersionNotDetected" xml:space="preserve">
+    <value>Unable to detect Internet Explorer version. Please install one of the supported versions and try again.</value>
+  </data>
+  <data name="ZoomNotAtHundred" xml:space="preserve">
+    <value>Internet Explorer zoom setting must be set to 100%. Please change the value to 100% and try again.</value>
+  </data>
+  <data name="ExecutableNotSpecified" xml:space="preserve">
+    <value>The application cannot be started because no file name or alternative file name has been specified.</value>
+  </data>
+  <data name="TouchActionManipulationUp" xml:space="preserve">
+    <value>{0} up</value>
+  </data>
+  <data name="FindControlDuration" xml:space="preserve">
+    <value>Find control operation took {0} milliseconds.</value>
+  </data>
+  <data name="TouchActionLogFormatForNoFriendlyName" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="StoreApplicationClosedAfterLaunch" xml:space="preserve">
+    <value>Store Application launched but closed immediately.</value>
+  </data>
+  <data name="ActionLogForEnterKey" xml:space="preserve">
+    <value>Press 'Enter' key</value>
+  </data>
+  <data name="BrowserNotInstalled" xml:space="preserve">
+    <value>The browser {0} is not installed on this machine.</value>
+  </data>
+  <data name="BrowserRefreshAction" xml:space="preserve">
+    <value>Perform Refresh on Browser Window</value>
+  </data>
+  <data name="DateTimePicker" xml:space="preserve">
+    <value>date time picker</value>
+  </data>
+  <data name="UnmuteForNoFriendlyName" xml:space="preserve">
+    <value>Unmute {0}</value>
+  </data>
+  <data name="runningZappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imageedit_1_7397606953.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DragDropActionForNoTargetFriendlyName" xml:space="preserve">
+    <value>Move{0} {1} {2} to {3}{4}</value>
+  </data>
+  <data name="ErrorHigherPrivilegeProcess" xml:space="preserve">
+    <value>You do not have sufficient privileges to access the information about this control or the control is part of the recorder process.</value>
+  </data>
+  <data name="WheelMovementDirection" xml:space="preserve">
+    <value>Wheel movement direction</value>
+  </data>
+  <data name="TouchActionZoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="ValueSet" xml:space="preserve">
+    <value>Value set</value>
+  </data>
+  <data name="WindowNotFoundException" xml:space="preserve">
+    <value>Automation Playback Engine was not able to find the {0} - Window.</value>
+  </data>
+  <data name="ToggleButton" xml:space="preserve">
+    <value>toggle button</value>
+  </data>
+  <data name="CheckPhraseMismatchErrorMessage" xml:space="preserve">
+    <value>The encoding key file or key length is different from the encoding settings used during the recording.</value>
+  </data>
+  <data name="BrowserDialogParametersText" xml:space="preserve">
+    <value>Parameter passed for the current action</value>
+  </data>
+  <data name="SendGlobalHotKeysAction" xml:space="preserve">
+    <value>Press keyboard shortcut keys '{0}' in {1} {2}</value>
+  </data>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>Access is denied.</value>
+  </data>
+  <data name="FailedToRecordMouseAction" xml:space="preserve">
+    <value>Last mouse action was not recorded.</value>
+  </data>
+  <data name="SetStateCollapseActionForNoFriendlyName" xml:space="preserve">
+    <value>Collapse {0}</value>
+  </data>
+  <data name="SingleWarningString" xml:space="preserve">
+    <value>Completed with 1 warning</value>
+  </data>
+  <data name="WindowRestoreActionForNoFriendlyName" xml:space="preserve">
+    <value>Restore window</value>
+  </data>
+  <data name="SeekForNoFriendlyName" xml:space="preserve">
+    <value>Seek {0} to {1}</value>
+  </data>
+  <data name="IDNotFoundExceptionMessage" xml:space="preserve">
+    <value>ID not found in UI map.</value>
+  </data>
+  <data name="FilterShouldHaveName" xml:space="preserve">
+    <value>The filter should have a valid name.</value>
+  </data>
+  <data name="SetPropertyFailed" xml:space="preserve">
+    <value>Property "{0}" could not be set due to current state of {1}</value>
+  </data>
+  <data name="InvalidUiaQueryElement" xml:space="preserve">
+    <value>The query element {0} does not satisfy the format requirements for a control.</value>
+  </data>
+  <data name="ButtonsPressed" xml:space="preserve">
+    <value>Mouse button</value>
+  </data>
+  <data name="Seek" xml:space="preserve">
+    <value>Seek {0} {1} to {2}</value>
+  </data>
+  <data name="InvalidPropertyForWait" xml:space="preserve">
+    <value>A wait for property {0} is not supported because this property is cached on first use.</value>
+  </data>
+  <data name="FailedToAggregateAction" xml:space="preserve">
+    <value>Error in aggregating action in ActionFilter: {0}. Detailed error: {1}. </value>
+  </data>
+  <data name="LaunchWindowsStoreAppArguments" xml:space="preserve">
+    <value> with Arguments '{0}'</value>
+  </data>
+  <data name="Separator" xml:space="preserve">
+    <value>separator</value>
+  </data>
+  <data name="TouchActionManipulation3" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="TouchActionDrag" xml:space="preserve">
+    <value>Drag on</value>
+  </data>
+  <data name="RelativeCoordinates" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="StandardErrorMessageString" xml:space="preserve">
+    <value>Test method {0} threw exception:</value>
+  </data>
+  <data name="InvalidParameterValueOfDataType" xml:space="preserve">
+    <value>An invalid value {0} was assigned to property {2} of control type {1}. Expected data type: {3}. Actual data type: {4}.</value>
+  </data>
+  <data name="TouchActionManipulationLeft" xml:space="preserve">
+    <value>{0} left</value>
+  </data>
+  <data name="SetValueZoomedInAction" xml:space="preserve">
+    <value>Zoom in to {0} {1} control</value>
+  </data>
+  <data name="DragActionNoEndPoint" xml:space="preserve">
+    <value>Move{0} {1} {2} from ({3}, {4}){5}</value>
+  </data>
+  <data name="InvalidUiaElementAtPoint" xml:space="preserve">
+    <value>The recorder encountered a wrong control while recording the last action.</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>custom control</value>
+  </data>
+  <data name="BrowserActionTypeText" xml:space="preserve">
+    <value>Browser action type</value>
+  </data>
+  <data name="firefox-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firefox-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

@@ -1,0 +1,1132 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.1.0.0" Id="109189cd-3764-446e-9058-00f21253c130" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\Administrator\source\repos\zappyai\Zappy\Sample\DataEntryToInhouseApplication\PatientDetailsUpload\Patient.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>99781</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2019-06-18T12:27:00.3241939Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>0c4aed26-4181-4ff7-a36c-07f2f0064a0c</SelfGuid>
+      <NextGuid>7cbe7f08-5f70-410d-a3a9-24bf38153c88</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>18</EditorLocationY>
+    </StartNodeAction>
+    <ForLoopStartAction>
+      <Timestamp>2019-06-18T12:27:00.3241939Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <LoopEndGuid>a4f97571-31ef-43c3-8117-40f9ddf41305</LoopEndGuid>
+      <SelfGuid>7cbe7f08-5f70-410d-a3a9-24bf38153c88</SelfGuid>
+      <NextGuid>eabdaac8-35ec-40e9-947a-ae43e402d53a</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>90</EditorLocationY>
+      <TerminateLoop>
+        <Value>false</Value>
+      </TerminateLoop>
+      <InitialValue>
+        <Value>1</Value>
+      </InitialValue>
+      <FinalValue>
+        <Value>10</Value>
+      </FinalValue>
+      <StepValue>
+        <Value>1</Value>
+      </StepValue>
+      <LoopIntValue>0</LoopIntValue>
+    </ForLoopStartAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-06-18T12:25:20.5431939Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>eabdaac8-35ec-40e9-947a-ae43e402d53a</SelfGuid>
+      <NextGuid>a12fcf73-3152-4ea3-9120-1924909023ca</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>180</EditorLocationY>
+      <ZappyWindowTitle>patient detail.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>3</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>1</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>patient detail.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-06-18T12:25:22.6991939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>a12fcf73-3152-4ea3-9120-1924909023ca</SelfGuid>
+      <NextGuid>55d511e9-bc68-49df-b314-800fd27131e1</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>252</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.TextBox1Window.TextBox1Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox1" Id="TextBox1Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox1</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox1" Id="TextBox1Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Doctor Name</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-06-18T12:25:25.8711939Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>55d511e9-bc68-49df-b314-800fd27131e1</SelfGuid>
+      <NextGuid>80d62a27-fa42-46c7-903b-b472756dcc23</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>360</EditorLocationY>
+      <ZappyWindowTitle>patient detail.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>3</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>2</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>patient detail.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-06-18T12:25:29.0581939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>80d62a27-fa42-46c7-903b-b472756dcc23</SelfGuid>
+      <NextGuid>a30f29fa-6ace-485e-8cac-d98ac702382e</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>450</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.TextBox2Window.TextBox2Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox2" Id="TextBox2Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox2</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox2" Id="TextBox2Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-06-18T12:25:32.2301939Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>a30f29fa-6ace-485e-8cac-d98ac702382e</SelfGuid>
+      <NextGuid>b87d8b30-5265-4066-8c53-48d31f7235a7</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>558</EditorLocationY>
+      <ZappyWindowTitle>patient detail.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>3</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>3</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>patient detail.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-06-18T12:25:35.3711939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>b87d8b30-5265-4066-8c53-48d31f7235a7</SelfGuid>
+      <NextGuid>0785de0c-1628-4c26-ab20-2b1b0c63f1c4</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>648</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.TextBox3Window.TextBox3Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox3" Id="TextBox3Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox3</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox3" Id="TextBox3Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-06-18T12:25:39.3861939Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>0785de0c-1628-4c26-ab20-2b1b0c63f1c4</SelfGuid>
+      <NextGuid>5fea8c7c-e8b1-474e-95c7-d9618554a32d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>756</EditorLocationY>
+      <ZappyWindowTitle>patient detail.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>3</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>4</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>patient detail.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-06-18T12:25:41.6521939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>5fea8c7c-e8b1-474e-95c7-d9618554a32d</SelfGuid>
+      <NextGuid>1da2f852-24a4-43ee-a768-7202bf7d6876</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>864</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.TextBox4Window.TextBox4Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox4" Id="TextBox4Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox4</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox4" Id="TextBox4Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-06-18T12:25:44.6051939Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>1da2f852-24a4-43ee-a768-7202bf7d6876</SelfGuid>
+      <NextGuid>c4e639c8-4582-45ad-bc00-7c98cb6bab89</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>954</EditorLocationY>
+      <ZappyWindowTitle>patient detail.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>3</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>5</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>patient detail.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-06-18T12:25:47.0581939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>c4e639c8-4582-45ad-bc00-7c98cb6bab89</SelfGuid>
+      <NextGuid>2d3135c0-8a96-4b7b-921b-f7f6b492f24e</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1044</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.TextBox5Window.TextBox5Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox5" Id="TextBox5Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox5</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox5" Id="TextBox5Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-06-18T12:25:50.2461939Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>2d3135c0-8a96-4b7b-921b-f7f6b492f24e</SelfGuid>
+      <NextGuid>4d0246ea-ed93-4362-ac43-cf552613e00a</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1134</EditorLocationY>
+      <ZappyWindowTitle>patient detail.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>3</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>6</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>patient detail.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-06-18T12:25:52.6521939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>4d0246ea-ed93-4362-ac43-cf552613e00a</SelfGuid>
+      <NextGuid>0748e50d-6eaf-4609-9dd9-f0106e7608e7</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1242</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.TextBox6Window.TextBox6Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox6" Id="TextBox6Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox6</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox6" Id="TextBox6Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-06-18T12:25:55.8861939Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>0748e50d-6eaf-4609-9dd9-f0106e7608e7</SelfGuid>
+      <NextGuid>c047706c-8b3f-4534-b64f-2b406b7a3d90</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1332</EditorLocationY>
+      <ZappyWindowTitle>patient detail.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>3</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>7</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>patient detail.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-06-18T12:25:58.1211939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>c047706c-8b3f-4534-b64f-2b406b7a3d90</SelfGuid>
+      <NextGuid>93b6956f-0cdf-4b0b-be80-3adec7c2b297</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1440</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.TextBox7Window.TextBox7Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox7" Id="TextBox7Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox7</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox7" Id="TextBox7Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-06-18T12:26:00.9331939Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>93b6956f-0cdf-4b0b-be80-3adec7c2b297</SelfGuid>
+      <NextGuid>b9dad64d-f855-4cbf-8ee5-01b5bb26704d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1530</EditorLocationY>
+      <ZappyWindowTitle>patient detail.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>3</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>8</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>Sheet1</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>patient detail.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-06-18T12:26:03.6681939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>b9dad64d-f855-4cbf-8ee5-01b5bb26704d</SelfGuid>
+      <NextGuid>c7b15e9a-5c80-4112-bca3-0c5db629772a</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1656</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.TextBox8Window.TextBox8Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox8" Id="TextBox8Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox8</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox8" Id="TextBox8Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData> public const string UiaUpdationUrl = "https://go.microsoft.com/fwlink/?LinkId=162159";
+        internal static bool UserInteractive = Environment.UserInteractive;
+</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-06-18T12:26:15.1521939Z</Timestamp>
+      <ExeName>MedicalStore.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>100</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>c7b15e9a-5c80-4112-bca3-0c5db629772a</SelfGuid>
+      <NextGuid>8489f5ac-6685-4174-beb8-4c0537079b33</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1764</EditorLocationY>
+      <ZappyWindowTitle>NewPatient</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.NewPatientWindow.AddWindow.AddButton</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="NewPatient" Id="NewPatientWindow" SessionId="1969810" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">NewPatient</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="Add" Id="AddWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">button1</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Button" FriendlyName="Add" Id="AddButton" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Add</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Button</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>NewPatient</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>NewPatient</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>NewPatient</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>56</X>
+        <Y>16</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <ExcelSetFocusedCell>
+      <Timestamp>2019-06-18T12:26:26.2931939Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>8489f5ac-6685-4174-beb8-4c0537079b33</SelfGuid>
+      <NextGuid>a4f97571-31ef-43c3-8117-40f9ddf41305</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1854</EditorLocationY>
+      <RowOffset>1</RowOffset>
+      <ColumnOffset>0</ColumnOffset>
+      <UseFixedRow>false</UseFixedRow>
+      <ExcelCellInfo>
+        <RowIndex>4</RowIndex>
+        <ColumnIndex>1</ColumnIndex>
+        <SheetName>Sheet1</SheetName>
+        <WorkbookName>patient detail.xlsx</WorkbookName>
+      </ExcelCellInfo>
+    </ExcelSetFocusedCell>
+    <ForLoopEndAction>
+      <Timestamp>2019-06-18T12:27:00.3241939Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <LoopStartGuid>7cbe7f08-5f70-410d-a3a9-24bf38153c88</LoopStartGuid>
+      <SelfGuid>a4f97571-31ef-43c3-8117-40f9ddf41305</SelfGuid>
+      <NextGuid>2acce805-8807-4017-830d-2e66ad766b0d</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>1962</EditorLocationY>
+    </ForLoopEndAction>
+    <EndNodeAction>
+      <Timestamp>2019-06-18T12:27:00.3241939Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>2acce805-8807-4017-830d-2e66ad766b0d</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>2052</EditorLocationY>
+    </EndNodeAction>
+  </ExecuteActivities>
+</ZappyTask>

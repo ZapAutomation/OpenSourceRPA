@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$CustomeActivity$</title>
+    <authors>$author$</authors>
+    <owners>ZappyAI Limited</owners>
+	<license type="file">LICENSE.txt</license>
+     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <Description>Zappy Shared Interface</Description>
+    <!-- <releaseNotes>Summary of changes made in this release of the package.</releaseNotes> -->
+    <copyright>ZappyAI Limited</copyright>
+    <tags>zappy</tags>
+  </metadata>
+   <files>
+  <file src="C:\Users\shubham\Documents\zappyaniroj\SharedZappyInterface/LICENSE.txt" target="" />
+   </files>
+</package>

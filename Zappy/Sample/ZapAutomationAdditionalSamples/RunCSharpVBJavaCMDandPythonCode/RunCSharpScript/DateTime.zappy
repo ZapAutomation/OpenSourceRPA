@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="3.3.0.0" Id="109e7b63-5f37-4b48-b7b5-c8687b6595ea" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\Comp2\Documents\zappyai\Crapy\Sample\ZappyAdditionalSamples\RunScript\DateTime.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>61266</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <DisplayName />
+      <Timestamp>2019-01-16T08:01:09.4753928Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>56f948cf-d28a-45a3-ad6d-94b26ac9ee28</SelfGuid>
+      <NextGuid>b14b5a40-f7ff-4ddc-80c0-62a9333d4170</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>160</EditorLocationX>
+      <EditorLocationY>85</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <DisplayName />
+      <Timestamp>2019-01-16T08:01:09.4753928Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>2b1a4647-f573-462f-a80a-68639244c1d2</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>160</EditorLocationX>
+      <EditorLocationY>345</EditorLocationY>
+    </EndNodeAction>
+    <RunScriptActivity>
+      <Timestamp>2019-01-16T08:01:14.3813928Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>b14b5a40-f7ff-4ddc-80c0-62a9333d4170</SelfGuid>
+      <NextGuid>7759d15c-64b8-42a7-851d-896034f98b73</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>160</EditorLocationX>
+      <EditorLocationY>165</EditorLocationY>
+      <Script>
+        <RuntimeScript>(context , currentactivity) =&gt; { DateTime dt = DateTime.Now; return dt; }</RuntimeScript>
+      </Script>
+    </RunScriptActivity>
+    <MessageBoxAction>
+      <Timestamp>2019-01-16T08:02:10.7413928Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <SelfGuid>7759d15c-64b8-42a7-851d-896034f98b73</SelfGuid>
+      <NextGuid>2b1a4647-f573-462f-a80a-68639244c1d2</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>160</EditorLocationX>
+      <EditorLocationY>245</EditorLocationY>
+      <Title>
+        <Value>DateTime</Value>
+      </Title>
+      <Text>
+        <DymanicKey>${b14b5a40-f7ff-4ddc-80c0-62a9333d4170:ExecutionResult}</DymanicKey>
+      </Text>
+      <Icon>Asterisk</Icon>
+      <Buttons>OK</Buttons>
+      <DefaultButton>Button1</DefaultButton>
+      <Options />
+      <DialogResult>None</DialogResult>
+      <DialogResultBool>false</DialogResultBool>
+    </MessageBoxAction>
+  </ExecuteActivities>
+</ZappyTask>

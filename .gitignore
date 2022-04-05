@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+***/.vs
+***/packages
+***/bin
+***/obj
+*.user
+/Stable Reference
+***/Debug
+***/Release
+***/x64
+/Crapy/.vs/crappy/v15
+/Analytics/.ipynb_checkpoints
+***/.ipynb_checkpoints
+***/.msi
+/packages
+***/.idea
+***/__pycache__
+/AdditionalProjects/ZappyJavaAccessBridge/debug86

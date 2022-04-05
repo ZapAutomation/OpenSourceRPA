@@ -1,0 +1,2104 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="3.9.0.0" Id="eaddabf0-086e-42ce-a971-703071ab0e17" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\vaishnavi\Documents\zappyai\Crapy\Sample\DataEntryToInhouseApplication\TradeReconciliation\TradeReconAutomation.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>88297</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2019-02-25T18:45:25.7028609Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>5df29ab5-8df9-4bfa-a0f3-a793aa361f3c</SelfGuid>
+      <NextGuid>7a9b5d01-db82-4096-a5ae-d5c7bdd1dee7</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>54</EditorLocationY>
+    </StartNodeAction>
+    <ForLoopStartAction>
+      <Timestamp>2019-02-25T18:45:25.7028609Z</Timestamp>
+      <StartTimestamp>0</StartTimestamp>
+      <EndTimestamp>0</EndTimestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <LoopEndGuid>63b8fdf6-952f-4b69-af44-8faa32116e15</LoopEndGuid>
+      <SelfGuid>7a9b5d01-db82-4096-a5ae-d5c7bdd1dee7</SelfGuid>
+      <NextGuid>936d21b8-c2da-44d5-939d-1eaddfca6157</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>108</EditorLocationY>
+      <TerminateLoop>
+        <Value>false</Value>
+      </TerminateLoop>
+      <InitialValue>
+        <Value>1</Value>
+      </InitialValue>
+      <FinalValue>
+        <Value>4</Value>
+      </FinalValue>
+      <StepValue>
+        <Value>1</Value>
+      </StepValue>
+      <LoopIntValue>0</LoopIntValue>
+    </ForLoopStartAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-25T18:43:57.4058609Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>936d21b8-c2da-44d5-939d-1eaddfca6157</SelfGuid>
+      <NextGuid>5df2c8a0-a3a4-4410-997a-4f0e053e99f6</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>162</EditorLocationY>
+      <ZappyWindowTitle>ClientTrade.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>1</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>ClientTrades</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>ClientTrade.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:43:59.3118609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>5df2c8a0-a3a4-4410-997a-4f0e053e99f6</SelfGuid>
+      <NextGuid>e7f8ead8-dbc5-464d-ad04-d60d8b25c009</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>216</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtSettAccountWindow.TxtSettAccountEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSettAccount" Id="TxtSettAccountWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSettAccount</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSettAccount" Id="TxtSettAccountEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>88</X>
+        <Y>10</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:43:59.6868609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>e7f8ead8-dbc5-464d-ad04-d60d8b25c009</SelfGuid>
+      <NextGuid>cbc5a5fe-db74-4e34-b6bd-1d12c72f95de</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>270</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtSettAccountWindow.TxtSettAccountEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSettAccount" Id="TxtSettAccountWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSettAccount</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSettAccount" Id="TxtSettAccountEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-25T18:44:01.8748609Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>cbc5a5fe-db74-4e34-b6bd-1d12c72f95de</SelfGuid>
+      <NextGuid>7e8e112b-4c53-4c66-ab7f-a6ad58ba4348</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>324</EditorLocationY>
+      <ZappyWindowTitle>ClientTrade.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>2</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>ClientTrades</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>ClientTrade.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:02.8898609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>7e8e112b-4c53-4c66-ab7f-a6ad58ba4348</SelfGuid>
+      <NextGuid>4ed0be15-c753-424a-a001-5d72b3bf3619</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>378</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtTickerWindow.TxtTickerEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtTicker" Id="TxtTickerWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtTicker</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtTicker" Id="TxtTickerEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>65</X>
+        <Y>6</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:03.1868609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>4ed0be15-c753-424a-a001-5d72b3bf3619</SelfGuid>
+      <NextGuid>eb9fd77f-971a-491d-8156-8f6d6c8812fe</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>432</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtTickerWindow.TxtTickerEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtTicker" Id="TxtTickerWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtTicker</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtTicker" Id="TxtTickerEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-25T18:44:05.4058609Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>eb9fd77f-971a-491d-8156-8f6d6c8812fe</SelfGuid>
+      <NextGuid>765e4bd6-b9ae-4c1b-9457-d33b6b3806ce</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>486</EditorLocationY>
+      <ZappyWindowTitle>ClientTrade.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>3</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>ClientTrades</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>ClientTrade.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:06.6248609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>765e4bd6-b9ae-4c1b-9457-d33b6b3806ce</SelfGuid>
+      <NextGuid>0b2a5e56-962a-463b-8ab4-648cef5d5294</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>540</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtSizeWindow.TxtSizeEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSize" Id="TxtSizeWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSize</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSize" Id="TxtSizeEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>79</X>
+        <Y>7</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:06.8278609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>0b2a5e56-962a-463b-8ab4-648cef5d5294</SelfGuid>
+      <NextGuid>b5dee108-ea51-45b3-8e5a-015eeb25002e</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>594</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtSizeWindow.TxtSizeEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSize" Id="TxtSizeWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSize</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSize" Id="TxtSizeEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-25T18:44:09.6248609Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>b5dee108-ea51-45b3-8e5a-015eeb25002e</SelfGuid>
+      <NextGuid>3b9ffddf-9162-4f5a-9bcb-216ec9e51153</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>198</EditorLocationX>
+      <EditorLocationY>648</EditorLocationY>
+      <ZappyWindowTitle>ClientTrade.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>4</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>ClientTrades</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>ClientTrade.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:10.8278609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>3b9ffddf-9162-4f5a-9bcb-216ec9e51153</SelfGuid>
+      <NextGuid>6c21c44a-9c10-4bc4-ae43-f334562711d5</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>72</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtPriceWindow.TxtPriceEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtPrice" Id="TxtPriceWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtPrice</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtPrice" Id="TxtPriceEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>39</X>
+        <Y>10</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:11.0618609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>6c21c44a-9c10-4bc4-ae43-f334562711d5</SelfGuid>
+      <NextGuid>1c614e69-7c88-4ebc-8db2-307a5f5bb271</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>126</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtPriceWindow.TxtPriceEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtPrice" Id="TxtPriceWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtPrice</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtPrice" Id="TxtPriceEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-25T18:44:13.6088609Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>1c614e69-7c88-4ebc-8db2-307a5f5bb271</SelfGuid>
+      <NextGuid>33b19ff6-cb49-41c1-bacf-8d33d05be51a</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>180</EditorLocationY>
+      <ZappyWindowTitle>ClientTrade.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>5</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>ClientTrades</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>ClientTrade.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:14.6558609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>33b19ff6-cb49-41c1-bacf-8d33d05be51a</SelfGuid>
+      <NextGuid>f8427b1a-61c2-487f-b501-83a6cea9cf23</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>234</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TextBox1Window.TextBox1Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox1" Id="TextBox1Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox1</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox1" Id="TextBox1Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>90</X>
+        <Y>11</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:14.9058609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>f8427b1a-61c2-487f-b501-83a6cea9cf23</SelfGuid>
+      <NextGuid>71863c01-21c3-4034-8de0-a482dee0902c</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>288</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TextBox1Window.TextBox1Edit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="textBox1" Id="TextBox1Window" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">textBox1</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="textBox1" Id="TextBox1Edit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-25T18:44:17.0308609Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>71863c01-21c3-4034-8de0-a482dee0902c</SelfGuid>
+      <NextGuid>11858dcb-d347-4f88-9c21-0f94f8f3e4ca</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>342</EditorLocationY>
+      <ZappyWindowTitle>ClientTrade.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>6</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>ClientTrades</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>ClientTrade.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:18.0458609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>11858dcb-d347-4f88-9c21-0f94f8f3e4ca</SelfGuid>
+      <NextGuid>43b00c48-219c-4c78-b0bc-b99ee36fa428</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>396</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtSettDateWindow.TxtSettDateEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSettDate" Id="TxtSettDateWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSettDate</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSettDate" Id="TxtSettDateEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Bank Trade ID</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>71</X>
+        <Y>11</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:18.2498609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>43b00c48-219c-4c78-b0bc-b99ee36fa428</SelfGuid>
+      <NextGuid>43efc494-7251-47a7-bafe-5f5e1d7da258</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>450</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtSettDateWindow.TxtSettDateEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtSettDate" Id="TxtSettDateWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtSettDate</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtSettDate" Id="TxtSettDateEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Bank Trade ID</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-25T18:44:20.7648609Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>43efc494-7251-47a7-bafe-5f5e1d7da258</SelfGuid>
+      <NextGuid>3c70e1d9-ac69-4812-a464-59ba8459f424</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>504</EditorLocationY>
+      <ZappyWindowTitle>ClientTrade.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>7</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>ClientTrades</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>ClientTrade.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:21.8588609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>3c70e1d9-ac69-4812-a464-59ba8459f424</SelfGuid>
+      <NextGuid>7ef98821-61f2-42d4-883b-ccf699a2b7b8</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>558</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtCommWindow.TxtCommEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtComm" Id="TxtCommWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtComm</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtComm" Id="TxtCommEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>149</X>
+        <Y>5</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:22.0778609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>7ef98821-61f2-42d4-883b-ccf699a2b7b8</SelfGuid>
+      <NextGuid>e7d5dd6f-fb14-4f4b-967f-b1afc0f177cb</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>612</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtCommWindow.TxtCommEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtComm" Id="TxtCommWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtComm</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtComm" Id="TxtCommEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+    </SendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:22.8428609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>e7d5dd6f-fb14-4f4b-967f-b1afc0f177cb</SelfGuid>
+      <NextGuid>68965202-0421-4d3a-a169-88922bd097fc</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>378</EditorLocationX>
+      <EditorLocationY>666</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.CheckStatusWindow.CheckStatusButton</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="Check Status" Id="CheckStatusWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">cmdCheckStatus</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Button" FriendlyName="Check Status" Id="CheckStatusButton" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Check Status</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Button</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>157</X>
+        <Y>13</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:24.9838609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>68965202-0421-4d3a-a169-88922bd097fc</SelfGuid>
+      <NextGuid>929cac1d-9144-425d-bf64-353de9cebc9a</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>108</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.ReconStatusWindow.ReconStatusText</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="Recon Status" Id="ReconStatusWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">label10</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Text" FriendlyName="Recon Status" Id="ReconStatusText" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Recon Status</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Text</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>70</X>
+        <Y>7</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:25.9058609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>929cac1d-9144-425d-bf64-353de9cebc9a</SelfGuid>
+      <NextGuid>d3b9b299-9a5f-481d-9074-63c2caa720e8</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>162</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtReconStatusWindow.TxtReconStatusEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtReconStatus" Id="TxtReconStatusWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtReconStatus</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtReconStatus" Id="TxtReconStatusEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+    </SendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:26.1248609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>d3b9b299-9a5f-481d-9074-63c2caa720e8</SelfGuid>
+      <NextGuid>e00cacd6-b2a6-4716-b499-828bb5013924</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>234</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtReconStatusWindow.TxtReconStatusEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtReconStatus" Id="TxtReconStatusWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtReconStatus</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtReconStatus" Id="TxtReconStatusEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+    </SendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:26.3278609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>e00cacd6-b2a6-4716-b499-828bb5013924</SelfGuid>
+      <NextGuid>f5039505-ccdc-42db-b742-6ef019299f27</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>288</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtReconStatusWindow.TxtReconStatusEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtReconStatus" Id="TxtReconStatusWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtReconStatus</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtReconStatus" Id="TxtReconStatusEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+    </SendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:26.4998609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>f5039505-ccdc-42db-b742-6ef019299f27</SelfGuid>
+      <NextGuid>9ac9f616-b70a-4a37-b6c0-f3aa2d72fc41</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>342</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtReconStatusWindow.TxtReconStatusEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtReconStatus" Id="TxtReconStatusWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtReconStatus</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtReconStatus" Id="TxtReconStatusEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+    </SendKeysAction>
+    <SendKeysAction>
+      <Timestamp>2019-02-25T18:44:26.7028609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>9ac9f616-b70a-4a37-b6c0-f3aa2d72fc41</SelfGuid>
+      <NextGuid>65f77775-8756-4f25-be5a-a87b731178df</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>396</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.TxtReconStatusWindow.TxtReconStatusEdit</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="txtReconStatus" Id="TxtReconStatusWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">txtReconStatus</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Edit" FriendlyName="txtReconStatus" Id="TxtReconStatusEdit" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Edit</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>c</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Copy</KeyboardActionType>
+    </SendKeysAction>
+    <ExcelSendKeysAction>
+      <Timestamp>2019-02-25T18:44:28.4528609Z</Timestamp>
+      <ExeName>EXCEL.EXE</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>65f77775-8756-4f25-be5a-a87b731178df</SelfGuid>
+      <NextGuid>38f630be-ab9c-4b22-be30-d4a076864a19</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>450</EditorLocationY>
+      <ZappyWindowTitle>ClientTrade.xlsx - Excel</ZappyWindowTitle>
+      <ParameterName />
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows />
+      </WindowIdentifier>
+      <ModifierKeys>Control</ModifierKeys>
+      <DelayBetweenKeyboardCharacters>0</DelayBetweenKeyboardCharacters>
+      <Text>
+        <Value>v</Value>
+      </Text>
+      <ClipboardData>We can see automation in Task editor,</ClipboardData>
+      <KeyboardActionType>Paste</KeyboardActionType>
+      <RowIndex>
+        <Value>2</Value>
+      </RowIndex>
+      <ColumnIndex>
+        <Value>8</Value>
+      </ColumnIndex>
+      <SheetName>
+        <Value>ClientTrades</Value>
+      </SheetName>
+      <WorkbookName>
+        <Value>ClientTrade.xlsx</Value>
+      </WorkbookName>
+      <ExcelPropertyType>Value</ExcelPropertyType>
+      <UseFixedRow>false</UseFixedRow>
+    </ExcelSendKeysAction>
+    <MouseAction>
+      <Timestamp>2019-02-25T18:44:36.9368609Z</Timestamp>
+      <ExeName>TradeMatcher.exe</ExeName>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>38f630be-ab9c-4b22-be30-d4a076864a19</SelfGuid>
+      <NextGuid>e88632f9-75a5-4cc7-9b02-215151ad10b7</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>504</EditorLocationY>
+      <ZappyWindowTitle>Trade Matcher</ZappyWindowTitle>
+      <ParameterName />
+      <TaskActivityIdentifier>Desktop.TradeMatcherWindow.ClearWindow.ClearButton</TaskActivityIdentifier>
+      <WindowIdentifier Id="Desktop">
+        <ReuseID>false</ReuseID>
+        <TopLevelWindows>
+          <TopLevelWindow ControlType="Window" FriendlyName="Trade Matcher" Id="TradeMatcherWindow" SessionId="2884768" SpecialControlType="None">
+            <Condition xsi:type="AndCondition" Id="SearchCondition">
+              <Conditions xsi:type="PropertyCondition" Name="Name">Trade Matcher</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ClassName" Operator="Contains">WindowsForms10.Window</Conditions>
+              <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+            </Condition>
+            <Descendants>
+              <TaskActivityObject ControlType="Window" FriendlyName="Clear" Id="ClearWindow" SpecialControlType="None">
+                <Condition xsi:type="AndCondition" Id="SearchCondition">
+                  <Conditions xsi:type="PropertyCondition" Name="ControlName">button1</Conditions>
+                  <Conditions xsi:type="PropertyCondition" Name="ControlType">Window</Conditions>
+                </Condition>
+                <Descendants>
+                  <TaskActivityObject ControlType="Button" FriendlyName="Clear" Id="ClearButton" SpecialControlType="None">
+                    <Condition xsi:type="AndCondition" Id="SearchCondition">
+                      <Conditions xsi:type="PropertyCondition" Name="Name">Clear</Conditions>
+                      <Conditions xsi:type="PropertyCondition" Name="ControlType">Button</Conditions>
+                    </Condition>
+                    <Descendants />
+                    <SearchConfigurations>
+                      <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                    </SearchConfigurations>
+                    <SupportLevel>100</SupportLevel>
+                    <Framework>MSAA</Framework>
+                    <WindowTitles>
+                      <WindowTitle>Trade Matcher</WindowTitle>
+                    </WindowTitles>
+                  </TaskActivityObject>
+                </Descendants>
+                <SearchConfigurations>
+                  <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                </SearchConfigurations>
+                <SupportLevel>100</SupportLevel>
+                <Framework>MSAA</Framework>
+                <WindowTitles>
+                  <WindowTitle>Trade Matcher</WindowTitle>
+                </WindowTitles>
+              </TaskActivityObject>
+            </Descendants>
+            <SearchConfigurations>
+              <SearchConfiguration>VisibleOnly</SearchConfiguration>
+            </SearchConfigurations>
+            <SupportLevel>100</SupportLevel>
+            <Framework>MSAA</Framework>
+            <WindowTitles>
+              <WindowTitle>Trade Matcher</WindowTitle>
+            </WindowTitles>
+            <TimeSpent />
+          </TopLevelWindow>
+        </TopLevelWindows>
+      </WindowIdentifier>
+      <ModifierKeys>None</ModifierKeys>
+      <ActionType>Click</ActionType>
+      <Location>
+        <X>202</X>
+        <Y>9</Y>
+      </Location>
+      <MouseButton>Left</MouseButton>
+      <WheelDirection>0</WheelDirection>
+    </MouseAction>
+    <ExcelSetFocusedCell>
+      <Timestamp>2019-02-25T18:44:40.2028609Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>e88632f9-75a5-4cc7-9b02-215151ad10b7</SelfGuid>
+      <NextGuid>63b8fdf6-952f-4b69-af44-8faa32116e15</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>558</EditorLocationY>
+      <RowOffset>1</RowOffset>
+      <ColumnOffset>0</ColumnOffset>
+      <UseFixedRow>false</UseFixedRow>
+      <ExcelCellInfo>
+        <RowIndex>3</RowIndex>
+        <ColumnIndex>1</ColumnIndex>
+        <SheetName>ClientTrades</SheetName>
+        <WorkbookName>ClientTrade.xlsx</WorkbookName>
+      </ExcelCellInfo>
+    </ExcelSetFocusedCell>
+    <ForLoopEndAction>
+      <Timestamp>2019-02-25T18:45:25.7028609Z</Timestamp>
+      <StartTimestamp>0</StartTimestamp>
+      <EndTimestamp>0</EndTimestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <LoopStartGuid>7a9b5d01-db82-4096-a5ae-d5c7bdd1dee7</LoopStartGuid>
+      <SelfGuid>63b8fdf6-952f-4b69-af44-8faa32116e15</SelfGuid>
+      <NextGuid>f52d9372-9dec-4b5f-9531-76194f67b399</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>612</EditorLocationY>
+    </ForLoopEndAction>
+    <EndNodeAction>
+      <Timestamp>2019-02-25T18:45:25.7028609Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>f52d9372-9dec-4b5f-9531-76194f67b399</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>558</EditorLocationX>
+      <EditorLocationY>666</EditorLocationY>
+    </EndNodeAction>
+  </ExecuteActivities>
+</ZappyTask>

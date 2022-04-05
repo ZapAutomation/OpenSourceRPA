@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ZappyTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" AssemblyVersion="4.5.2.0" Id="5da987ef-1d89-443b-b5b0-e8c40dcfcf5b" Name="">
+  <ReuseID>false</ReuseID>
+  <FilePath>C:\Users\DELL\Documents\zappyai\Crapy\Sample\ZapAutomationAdditionalSamples\RunCSharpVBJavaCMDandPythonCode\RunJavaScriptWeb\Chrome Run Script.zappy</FilePath>
+  <ZappyExecutionTimeMillisecs>0</ZappyExecutionTimeMillisecs>
+  <ManualExecutionTimeMillisecs>1139454</ManualExecutionTimeMillisecs>
+  <ExecuteActivities>
+    <StartNodeAction>
+      <Timestamp>2020-03-25T13:03:02.0672697Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>a42dbc0f-80d8-4bf8-8c64-df75a0360e54</SelfGuid>
+      <NextGuid>399d4dbf-fc26-4642-982c-8fab6c517358</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>36</EditorLocationY>
+    </StartNodeAction>
+    <EndNodeAction>
+      <Timestamp>2020-03-25T13:03:02.0672697Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>0</NumberOfRetries>
+      <SelfGuid>f28918ba-d9be-4722-9421-26d8f248b40b</SelfGuid>
+      <NextGuid>00000000-0000-0000-0000-000000000000</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>216</EditorLocationY>
+    </EndNodeAction>
+    <ChromeAction_runScript>
+      <Timestamp>2020-03-25T13:30:25.8126337Z</Timestamp>
+      <TimeOutInMilliseconds>0</TimeOutInMilliseconds>
+      <ContinueOnError>false</ContinueOnError>
+      <PauseTimeAfterAction>0</PauseTimeAfterAction>
+      <NumberOfRetries>3</NumberOfRetries>
+      <SelfGuid>399d4dbf-fc26-4642-982c-8fab6c517358</SelfGuid>
+      <NextGuid>f28918ba-d9be-4722-9421-26d8f248b40b</NextGuid>
+      <ErrorHandlerGuid>00000000-0000-0000-0000-000000000000</ErrorHandlerGuid>
+      <EditorLocationX>306</EditorLocationX>
+      <EditorLocationY>144</EditorLocationY>
+      <CommandName>runScript</CommandName>
+      <TargetToSend>Id</TargetToSend>
+      <CommandTarget>
+        <string>alert("Hello");</string>
+      </CommandTarget>
+      <CommandValue />
+    </ChromeAction_runScript>
+  </ExecuteActivities>
+</ZappyTask>
